@@ -1,0 +1,201 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#fff;
+    color:#222;
+}
+
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    border-bottom:1px solid #eee;
+}
+
+#logo{
+    width: 30px;
+}
+
+.logo{
+    font-size:2rem;
+    font-weight:700;
+    color:#111;
+}
+
+.logo span{
+    color:#e60000;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#222;
+    font-weight:500;
+}
+
+nav ul li a:hover{
+    color:#e60000;
+}
+
+/* Hero Section */
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:70px 8%;
+    gap:50px;
+    background-image: url("bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:5rem;
+    line-height:1;
+}
+
+.hero-text h1 span{
+    color:#e60000;
+}
+
+.hero-text h2{
+    margin:20px 0;
+    font-size:2rem;
+}
+
+.hero-text p{
+    max-width:500px;
+    color:#666;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#e60000;
+    color:#fff;
+    padding:15px 35px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.hero-image{
+    flex:1;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:20px;
+}
+
+/* Features */
+.features{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    padding:50px 8%;
+    background:#fafafa;
+}
+
+.feature{
+    text-align:center;
+}
+
+.icon{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    background:#ffeaea;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+    font-size:2rem;
+}
+
+.feature h3{
+    margin:15px 0 10px;
+}
+
+.feature p{
+    color:#666;
+}
+
+/* About Section */
+.about{
+    display:flex;
+    align-items:center;
+    gap:50px;
+    padding:80px 8%;
+}
+
+.about img{
+    width:50%;
+    border-radius:15px;
+    width: 50%;
+    height: 450px;
+
+    background-image: url("bandage.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 15px;
+}
+
+.about-content{
+    flex:1;
+}
+
+.about-content h3{
+    color:#e60000;
+    letter-spacing:1px;
+}
+
+.about-content h2{
+    font-size:3rem;
+    margin:15px 0;
+}
+
+.about-content p{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.read-btn{
+    display:inline-block;
+    padding:12px 25px;
+    border:2px solid #ddd;
+    border-radius:10px;
+    text-decoration:none;
+    color:#111;
+    font-weight:600;
+}
+
+
+footer{
+    background:#07172d;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
