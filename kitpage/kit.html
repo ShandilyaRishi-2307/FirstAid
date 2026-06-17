@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Aid Kit</title>
+    <link rel="stylesheet" href="kit.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+    <div class="logo">
+        <img src="images/first-aid-box.png" alt="#" id="logo"> First <span>Aid</span>
+    </div>
+
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger"><i class="fa-solid fa-bars"></i></label>
+    <ul class="nav-links">
+        <li><a href="/firstpage/index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="/kitpage/kit.html">Kit</a></li>
+        <li><a href="/learnPage/learn.html">Learn</a></li>
+        <li><a href="#">Emergency</a></li>
+        <li><a href="/ResourcePage/resources.html">Resources</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#"><img src="images/profile.png" alt="#" id="profile-logo"></a></li>
+    </ul>
+
+    
+</nav>
+
+<!-- SECTION-1 -->
+
+<section class="hero">
+
+    <h1>First Aid Kit</h1>
+    <p>
+        Always be prepared..
+    </p>
+
+</section>
+
+<div class="container">
+    <div class="card" onclick="openModal(
+        'images/gauze.webp',
+        'GAUZE',
+        'Sterile gauze is used for absorbing fluids as well as dressing and protecting wounds. Sterile gauze acts as a barrier to prevent contaminants from entering any wound area that is covers and absorbs any blood or fluid that seeps out of the wound.'
+    )">
+        <img src="images/gauze.webp" alt="">
+        <div class="card-title">gauze</div>
+    </div>
+
+
+
+    
+
+
+
+    <div class="card" onclick="openModal(
+        'images/adhesive-tape.webp',
+        'ADHESIVE-TAPE',
+        'Surgical tape or medical tape is a type of pressure-sensitive adhesive tape used in medicine and first aid to hold a bandage or other dressing onto a wound.'
+    )">
+        <img src="images/adhesive-tape.webp" alt="">
+        <div class="card-title">adhesive tape</div>
+    </div>
+
+
+
+
+    <div class="card" onclick="openModal(
+        'images/adhesive-bandages.jpg',
+        'ADHESIVE BANDAGES',
+        'An adhesive bandage, also called a sticking plaster(or simply plaster) in British English, is a small medical dressing used for injuries not serious enough to require a full-size bandage.They are also known by the genericized trademarks Band-Aid or Elastoplast(in the UK).'
+    )">
+        <img src="images/adhesive-bandages.jpg" alt="bandages">
+        <div class="card-title">adhesive bandages</div>
+    </div>
+    <div class="card" onclick="openModal(
+        'https://cruzine.in/cdn/shop/files/a_1028fc75-041c-4ff6-b38a-42e940ce74fe_1296x.jpg?v=1711782449',
+        'ELASTIC BANDAGE',
+        'An elastic bandage is a  sensitive bandage used to create localized pressure. Elastic bandages are commonly used to treat muscle sprains and strains by reducing the flow of blood to a particular area by the application of even stable pressure which can restrict swelling at the place of injury.'
+    )">
+        <img src="https://cruzine.in/cdn/shop/files/a_1028fc75-041c-4ff6-b38a-42e940ce74fe_1296x.jpg?v=1711782449" alt="">
+        <div class="card-title">elastic bandage</div>
+    </div>
+    <div class="card" onclick="openModal(
+        'images/splint.jpg',
+        'A SPLINT',
+        'Casts and splints are hard wrpas used to support and protect injured bones, ligaments, tendons and other tissues. They help broken bones heal by keeping the broken ends together and as straight as possible. Casts and splints also help relive pain and swelling, and protact the injured area from more harm.'
+    )">
+        <img src="images/splint.jpg" alt="">
+        <div class="card-title">a splint</div>
+    </div>
+    <div class="card" onclick="openModal(
+        'images/wipes.jpg',
+        'WIPES',
+        'alcohol wipes are designed to clean and for the convenient disinfection of smaller surfaces and individual non invasive medical devices.'
+    )">
+        <img src="images/wipes.jpg" alt="">
+        <div class="card-title">wipes</div>
+    </div>
+    <div class="card" onclick="openModal(
+        'images/soap.webp',
+        'SOAP',
+        'Mild soaps may be used to gently clean the area around the wound.'
+    )">
+        <img src="images/soap.webp" alt="">
+        <div class="card-title">soap</div>
+    </div>
+    <div class="card" onclick="openModal(
+        'images/antibiotic-cream.jpg',
+        'ANTIBIOTIC OINTMENT',
+        'Polymyxin B sulfate - bacitracin Zinc - gramicidin contains a combination of antibiotics used for the treatment of certain types of infections caused by bacteria. The topical ointment can  be used to treat certain skin infections such as infected wounds, burns, skin grafts, boils, and acne.'
+    )">
+        <img src="images/antibiotic-cream.jpg" alt="">
+        <div class="card-title">antibiotic ointment</div>
+    </div>
+    <div class="card" onclick="openModal(
+        'images/rectos-solution.jpeg',
+        'ANTISEPATIC SOLUTION',
+        'Antiseptic Liquid (provone-iodine) is a potent topical antiseptic used to prevent or treat infection in minor wounds. It is effective at killing bacteria,virues,fungi,protozoa,molds and yeast.'
+    )">
+        <img src="images/rectos-solution.jpeg" alt="">
+        <div class="card-title">Antisepatic Solution</div>
+    </div>
+    <div class="card" onclick="openModal(
+        'images/hydo cream.webp',
+        'HYDEOCORTISONE CREAM',
+        'Hydrocortisone is a topical steroid. It reduces the actions of chemicals in the body that cause inflammation, redness, and swelling. Hydrocortisone topical is used to treat inflammation of the skin caused by the number of conditions such as allergic, resctions,eczema, or psoriasis.'
+    )">
+        <img src="images/hydo cream.webp" alt="">
+        <div class="card-title">hydrocortisone cream</div>
+    </div>
+    <div class="card" onclick="openModal(
+        'images/tablet.jpg',
+        'ACETAMINOPHEN & IBUPROFEN',
+        'Adding acetaminophen to nonsteroidal anti-inflammatory drugs (NSAIDs), can be an effective way to improve pain relief.'
+    )">
+        <img src="images/tablet.jpg" alt="">
+        <div class="card-title">acetaminophen & ibuprofen</div>
+    </div>
+    <div class="card" onclick="openModal(
+        'images/medicines.jpg',
+        'MEDICATIONS',
+        'extra prescription medicines (if the family is going on vacation).'
+    )">
+        <img src="images/medicines.jpg" alt="">
+        <div class="card-title">medications</div>
+    </div>
+
+    <div class="card" onclick="openModal(
+        'images/tweezers.jpg',
+        'TWEEZERS',
+        'Tweezers are small hand-held tools used to grip, hold, or remove tiny objects that are difficult to pick up with fingers. In first aid, they are commonly used to safely remove splinters, glass fragments, ticks, or other foreign objects from the skin, helping to prevent infection and injury.'
+    )">
+        <img src="images/tweezers.jpg" alt="">
+        <div class="card-title">tweezers</div>
+    </div>
+    <div class="card" onclick="openModal(
+        'images/dressing-scissors-pointed-straight.jpg',
+        'SHARP SCISSORS',
+        'Sharp scissors are essential first-aid tools used to cut bandages, gauze, adhesive tape, clothing, and dressings quickly and safely. Their sharp blades provide clean cuts, making it easier to access and treat injuries during emergencies.'
+    )">
+        <img src="images/dressing-scissors-pointed-straight.jpg" alt="">
+        <div class="card-title">sharp scissors</div>
+    </div>
+    <div class="card" onclick="openModal(
+        'images/safety pins.jpg',
+        'SAFETY PINS',
+        'Medical safety pins are versatile tools used in first-aid kits to secure bandages, slings, and dressings in place. They help keep wound coverings secure and can be used in emergency situations to fasten clothing or support injured limbs safely.'
+    )">
+        <img src="images/safety pins.jpg" alt="">
+        <div class="card-title">safety pins</div>
+    </div>
+    <div class="card" onclick="openModal(
+        'images/cold packs.webp',
+        'COLD PACKS',
+        'A cold pack is a first-aid item used to reduce pain, swelling, and inflammation caused by minor injuries such as sprains, strains, bruises, and bumps. When applied to the affected area, it helps numb pain and minimize tissue damage by constricting blood vessels.'
+    )">
+        <img src="images/cold packs.webp" alt="">
+        <div class="card-title">cold packs</div>
+    </div>
+    <div class="card" onclick="openModal(
+        'images/calamine lotion.jpg',
+        'CALAMINE LOTION',
+        'Calamine lotion is a soothing topical medication used to relieve itching, irritation, and discomfort caused by insect bites, rashes, sunburn, poison ivy, and other minor skin conditions. It helps calm the skin and provides a cooling effect, reducing redness and irritation.'
+    )">
+        <img src="images/calamine lotion.jpg" alt="">
+        <div class="card-title">calamine lotion</div>
+    </div>
+    <div class="card" onclick="openModal(
+        'images/thermometer.jpg',
+        'THERMOMETER',
+        'A thermometer is a medical device used to measure body temperature accurately. It helps detect fever and monitor changes in temperature, making it an essential tool for diagnosing and managing illnesses and infections.'
+    )">
+        <img src="images/thermometer.jpg" alt="">
+        <div class="card-title">thermometer</div>
+    </div>
+</div>
+
+
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <img id="modalImg" src="" alt="">
+        <h2 id="modalTitle"></h2>
+        <p id="modalDesc" ></p>
+
+        <button onclick="closeModal()">CLOSE</button>
+    </div>
+</div>
+
+<script src="kit.js"></script>
+
+</body>
+</html>
