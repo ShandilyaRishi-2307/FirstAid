@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emergency | First Aid</title>
+
+<link rel="stylesheet" href="emergency.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<nav>
+    <div class="logo">
+        <img src="first-aid-box.jpg" alt="#" id="logo">
+        <h2>First <span>Aid</span></h2> 
+    </div>
+
+    <ul>
+        <li><a href="/firstpage/index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="/kitpage/kit.html">Kit</a></li>
+        <li><a href="/learnPage/learn.html">Learn</a></li>
+        <li><a href="/emergencyPage/emergency.html">Emergency</a></li>
+        <li><a href="/ResourcePage/resources.html">Resources</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#"><img src="profile.png" alt="#" id="profile-logo"></a></li>
+    </ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+
+    <h1>🚨 Emergency Assistance</h1>
+
+    <p>Stay Calm. Act Fast. Save Lives.</p>
+
+</section>
+
+
+<!-- Cards -->
+<section class="cards">
+
+    <div class="card">
+        <div class="icon">🏥</div>
+        <h3>Nearest Hospital</h3>
+        <p>Find nearby hospitals quickly.</p>
+        <button id="hospitalBtn">Locate</button>
+    </div>
+
+    <div class="card">
+        <div class="icon">🚑</div>
+        <h3>Ambulance</h3>
+        <p>Call emergency ambulance service.</p>
+        <a href="tel:108">Call 108</a>
+    </div>
+
+    <div class="card">
+        <div class="icon">☎</div>
+        <h3>Emergency Numbers</h3>
+        <p>112 National Emergency<br>101 Fire<br>100 Police</p>
+    </div>
+
+    <div class="card">
+        <div class="icon">❤️</div>
+        <h3>CPR Guide</h3>
+        <p>Perform chest compressions and rescue breathing.</p>
+    </div>
+
+    <div class="card">
+        <div class="icon">🩸</div>
+        <h3>Bleeding Control</h3>
+        <p>Apply pressure and elevate wound.</p>
+    </div>
+
+    <div class="card">
+        <div class="icon">🔥</div>
+        <h3>Burn Treatment</h3>
+        <p>Cool burn under running water for 20 minutes.</p>
+    </div>
+
+    <div class="card">
+        <div class="icon">😮</div>
+        <h3>Choking Relief</h3>
+        <p>Use back blows and abdominal thrusts.</p>
+    </div>
+
+    <div class="card">
+        <div class="icon">🐍</div>
+        <h3>Snake Bite</h3>
+        <p>Keep victim still and seek medical help.</p>
+    </div>
+
+    <div class="card">
+        <div class="icon">⚡</div>
+        <h3>Electric Shock</h3>
+        <p>Turn off power source before touching victim.</p>
+    </div>
+
+</section>
+
+
+<!-- Location -->
+<section class="location">
+
+    <h2>📍 Share My Location</h2>
+
+    <button onclick="getLocation()">
+        Get Current Location
+    </button>
+
+    <p id="demo"></p>
+
+</section>
+
+
+<script src="emergency.js"></script>
+
+</body>
+</html>
