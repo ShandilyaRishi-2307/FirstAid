@@ -10,3 +10,12 @@ function openModal(img, title, desc){
 function closeModal(){
     document.getElementById("modal").style.display = "none";
 }
+
+const modal = document.querySelector(".modal");
+
+modal.addEventListener("click", function(event) {
+    if (event.target === modal) {
+        closeModal();
+    }
+});
+
