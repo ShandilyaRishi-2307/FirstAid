@@ -163,3 +163,198 @@ nav ul li a:hover{
     margin-top:20px;
     color:#555;
 }
+
+.sendEmergency{
+    width: 90%;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 50px 30px;
+    background: linear-gradient(135deg,#ff3b3b,#c70000);
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.sendEmergency h2{
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.sendEmergency p{
+    max-width: 600px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #f5f5f5;
+}
+
+.sendEmergency button{
+    background: white;
+    color: #e60000;
+    border: none;
+    padding: 15px 35px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sendEmergency button:hover{
+    background: #ffeaea;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+
+@media (max-width: 992px){
+
+    nav{
+        padding:20px 5%;
+    }
+
+    nav ul{
+        gap:20px;
+    }
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    .cards{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .sendEmergency h2{
+        font-size:2rem;
+    }
+
+}
+
+
+@media (max-width:768px){
+
+    body{
+        padding-top:100px;
+    }
+
+    nav{
+        flex-direction:column;
+        height:auto;
+        padding:15px;
+        gap:15px;
+    }
+
+    .logo{
+        font-size:1.6rem;
+    }
+
+    #logo{
+        width:50px;
+        height:50px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .hero{
+        padding:60px 20px;
+    }
+
+    .hero h1{
+        font-size:2.2rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    .cards{
+        width:95%;
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .card{
+        padding:25px;
+    }
+
+    .icon{
+        font-size:2.5rem;
+    }
+
+    .location{
+        width:95%;
+        padding:40px 0;
+    }
+
+    .location button{
+        width:100%;
+    }
+
+    .sendEmergency{
+        width:95%;
+        padding:40px 20px;
+    }
+
+    .sendEmergency h2{
+        font-size:1.8rem;
+    }
+
+    .sendEmergency p{
+        font-size:1rem;
+    }
+
+    .sendEmergency button{
+        width:100%;
+    }
+
+}
+
+
+@media (max-width:480px){
+
+    .logo{
+        font-size:1.3rem;
+    }
+
+    #logo{
+        width:40px;
+        height:40px;
+    }
+
+    nav ul{
+        gap:10px;
+        font-size:0.9rem;
+    }
+
+    .hero h1{
+        font-size:1.8rem;
+    }
+
+    .hero p{
+        font-size:.95rem;
+    }
+
+    .card{
+        padding:20px;
+    }
+
+    .card h3{
+        font-size:1.2rem;
+    }
+
+    .card p{
+        font-size:.95rem;
+    }
+
+    .sendEmergency h2{
+        font-size:1.5rem;
+    }
+
+}
