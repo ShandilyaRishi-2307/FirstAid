@@ -209,6 +209,17 @@ nav ul li a:hover{
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
+.hamburger{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+
 
 @media (max-width: 992px){
 
@@ -218,6 +229,31 @@ nav ul li a:hover{
 
     nav ul{
         gap:20px;
+    }
+
+     .hamburger{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20%;
+        transform: translate(-50%);
+    }
+
+    #menu-toggle:checked ~ .nav-links{
+        display: flex;
+    }
+
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        width: 200px;
+        background: white;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     }
 
     .hero h1{
@@ -240,6 +276,9 @@ nav ul li a:hover{
     body{
         padding-top:100px;
     }
+
+
+    
 
     nav{
         flex-direction:column;
