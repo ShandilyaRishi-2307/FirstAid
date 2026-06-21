@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drownings - First Aid</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f3f3f3;
+    color:#222;
+}
+
+.container{
+    width:95%;
+    max-width:1400px;
+    margin:auto;
+    padding:20px 0;
+}
+
+/* HERO */
+.hero{
+    position:relative;
+    height:350px;
+    overflow:hidden;
+    border-radius:20px;
+    margin-bottom:25px;
+}
+
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.4);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay h1{
+    color:#fff;
+    font-size:5rem;
+}
+
+.overlay p{
+    color:white;
+    font-size:1.6rem;
+    margin-top:10px;
+}
+
+/* CARDS */
+.card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+}
+
+.card h2{
+    color:#e60000;
+    margin-bottom:20px;
+    border-bottom:3px solid #ffb0b0;
+    display:inline-block;
+}
+
+.card p{
+    line-height:2;
+    color:#444;
+}
+
+.card ul{
+    padding-left:20px;
+}
+
+.card li{
+    line-height:1.9;
+    margin:8px 0;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.flex{
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+
+.flex img{
+    width:40%;
+    border-radius:15px;
+}
+
+.flex-content{
+    flex:1;
+}
+
+.note{
+    margin-top:20px;
+    background:#e7f1ff;
+    padding:15px;
+    border-radius:15px;
+    color:#0b57d0;
+}
+
+/* DO DON'T */
+.do-dont{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.do{
+    background:#effbf0;
+    border:2px solid #a8e1ad;
+}
+
+.dont{
+    background:#fff2f2;
+    border:2px solid #ffb3b3;
+}
+
+/* PREVENTION */
+.prevent{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:20px;
+}
+
+.prevent div{
+    text-align:center;
+}
+
+.prevent img{
+    width:90px;
+    margin-bottom:10px;
+}
+
+.home-btn{
+    text-align:center;
+    margin:40px;
+}
+
+.home-btn a{
+    background:#e60000;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.home-btn a:hover{
+    background:#c70000;
+}
+
+@media(max-width:900px){
+
+.grid,
+.do-dont,
+.flex{
+    grid-template-columns:1fr;
+    flex-direction:column;
+}
+
+.flex img{
+    width:100%;
+}
+
+.prevent{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.overlay h1{
+    font-size:3rem;
+}
+
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<!-- HERO -->
+<div class="hero">
+<img src="drowning-hero.jpg">
+
+<div class="overlay">
+<h1>Drownings</h1>
+<p>Quick action can save a life</p>
+</div>
+</div>
+
+
+<!-- INTRODUCTION -->
+<div class="card flex">
+
+<div class="flex-content">
+<h2>Introduction</h2>
+
+<p>
+Instant first aid should be given to a person rescued from drowning, along with immediate medical attention. Every second counts and prompt action can save a life.
+</p>
+</div>
+
+<img src="intro-drowning.jpg">
+
+</div>
+
+
+<!-- CAUSES -->
+<div class="card flex">
+
+<img src="causes.jpg">
+
+<div class="flex-content">
+
+<h2>Causes of Drowning Accidents</h2>
+
+<ul>
+
+<li>Seizures or blows to the head under water.</li>
+
+<li>Attempt to commit suicide.</li>
+
+<li>Falling through thin ice.</li>
+
+<li>Alcohol consumption while swimming or boating.</li>
+
+<li>Unattended children around pools and bathtubs.</li>
+
+<li>Panic while swimming or inability to swim.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- FACTS + SYMPTOMS -->
+<div class="grid">
+
+<div class="card">
+
+<h2>Facts Related to Drowning</h2>
+
+<p>
+Thousands of drowning incidents occur every year. Most happen close to safety zones. Children can drown in only a few inches of water. Young victims submerged in cold water for long periods can sometimes be revived.
+</p>
+
+<div class="note">
+<b>Important:</b> Look for unusual swimming motions and signs of exhaustion. Check if the victim is fully clothed, which may indicate accidental drowning.
+</div>
+
+</div>
+
+
+<div class="card">
+
+<h2>Symptoms of Near Drowning</h2>
+
+<ul>
+
+<li>Vomiting</li>
+
+<li>Restlessness</li>
+
+<li>Confusion</li>
+
+<li>Chest pain</li>
+
+<li>Pale appearance</li>
+
+<li>Cold skin</li>
+
+<li>Bluish lips or skin</li>
+
+<li>Abdominal distention</li>
+
+<li>Unconsciousness</li>
+
+<li>Lack of breathing</li>
+
+<li>Lethargy</li>
+
+<li>Coughing froth</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- BRING TO LAND -->
+<div class="card flex">
+
+<img src="rescue.jpg">
+
+<div class="flex-content">
+
+<h2>How to Bring a Drowning Victim to Land</h2>
+
+<ol>
+
+<li>Wear a flotation device if available.</li>
+
+<li>Call emergency services immediately.</li>
+
+<li>Reach or pull the victim with a rope or object.</li>
+
+<li>Do not touch a panicking victim directly.</li>
+
+<li>If unconscious, use a boat or rope to bring the victim to shore.</li>
+
+<li>Remove wet clothes and cover the victim with a blanket.</li>
+
+<li>Seek medical attention for all near-drowning victims.</li>
+
+</ol>
+
+</div>
+
+</div>
+
+
+<!-- FIRST AID -->
+<div class="card">
+
+<h2 style="text-align:center">First Aid for Drowning Victim</h2>
+
+<div class="do-dont">
+
+<div class="card do">
+
+<h2>✔ DOs</h2>
+
+<ul>
+
+<li>Check for hypothermia.</li>
+
+<li>Start CPR if the victim is not breathing.</li>
+
+<li>Protect the neck and spine.</li>
+
+<li>Keep the victim still and calm.</li>
+
+<li>Keep the body warm.</li>
+
+<li>Provide first aid for other injuries.</li>
+
+</ul>
+
+</div>
+
+
+<div class="card dont">
+
+<h2>✖ DON'Ts</h2>
+
+<ul>
+
+<li>Don't enter the water if you are untrained.</li>
+
+<li>Don't jump into rough or icy water.</li>
+
+<li>Don't use the Heimlich maneuver routinely.</li>
+
+<li>Don't delay professional medical treatment.</li>
+
+<li>Don't leave the victim alone.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PREVENTION -->
+<div class="card">
+
+<h2 style="text-align:center">Prevention is the Best Protection</h2>
+
+<div class="prevent">
+
+<div>
+<img src="alcohol.png">
+<p>Avoid alcohol while swimming.</p>
+</div>
+
+<div>
+<img src="child.png">
+<p>Never leave children unattended.</p>
+</div>
+
+<div>
+<img src="bucket.png">
+<p>Empty tubs and buckets.</p>
+</div>
+
+<div>
+<img src="toilet.png">
+<p>Keep toilet seats covered.</p>
+</div>
+
+<div>
+<img src="jacket.png">
+<p>Follow water safety rules.</p>
+</div>
+
+<div>
+<img src="lifebuoy.png">
+<p>Learn CPR and water safety.</p>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- BACK BUTTON -->
+<div class="home-btn">
+<a href="/learnPage/learn.html">← Back to Home</a>
+</div>
+
+</div>
+
+</body>
+</html>

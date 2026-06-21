@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drownings - First Aid</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f3f3f3;
+    color:#222;
+}
+
+.container{
+    width:95%;
+    max-width:1400px;
+    margin:auto;
+    padding:20px 0;
+}
+
+/* HERO */
+.hero{
+    position:relative;
+    height:350px;
+    overflow:hidden;
+    border-radius:20px;
+    margin-bottom:25px;
+}
+
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.4);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay h1{
+    color:#fff;
+    font-size:5rem;
+}
+
+.overlay p{
+    color:white;
+    font-size:1.6rem;
+    margin-top:10px;
+}
+
+/* CARDS */
+.card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+}
+
+.card h2{
+    color:#e60000;
+    margin-bottom:20px;
+    border-bottom:3px solid #ffb0b0;
+    display:inline-block;
+}
+
+.card p{
+    line-height:2;
+    color:#444;
+}
+
+.card ul{
+    padding-left:20px;
+}
+
+.card li{
+    line-height:1.9;
+    margin:8px 0;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.flex{
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+
+.flex img{
+    width:40%;
+    border-radius:15px;
+}
+
+.flex-content{
+    flex:1;
+}
+
+.note{
+    margin-top:20px;
+    background:#e7f1ff;
+    padding:15px;
+    border-radius:15px;
+    color:#0b57d0;
+}
+
+/* DO DON'T */
+.do-dont{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.do{
+    background:#effbf0;
+    border:2px solid #a8e1ad;
+}
+
+.dont{
+    background:#fff2f2;
+    border:2px solid #ffb3b3;
+}
+
+/* PREVENTION */
+.prevent{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:20px;
+}
+
+.prevent div{
+    text-align:center;
+}
+
+.prevent img{
+    width:90px;
+    margin-bottom:10px;
+}
+
+.home-btn{
+    text-align:center;
+    margin:40px;
+}
+
+.home-btn a{
+    background:#e60000;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.home-btn a:hover{
+    background:#c70000;
+}
+
+@media(max-width:900px){
+
+.grid,
+.do-dont,
+.flex{
+    grid-template-columns:1fr;
+    flex-direction:column;
+}
+
+.flex img{
+    width:100%;
+}
+
+.prevent{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.overlay h1{
+    font-size:3rem;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- HERO -->
+<div class="hero">
+<img src="fainting-hero.jpg">
+
+<div class="overlay">
+<h1>Fainting</h1>
+<p>Quick care helps restore blood flow to the brain</p>
+</div>
+</div>
+
+
+<!-- INTRODUCTION -->
+<div class="card flex">
+
+<div class="flex-content">
+
+<h2>Introduction</h2>
+
+<p>
+Fainting, also known as syncope, is a temporary loss of consciousness caused by a sudden decrease in blood flow to the brain. It usually lasts only a few seconds or minutes and most people recover quickly. However, fainting can sometimes indicate a serious underlying medical condition and should never be ignored.
+<br><br>
+Common causes include dehydration, low blood sugar, stress, emotional shock, pain, prolonged standing, overheating, heart problems, or certain medications. Prompt first aid and proper observation are important to ensure safety and prevent complications.
+</p>
+
+</div>
+
+<img src="fainting-intro.jpg">
+
+</div>
+
+
+<!-- CAUSES -->
+<div class="card flex">
+
+<img src="causes-fainting.jpg">
+
+<div class="flex-content">
+
+<h2>Common Causes of Fainting</h2>
+
+<ul>
+
+<li>Dehydration and lack of fluids.</li>
+
+<li>Low blood sugar due to prolonged fasting.</li>
+
+<li>Stress, fear, pain, or emotional shock.</li>
+
+<li>Standing for long periods.</li>
+
+<li>Heat exhaustion and overheating.</li>
+
+<li>Sudden changes in body position.</li>
+
+<li>Heart rhythm abnormalities and heart disease.</li>
+
+<li>Pregnancy and certain medications.</li>
+
+<li>Anemia or low blood pressure.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- SIGNS + WARNING -->
+<div class="grid">
+
+<div class="card">
+
+<h2>Signs and Symptoms</h2>
+
+<ul>
+
+<li>Dizziness or lightheadedness.</li>
+
+<li>Weakness and fatigue.</li>
+
+<li>Blurred vision.</li>
+
+<li>Pale skin.</li>
+
+<li>Cold sweating.</li>
+
+<li>Nausea.</li>
+
+<li>Yawning or feeling sleepy.</li>
+
+<li>Slow pulse.</li>
+
+<li>Temporary loss of consciousness.</li>
+
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h2>Warning Signs</h2>
+
+<p>
+
+Most fainting episodes are harmless, but loss of consciousness can sometimes result from serious heart or brain disorders. Seek medical attention immediately if unusual symptoms are present.
+
+</p>
+
+<div class="note">
+
+<b>Important:</b> Call emergency services immediately if the person remains unconscious, has chest pain, difficulty breathing, or does not recover quickly.
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- FIRST AID -->
+<div class="card flex">
+
+<img src="first-aid-fainting.jpg">
+
+<div class="flex-content">
+
+<h2>First Aid Measures</h2>
+
+<ol>
+
+<li>Lay the person flat on his or her back.</li>
+
+<li>Elevate the legs 8–12 inches to improve blood flow to the brain.</li>
+
+<li>Loosen tight clothing around the neck and waist.</li>
+
+<li>Ensure plenty of fresh air.</li>
+
+<li>Check breathing and responsiveness.</li>
+
+<li>If unconscious and not breathing normally, begin CPR.</li>
+
+<li>Call emergency services if recovery does not occur quickly.</li>
+
+<li>If trained, use an AED if one is available.</li>
+
+</ol>
+
+</div>
+
+</div>
+
+
+<!-- REVIVAL + HOME CARE -->
+<div class="grid">
+
+<div class="card">
+
+<h2>Reviving the Person</h2>
+
+<ul>
+
+<li>Speak loudly and gently tap the person.</li>
+
+<li>Check responsiveness.</li>
+
+<li>Monitor breathing and pulse.</li>
+
+<li>Keep the person lying down.</li>
+
+<li>Allow recovery slowly.</li>
+
+<li>Avoid sudden standing.</li>
+
+<li>Seek emergency care if no response occurs.</li>
+
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h2>Home Care After Recovery</h2>
+
+<ul>
+
+<li>Stay with the person until fully alert.</li>
+
+<li>Offer fruit juice or a sweet drink if blood sugar is low.</li>
+
+<li>Allow plenty of rest.</li>
+
+<li>Encourage drinking water.</li>
+
+<li>Help the person sit up slowly.</li>
+
+<li>Avoid strenuous activity immediately after recovery.</li>
+
+<li>Consult a doctor if fainting recurs.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- WHEN TO SEEK MEDICAL HELP -->
+<div class="card">
+
+<h2 style="text-align:center;">When to See a Doctor</h2>
+
+<div class="do-dont">
+
+<div class="card do">
+
+<h2>✔ Seek Medical Care If</h2>
+
+<ul>
+
+<li>The person hit the head while falling.</li>
+
+<li>Fainting occurs more than once.</li>
+
+<li>The person is pregnant.</li>
+
+<li>There is heart disease or diabetes.</li>
+
+<li>Chest pain or shortness of breath occurs.</li>
+
+<li>Confusion or difficulty speaking develops.</li>
+
+<li>Vision becomes blurred.</li>
+
+</ul>
+
+</div>
+
+
+<div class="card dont">
+
+<h2>⚠ Emergency Warning Signs</h2>
+
+<ul>
+
+<li>Unconsciousness lasting several minutes.</li>
+
+<li>No breathing or pulse.</li>
+
+<li>Seizures or convulsions.</li>
+
+<li>Severe headache.</li>
+
+<li>Weakness on one side of the body.</li>
+
+<li>Sudden collapse without warning.</li>
+
+<li>Persistent chest pain.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PREVENTION -->
+<div class="card">
+
+<h2 style="text-align:center;">Prevention and Safety Measures</h2>
+
+<div class="prevent">
+
+<div>
+<img src="water.png">
+<p>Drink enough water daily.</p>
+</div>
+
+<div>
+<img src="food.png">
+<p>Do not skip meals.</p>
+</div>
+
+<div>
+<img src="exercise.png">
+<p>Exercise regularly.</p>
+</div>
+
+<div>
+<img src="heart.png">
+<p>Control heart conditions.</p>
+</div>
+
+<div>
+<img src="rest.png">
+<p>Avoid excessive fatigue.</p>
+</div>
+
+<div>
+<img src="cpr.png">
+<p>Learn CPR and first aid.</p>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- WHY QUICK ACTION MATTERS -->
+<div class="card">
+
+<h2>Why Immediate Action Matters</h2>
+
+<p>
+
+Most fainting episodes are brief and harmless, but they may occasionally signal a life-threatening condition such as a heart attack, stroke, or abnormal heart rhythm. Prompt first aid helps restore blood flow to the brain and prevents injuries caused by falls.
+
+<br><br>
+
+Knowing when to call emergency services and how to perform CPR can save lives. Continuous observation and timely medical evaluation are essential, especially if fainting occurs repeatedly or is accompanied by unusual symptoms.
+
+</p>
+
+</div>
+
+
+<!-- BACK BUTTON -->
+<div class="home-btn">
+<a href="/learnPage/learn.html">← Back to Home</a>
+</div>
+
+</div>
+
+</body>

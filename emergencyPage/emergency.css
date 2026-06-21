@@ -398,3 +398,10 @@ nav ul li a:hover{
     }
 
 }
+
+#district{
+    margin-top:10px;
+    font-size:1.1rem;
+    font-weight:600;
+    color:#e60000;
+}

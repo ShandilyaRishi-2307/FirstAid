@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diabetic Emergency - First Aid</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f3f3f3;
+    color:#222;
+}
+
+.container{
+    width:95%;
+    max-width:1400px;
+    margin:auto;
+    padding:20px 0;
+}
+
+.hero{
+    position:relative;
+    height:350px;
+    overflow:hidden;
+    border-radius:20px;
+    margin-bottom:25px;
+}
+
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.4);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay h1{
+    color:#fff;
+    font-size:5rem;
+}
+
+.overlay p{
+    color:white;
+    font-size:1.6rem;
+    margin-top:10px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+}
+
+.card h2{
+    color:#e60000;
+    margin-bottom:20px;
+    border-bottom:3px solid #ffb0b0;
+    display:inline-block;
+}
+
+.card p{
+    line-height:2;
+    color:#444;
+}
+
+.card ul,
+.card ol{
+    padding-left:20px;
+}
+
+.card li{
+    line-height:1.9;
+    margin:8px 0;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.flex{
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+
+.flex img{
+    width:40%;
+    border-radius:15px;
+}
+
+.flex-content{
+    flex:1;
+}
+
+.note{
+    margin-top:20px;
+    background:#e7f1ff;
+    padding:15px;
+    border-radius:15px;
+    color:#0b57d0;
+}
+
+.do-dont{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.do{
+    background:#effbf0;
+    border:2px solid #a8e1ad;
+}
+
+.dont{
+    background:#fff2f2;
+    border:2px solid #ffb3b3;
+}
+
+.prevent{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:20px;
+}
+
+.prevent div{
+    text-align:center;
+}
+
+
+
+.home-btn{
+    text-align:center;
+    margin:40px;
+}
+
+.home-btn a{
+    background:#e60000;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.home-btn a:hover{
+    background:#c70000;
+}
+
+@media(max-width:900px){
+
+.grid,
+.do-dont,
+.flex{
+    grid-template-columns:1fr;
+    flex-direction:column;
+}
+
+.flex img{
+    width:100%;
+}
+
+.prevent{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.overlay h1{
+    font-size:3rem;
+}
+
+}
+</style>
+</head>
+
+
+
+<body>
+
+<div class="container">
+
+<!-- HERO -->
+<div class="hero">
+
+<img src="stroke-hero.jpg">
+
+<div class="overlay">
+<h1>Stroke</h1>
+<p>Act FAST – Every Minute Counts</p>
+</div>
+
+</div>
+
+
+<!-- INTRODUCTION -->
+<div class="card flex">
+
+<div class="flex-content">
+
+<h2>Introduction</h2>
+
+<p>
+
+A stroke occurs when the blood supply to part of the brain is interrupted due to a blood clot or bleeding inside the brain. Without oxygen and nutrients, brain cells begin to die within minutes. Because the brain controls movement, speech, memory and many body functions, a stroke can cause permanent disability or even death.
+
+<br><br>
+
+A stroke is a medical emergency. Rapid recognition and treatment can greatly reduce brain damage and improve recovery. Knowing the warning signs and acting immediately can save a life.
+
+</p>
+
+</div>
+
+<img src="stroke-intro.jpg">
+
+</div>
+
+
+
+<!-- TYPES -->
+<div class="card flex">
+
+<img src="brain-blood-vessel.jpg">
+
+<div class="flex-content">
+
+<h2>Types of Stroke</h2>
+
+<ul>
+
+<li><b>Ischemic Stroke:</b> Caused by a blood clot blocking blood flow to the brain.</li>
+
+<li><b>Hemorrhagic Stroke:</b> Caused by bleeding from a ruptured blood vessel.</li>
+
+<li><b>Transient Ischemic Attack (TIA):</b> A temporary "mini-stroke" warning sign.</li>
+
+</ul>
+
+<h2>Risk Factors</h2>
+
+<ul>
+
+<li>High blood pressure.</li>
+
+<li>Diabetes.</li>
+
+<li>Smoking and alcohol abuse.</li>
+
+<li>High cholesterol.</li>
+
+<li>Heart disease.</li>
+
+<li>Obesity and lack of exercise.</li>
+
+<li>Family history of stroke.</li>
+
+<li>Increasing age.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+
+<!-- FAST TEST -->
+<div class="grid">
+
+<div class="card">
+
+<h2>FAST Test</h2>
+
+<ul>
+
+<li><b>F – Face:</b> Ask the person to smile. Is one side drooping?</li>
+
+<li><b>A – Arms:</b> Ask them to raise both arms. Does one arm drift downward?</li>
+
+<li><b>S – Speech:</b> Is speech slurred or difficult?</li>
+
+<li><b>T – Time:</b> Call emergency services immediately.</li>
+
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h2>Other Warning Signs</h2>
+
+<ul>
+
+<li>Sudden weakness or numbness.</li>
+
+<li>Loss of balance or coordination.</li>
+
+<li>Severe headache.</li>
+
+<li>Blurred or double vision.</li>
+
+<li>Confusion.</li>
+
+<li>Dizziness.</li>
+
+<li>Difficulty swallowing.</li>
+
+<li>Loss of consciousness.</li>
+
+</ul>
+
+<div class="note">
+
+<b>Important:</b> Even if symptoms disappear quickly, seek emergency medical care immediately.
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- FIRST AID -->
+<div class="card flex">
+
+<img src="stroke-first-aid.jpg">
+
+<div class="flex-content">
+
+<h2>First Aid for Stroke</h2>
+
+<ol>
+
+<li>Call emergency medical services immediately.</li>
+
+<li>Help the person sit or lie comfortably.</li>
+
+<li>Keep them calm and reassured.</li>
+
+<li>Loosen tight clothing.</li>
+
+<li>Monitor breathing, pulse and responsiveness.</li>
+
+<li>If unconscious but breathing, place in the recovery position.</li>
+
+<li>If breathing stops, begin CPR.</li>
+
+<li>Note the time symptoms started and inform medical personnel.</li>
+
+</ol>
+
+</div>
+
+</div>
+
+
+
+<!-- WHAT NOT TO DO -->
+<div class="card">
+
+<h2>Things You Should Avoid</h2>
+
+<ul>
+
+<li>Do not give food or drinks.</li>
+
+<li>Do not give medication unless prescribed.</li>
+
+<li>Do not allow the person to walk around.</li>
+
+<li>Do not delay calling emergency services.</li>
+
+<li>Do not shake or move the person unnecessarily.</li>
+
+<li>Do not leave the person alone.</li>
+
+</ul>
+
+</div>
+
+
+
+<!-- DO'S AND DON'TS -->
+<div class="card">
+
+<h2 style="text-align:center;">Stroke First Aid</h2>
+
+<div class="do-dont">
+
+<div class="card do">
+
+<h2>✔ DOs</h2>
+
+<ul>
+
+<li>Use the FAST test.</li>
+
+<li>Call emergency services immediately.</li>
+
+<li>Keep the person comfortable.</li>
+
+<li>Monitor breathing and pulse.</li>
+
+<li>Place unconscious casualties in the recovery position.</li>
+
+<li>Start CPR if breathing stops.</li>
+
+</ul>
+
+</div>
+
+
+<div class="card dont">
+
+<h2>✖ DON'Ts</h2>
+
+<ul>
+
+<li>Do not give food or water.</li>
+
+<li>Do not allow smoking or alcohol.</li>
+
+<li>Do not let the person drive.</li>
+
+<li>Do not ignore mild symptoms.</li>
+
+<li>Do not leave the casualty alone.</li>
+
+<li>Do not delay treatment.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- COMPLICATIONS -->
+<div class="card flex">
+
+<img src="brain-damage.jpg">
+
+<div class="flex-content">
+
+<h2>Possible Complications</h2>
+
+<p>
+
+A stroke may cause paralysis, difficulty speaking, memory problems, swallowing difficulties, vision loss, emotional disturbances, seizures, and permanent disability. Severe strokes can result in coma or death.
+
+<br><br>
+
+Prompt medical treatment greatly improves recovery and reduces long-term complications.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- PREVENTION -->
+<div class="card">
+
+<h2 style="text-align:center;">Prevention and Healthy Habits</h2>
+
+<div class="prevent">
+
+<div>
+<span style="font-size:70px;">🥗</span>
+<p>Eat a healthy diet.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">🏃</span>
+<p>Exercise regularly.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">🚭</span>
+<p>Avoid smoking.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">💧</span>
+<p>Stay hydrated.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">🩺</span>
+<p>Control blood pressure and diabetes.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">❤️</span>
+<p>Maintain heart health.</p>
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- WHY QUICK ACTION MATTERS -->
+<div class="card">
+
+<h2>Why Immediate Treatment Matters</h2>
+
+<p>
+
+Brain cells begin to die within minutes when blood supply is interrupted. Early treatment can restore blood flow and minimize brain damage. The sooner treatment begins, the better the chances of survival and recovery.
+
+<br><br>
+
+Remember the word <b>FAST</b>: Face, Arms, Speech, Time. Recognizing these signs quickly and calling emergency services immediately can save lives and reduce disability.
+
+</p>
+
+</div>
+
+
+
+<!-- BACK BUTTON -->
+<div class="home-btn">
+
+<a href="/learnPage/learn.html">
+← Back to Home
+</a>
+
+</div>
+
+</div>
+
+</body>

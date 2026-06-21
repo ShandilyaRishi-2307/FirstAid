@@ -3,34 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CPR (Cardiac Massage) </title>
+<title>Artificial Respiration</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
-    *{
+
+*{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Poppins,sans-serif;
+    font-family:'Poppins',sans-serif;
 }
 
 body{
-    background:#f4f4f4;
+    background:#f3f3f3;
+    color:#222;
 }
 
 .container{
-    width:90%;
-    max-width:900px;
+    width:95%;
+    max-width:1400px;
     margin:auto;
-    padding:30px 0;
+    padding:20px 0;
 }
+
+/* HERO */
 
 .hero{
     position:relative;
-    height:400px;
-    border-radius:20px;
+    height:350px;
     overflow:hidden;
-    margin-bottom:30px;
+    border-radius:20px;
+    margin-bottom:25px;
 }
 
 .hero img{
@@ -43,161 +48,412 @@ body{
     position:absolute;
     inset:0;
     background:rgba(0,0,0,.45);
-
     display:flex;
+    flex-direction:column;
     justify-content:center;
     align-items:center;
 }
 
 .overlay h1{
     color:white;
-    font-size:3rem;
+    font-size:4.5rem;
 }
+
+.overlay p{
+    color:white;
+    font-size:1.4rem;
+    margin-top:10px;
+}
+
+/* CARDS */
 
 .card{
     background:white;
     border-radius:20px;
-    padding:35px;
-    margin-bottom:30px;
-    box-shadow:0 5px 20px rgba(0,0,0,.1);
-}
-
-.card img{
-    width:100%;
-    height:300px;
-    object-fit:cover;
-    border-radius:15px;
-    margin-bottom:20px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
 }
 
 .card h2{
-    color:#d40000;
+    color:#e60000;
     margin-bottom:20px;
-    padding-bottom:10px;
-    border-bottom:2px solid #ffb0b0;
+    border-bottom:3px solid #ffb0b0;
+    display:inline-block;
 }
 
 .card h3{
-    margin:20px 0;
+    color:#444;
+    margin-bottom:15px;
 }
 
 .card p{
-    color:#555;
     line-height:2;
-}
-
-.card ol{
-    padding-left:25px;
+    color:#444;
 }
 
 .card li{
-    margin:15px 0;
-    line-height:1.8;
-    color:#444;
+    line-height:1.9;
+    margin:10px 0;
 }
+
+.card ol{
+    padding-left:20px;
+}
+
+/* FLEX */
+
+.flex{
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+
+.flex img{
+    width:40%;
+    border-radius:15px;
+}
+
+.flex-content{
+    flex:1;
+}
+
+/* GRID */
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+/* NOTE */
+
+.note{
+    margin-top:20px;
+    background:#e7f1ff;
+    padding:15px;
+    border-radius:15px;
+    color:#0b57d0;
+}
+
+/* HOME BUTTON */
+
 .home-btn{
     text-align:center;
-    margin:40px 0 60px;
+    margin:40px;
 }
 
 .home-btn a{
-    display:inline-block;
     background:#e60000;
     color:white;
     text-decoration:none;
     padding:15px 35px;
     border-radius:12px;
-    font-size:1rem;
     font-weight:600;
-    transition:0.3s;
-    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    transition:.3s;
 }
 
 .home-btn a:hover{
     background:#c70000;
-    transform:translateY(-5px);
 }
-</style>
 
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.flex{
+    flex-direction:column;
+}
+
+.flex img{
+    width:100%;
+}
+
+.grid{
+    grid-template-columns:1fr;
+}
+
+.overlay h1{
+    font-size:3rem;
+}
+
+}
+
+</style>
 </head>
+
+
+
 <body>
 
 <div class="container">
 
-    <!-- Hero Image -->
+    <!-- HERO -->
     <div class="hero">
-        <img src="cpr.jpg" alt="">
+        <img src="cpr.jpg">
+
         <div class="overlay">
             <h1>CPR (Cardiac Massage)</h1>
+            <p>Immediate action can save a life</p>
         </div>
     </div>
 
-    <!-- Introduction -->
-    <div class="card">
-        <h2>Introduction</h2>
 
-        <p>
-            Cardiopulmonary resuscitation (CPR) can help save a life during a cardiac or breathing emergency. However, even after training, remembering the CPR steps and administering them correctly can be a challenge. In order to help you help someone in need, we've created this simple step-by-step guide that you can print up and place on your refrigerator, in your car, in your bag or at your desk.
-        </p>
-    </div>
+    <!-- INTRODUCTION -->
+    <div class="card flex">
 
-    <!-- Mouth to Mouth -->
-    <div class="card">
+        <div class="flex-content">
 
-        <img src="mouth-to-mouth.jpg" alt="">
+            <h2>Introduction</h2>
 
-        <h2>Before Giving CPR</h2>
+            <p>
+                Cardiopulmonary Resuscitation (CPR) is an emergency lifesaving technique used when a person's breathing or heartbeat has stopped. It helps maintain blood circulation and oxygen supply to the brain and vital organs until professional medical assistance arrives.
+                <br><br>
+                CPR is commonly required during cardiac arrest, drowning, electric shock, choking, suffocation and severe trauma. Learning CPR can greatly improve a victim's chances of survival.
+            </p>
 
+        </div>
 
-        <ol>
-            <li>Check the scene and the person. Make sure the scene is safe, then tap the person on the shoulder and shout "Are you OK?" to ensure that the person needs help.</li>
-
-            <li>Call emergence for assistance. If it's evident that the person needs help, call (or ask a bystander to call) emergence, then send someone to get an AED. (If an AED is unavailable, or a there is no bystander to access it, stay with the victim, call emergence and begin administering assistance.)</li>
-
-            <li>Open the airway. With the person lying on his or her back, tilt the head back slightly to lift the chin.</li>
-
-            <li>Check for breathing. Listen carefully, for no more than 10 seconds, for sounds of breathing. (Occasional gasping sounds do not equate to breathing.) If there is no breathing begin CPR.</li>
-
-
-        </ol>
+        <img src="cpr-intro.jpg">
 
     </div>
 
-    <!-- Mouth to Nose -->
+
+    <!-- BEFORE GIVING CPR -->
+    <div class="card flex">
+
+        <img src="before-cpr.jpg">
+
+        <div class="flex-content">
+
+            <h2>Before Giving CPR</h2>
+
+            <ul>
+
+                <li>Check the scene and ensure it is safe.</li>
+
+                <li>Tap the person and ask loudly, "Are you OK?"</li>
+
+                <li>Call emergency medical services immediately.</li>
+
+                <li>Ask someone to bring an AED if available.</li>
+
+                <li>Open the airway by tilting the head slightly backward.</li>
+
+                <li>Check breathing for no more than 10 seconds.</li>
+
+                <li>If the person is not breathing, begin CPR immediately.</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- GRID -->
+    <div class="grid">
+
+        <!-- CHEST COMPRESSIONS -->
+        <div class="card">
+
+            <h2>Chest Compressions</h2>
+
+            <ul>
+
+                <li>Place one hand over the other in the center of the chest.</li>
+
+                <li>Push hard and fast using body weight.</li>
+
+                <li>Compress at least 2 inches deep.</li>
+
+                <li>Maintain 100–120 compressions per minute.</li>
+
+                <li>Allow the chest to fully recoil after each compression.</li>
+
+                <li>Continue compressions without unnecessary interruptions.</li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- RESCUE BREATHS -->
+        <div class="card">
+
+            <h2>Rescue Breaths</h2>
+
+            <ul>
+
+                <li>Tilt the head back and lift the chin.</li>
+
+                <li>Pinch the nose closed.</li>
+
+                <li>Seal your mouth over the victim's mouth.</li>
+
+                <li>Give two rescue breaths.</li>
+
+                <li>Watch for chest rise.</li>
+
+                <li>If the chest does not rise, reposition the head and try again.</li>
+
+                <li>Look for possible airway obstruction.</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- RED CROSS CPR STEPS -->
+    <div class="card flex">
+
+        <img src="cpr-steps.jpg">
+
+        <div class="flex-content">
+
+            <h2>Red Cross CPR Steps</h2>
+
+            <ol>
+
+                <li>
+                    Push hard and fast in the center of the chest at a rate of 100–120 compressions per minute.
+                </li>
+
+                <li>
+                    Deliver two rescue breaths after every 30 compressions.
+                </li>
+
+                <li>
+                    Continue cycles of compressions and breaths until:
+                    <ul>
+                        <li>The victim starts breathing.</li>
+                        <li>An AED becomes available.</li>
+                        <li>Emergency personnel arrive.</li>
+                        <li>You become too exhausted to continue.</li>
+                    </ul>
+                </li>
+
+            </ol>
+
+        </div>
+
+    </div>
+
+
+    <!-- DO'S AND DON'TS -->
     <div class="card">
 
-        <img src="mouth-to-nose.jpg" alt="">
+        <h2 style="text-align:center;">CPR DOs and DON'Ts</h2>
 
-        <h2>Red Cross CPR Steps</h2>
+        <div class="do-dont">
 
-        <ol>
+            <div class="card do">
 
-            <li>Push hard, push fast. Place your hands, one on top of the other, in the middle of the chest. Use your body weight to help you administer compressions that are at least 2 inches deep and delivered at a rate of at least 100 compressions per minute.</li>
+                <h2>✔ DOs</h2>
 
-            <li>Deliver rescue breaths. With the person's head tilted back slightly and the chin lifted, pinch the nose shut and place your mouth over the person's mouth to make a complete seal. Blow into the person's mouth to make the chest rise. Deliver two rescue breaths, then continue compressions. <br>
-            <b>Note: If the chest does not rise with the initial rescue breath, re-tilt the head before delivering the second breath. If the chest doesn't rise with the second breath, the person may be choking. After each subsequent set of 100 chest compressions, and before attempting breaths, look for an object and, if seen, remove it.</b></li>
+                <ul>
 
-            <li>Continue CPR steps. Keep performing cycles of chest compressions and breathing until the person exhibits signs of life, such as breathing, an AED becomes available, or EMS or a trained medical responder arrives on scene. <br>
-            <b>Note: End the cycles if the scene becomes unsafe or you cannot continue performing CPR due to exhaustion.</b></li>
+                    <li>Call emergency services immediately.</li>
 
-        </ol>
+                    <li>Begin CPR without delay.</li>
+
+                    <li>Push hard and fast.</li>
+
+                    <li>Allow full chest recoil.</li>
+
+                    <li>Use an AED if available.</li>
+
+                    <li>Continue CPR until help arrives.</li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="card dont">
+
+                <h2>✖ DON'Ts</h2>
+
+                <ul>
+
+                    <li>Do not stop compressions unnecessarily.</li>
+
+                    <li>Do not bend the arms while compressing.</li>
+
+                    <li>Do not perform CPR on a conscious person.</li>
+
+                    <li>Do not panic.</li>
+
+                    <li>Do not leave the victim alone.</li>
+
+                    <li>Do not give food or water.</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- AED -->
+    <div class="card flex">
+
+        <img src="aed.jpg">
+
+        <div class="flex-content">
+
+            <h2>Automated External Defibrillator (AED)</h2>
+
+            <p>
+
+                An Automated External Defibrillator (AED) is a portable device used to restore normal heart rhythm during cardiac arrest. If available, start CPR while another person retrieves the AED.
+
+                <br><br>
+
+                Attach the pads according to the instructions and follow the voice prompts provided by the device. The AED automatically analyzes the heart rhythm and advises whether a shock is necessary.
+
+            </p>
+
+            <div class="note">
+                <b>Important:</b> Hands-only CPR consisting of chest compressions alone can save lives when rescue breathing cannot be performed.
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- WHY CPR IS IMPORTANT -->
+    <div class="card">
+
+        <h2>Why CPR Is Important</h2>
 
         <p>
-            Cardiopulmonary Resuscitation (CPR) is a vital emergency procedure used when a person's heart stops beating or they stop breathing. It helps maintain blood circulation and oxygen delivery to the brain and other organs until professional medical help arrives. CPR is commonly required in situations such as cardiac arrest, drowning, suffocation, electric shock, or severe trauma. Learning CPR equips individuals with the ability to respond quickly during life-threatening emergencies and can significantly improve the chances of survival for victims. <br><br>
-            Before performing CPR, ensure the scene is safe and check if the victim is responsive. Call emergency services immediately or ask someone nearby to do so. Place the person on a firm surface and begin chest compressions by positioning your hands in the center of the chest. Push hard and fast at a rate of 100 to 120 compressions per minute, allowing the chest to fully recoil after each compression. Proper technique is essential to maintain blood flow and increase the effectiveness of CPR. <br><br>
-            CPR should be continued until the victim starts breathing normally, trained medical personnel take over, or an Automated External Defibrillator (AED) becomes available. If you are trained in rescue breathing, provide two breaths after every thirty chest compressions. Even hands-only CPR, consisting solely of chest compressions, can save lives when performed promptly. Regular training and practice help people remain confident and prepared to act effectively during emergencies, making CPR one of the most valuable first aid skills anyone can learn.
+
+            CPR maintains blood flow and oxygen supply to the brain and vital organs during cardiac arrest. Quick intervention significantly improves survival rates and reduces the risk of permanent brain damage.
+
+            <br><br>
+
+            Regular CPR training and awareness help people remain prepared during emergencies. Even basic knowledge of chest compressions can make a life-saving difference.
 
         </p>
 
-        
+    </div>
+
+
+    <!-- BACK BUTTON -->
+    <div class="home-btn">
+
+        <a href="/learnPage/learn.html">
+            ← Back to Home
+        </a>
 
     </div>
 
 </div>
-<!-- Back to Home Button -->
-<div class="home-btn">
-    <a href="/learnPage/learn.html">← Back to Home</a>
-</div>
-s
+
 </body>
-</html>

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drownings - First Aid</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f3f3f3;
+    color:#222;
+}
+
+.container{
+    width:95%;
+    max-width:1400px;
+    margin:auto;
+    padding:20px 0;
+}
+
+/* HERO */
+.hero{
+    position:relative;
+    height:350px;
+    overflow:hidden;
+    border-radius:20px;
+    margin-bottom:25px;
+}
+
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.4);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay h1{
+    color:#fff;
+    font-size:5rem;
+}
+
+.overlay p{
+    color:white;
+    font-size:1.6rem;
+    margin-top:10px;
+}
+
+/* CARDS */
+.card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+}
+
+.card h2{
+    color:#e60000;
+    margin-bottom:20px;
+    border-bottom:3px solid #ffb0b0;
+    display:inline-block;
+}
+
+.card p{
+    line-height:2;
+    color:#444;
+}
+
+.card ul{
+    padding-left:20px;
+}
+
+.card li{
+    line-height:1.9;
+    margin:8px 0;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.flex{
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+
+.flex img{
+    width:40%;
+    border-radius:15px;
+}
+
+.flex-content{
+    flex:1;
+}
+
+.note{
+    margin-top:20px;
+    background:#e7f1ff;
+    padding:15px;
+    border-radius:15px;
+    color:#0b57d0;
+}
+
+/* DO DON'T */
+.do-dont{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.do{
+    background:#effbf0;
+    border:2px solid #a8e1ad;
+}
+
+.dont{
+    background:#fff2f2;
+    border:2px solid #ffb3b3;
+}
+
+/* PREVENTION */
+.prevent{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:20px;
+}
+
+.prevent div{
+    text-align:center;
+}
+
+.prevent img{
+    width:90px;
+    margin-bottom:10px;
+}
+
+.home-btn{
+    text-align:center;
+    margin:40px;
+}
+
+.home-btn a{
+    background:#e60000;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.home-btn a:hover{
+    background:#c70000;
+}
+
+@media(max-width:900px){
+
+.grid,
+.do-dont,
+.flex{
+    grid-template-columns:1fr;
+    flex-direction:column;
+}
+
+.flex img{
+    width:100%;
+}
+
+.prevent{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.overlay h1{
+    font-size:3rem;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- HERO -->
+<div class="hero">
+
+<img src="heart-attack-hero.jpg">
+
+<div class="overlay">
+<h1>Heart Attack</h1>
+<p>Immediate action can save a life</p>
+</div>
+
+</div>
+
+
+<!-- INTRODUCTION -->
+<div class="card flex">
+
+<div class="flex-content">
+
+<h2>Introduction</h2>
+
+<p>
+
+A heart attack occurs when blood flow to a part of the heart is blocked, preventing oxygen from reaching the heart muscle. Without oxygen, heart tissue begins to die. Immediate treatment is essential because delayed care can lead to severe damage or death.
+
+<br><br>
+
+Recognizing symptoms early and providing prompt first aid greatly improves the chance of survival. Heart attacks can affect people of all ages but are more common in individuals with high blood pressure, diabetes, smoking habits, obesity, and high cholesterol.
+
+</p>
+
+</div>
+
+<img src="heart-intro.jpg">
+
+</div>
+
+
+
+<!-- CAUSES -->
+<div class="card flex">
+
+<img src="heart-causes.jpg">
+
+<div class="flex-content">
+
+<h2>Common Causes and Risk Factors</h2>
+
+<ul>
+
+<li>Coronary artery blockage due to cholesterol buildup.</li>
+
+<li>High blood pressure.</li>
+
+<li>Smoking and tobacco use.</li>
+
+<li>Diabetes.</li>
+
+<li>Obesity and lack of exercise.</li>
+
+<li>Stress and anxiety.</li>
+
+<li>Family history of heart disease.</li>
+
+<li>Excessive alcohol consumption.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+
+<!-- SYMPTOMS + WARNING SIGNS -->
+<div class="grid">
+
+<div class="card">
+
+<h2>Signs and Symptoms</h2>
+
+<ul>
+
+<li>Chest pain or pressure.</li>
+
+<li>Pain spreading to arms, shoulders, neck or jaw.</li>
+
+<li>Shortness of breath.</li>
+
+<li>Cold sweat.</li>
+
+<li>Nausea or vomiting.</li>
+
+<li>Dizziness or fainting.</li>
+
+<li>Weakness and unusual fatigue.</li>
+
+<li>Rapid or irregular heartbeat.</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>Important Facts</h2>
+
+<p>
+
+Heart attack symptoms may appear hours, days or weeks before the attack. Some people, especially women, elderly adults and diabetics, may experience mild or unusual symptoms.
+
+</p>
+
+<div class="note">
+
+<b>Important:</b> Chest pain lasting more than 15 minutes should never be ignored. Seek emergency medical help immediately.
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- FIRST AID -->
+<div class="card flex">
+
+<img src="heart-first-aid.jpg">
+
+<div class="flex-content">
+
+<h2>First Aid During a Heart Attack</h2>
+
+<ol>
+
+<li>Call emergency medical services immediately.</li>
+
+<li>Help the person sit comfortably and stay calm.</li>
+
+<li>Loosen tight clothing.</li>
+
+<li>Give aspirin to chew if not allergic and advised by a doctor.</li>
+
+<li>Assist with prescribed nitroglycerin medication.</li>
+
+<li>Monitor breathing and responsiveness.</li>
+
+<li>Prepare to start CPR if the person becomes unconscious.</li>
+
+<li>Use an AED if available.</li>
+
+</ol>
+
+</div>
+
+</div>
+
+
+
+<!-- DO'S AND DON'TS -->
+<div class="card">
+
+<h2 style="text-align:center">Heart Attack First Aid</h2>
+
+<div class="do-dont">
+
+
+<div class="card do">
+
+<h2>✔ DOs</h2>
+
+<ul>
+
+<li>Call emergency services immediately.</li>
+
+<li>Keep the patient calm.</li>
+
+<li>Allow the person to sit and rest.</li>
+
+<li>Give prescribed nitroglycerin.</li>
+
+<li>Start CPR if breathing stops.</li>
+
+<li>Use an AED if available.</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="card dont">
+
+<h2>✖ DON'Ts</h2>
+
+<ul>
+
+<li>Do not ignore chest pain.</li>
+
+<li>Do not allow unnecessary walking.</li>
+
+<li>Do not give food or drinks.</li>
+
+<li>Do not leave the person alone.</li>
+
+<li>Do not delay calling emergency services.</li>
+
+<li>Do not give medication not prescribed to the patient.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- COMPLICATIONS -->
+<div class="card flex">
+
+<img src="aed.jpg">
+
+<div class="flex-content">
+
+<h2>Why Quick Treatment Matters</h2>
+
+<p>
+
+Heart attacks can cause severe complications including heart failure, irregular heartbeat, cardiac arrest, and permanent heart muscle damage. Early treatment with medications, CPR and defibrillation greatly increases survival chances.
+
+<br><br>
+
+Learning CPR and knowing how to use an Automated External Defibrillator (AED) can save lives before professional medical help arrives.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- PREVENTION -->
+<div class="card">
+
+<h2 style="text-align:center">Prevention is the Best Protection</h2>
+
+<div class="prevent">
+
+<div>
+<img src="exercise.png">
+<p>Exercise regularly.</p>
+</div>
+
+<div>
+<img src="healthy-food.png">
+<p>Eat a heart-healthy diet.</p>
+</div>
+
+<div>
+<img src="no-smoking.png">
+<p>Avoid smoking.</p>
+</div>
+
+<div>
+<img src="bp.png">
+<p>Control blood pressure.</p>
+</div>
+
+<div>
+<img src="diabetes.png">
+<p>Manage diabetes and cholesterol.</p>
+</div>
+
+<div>
+<img src="cpr-icon.png">
+<p>Learn CPR and first aid.</p>
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- BACK BUTTON -->
+<div class="home-btn">
+
+<a href="/learnPage/learn.html">
+← Back to Home
+</a>
+
+</div>
+
+</div>
+
+</body>

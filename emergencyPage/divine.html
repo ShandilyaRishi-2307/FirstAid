@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Divine</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+    background:rgb(191, 63, 57);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+.frame{
+    width:95vw;
+    height:95vh;
+    padding:15px;
+    background:linear-gradient(135deg,#ffd700,#fff4b0,#b8860b);
+    border:8px solid #8b4513;
+    border-radius:25px;
+    box-shadow:
+        0 0 20px rgba(0,0,0,.5),
+        inset 0 0 15px rgba(255,255,255,.5);
+}
+
+img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    background:#fff8dc;
+    border-radius:15px;
+    cursor:pointer;
+}
+</style>
+
+</head>
+<body>
+
+<div class="frame">
+    <img src="/emergencyPage/divine.png"
+         alt="Divine Image"
+         onclick="window.history.back()">
+</div>
+
+</body>
+</html>

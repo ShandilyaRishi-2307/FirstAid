@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diabetic Emergency - First Aid</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f3f3f3;
+    color:#222;
+}
+
+.container{
+    width:95%;
+    max-width:1400px;
+    margin:auto;
+    padding:20px 0;
+}
+
+.hero{
+    position:relative;
+    height:350px;
+    overflow:hidden;
+    border-radius:20px;
+    margin-bottom:25px;
+}
+
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.4);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay h1{
+    color:#fff;
+    font-size:5rem;
+}
+
+.overlay p{
+    color:white;
+    font-size:1.6rem;
+    margin-top:10px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+}
+
+.card h2{
+    color:#e60000;
+    margin-bottom:20px;
+    border-bottom:3px solid #ffb0b0;
+    display:inline-block;
+}
+
+.card p{
+    line-height:2;
+    color:#444;
+}
+
+.card ul,
+.card ol{
+    padding-left:20px;
+}
+
+.card li{
+    line-height:1.9;
+    margin:8px 0;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.flex{
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+
+.flex img{
+    width:40%;
+    border-radius:15px;
+}
+
+.flex-content{
+    flex:1;
+}
+
+.note{
+    margin-top:20px;
+    background:#e7f1ff;
+    padding:15px;
+    border-radius:15px;
+    color:#0b57d0;
+}
+
+.do-dont{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.do{
+    background:#effbf0;
+    border:2px solid #a8e1ad;
+}
+
+.dont{
+    background:#fff2f2;
+    border:2px solid #ffb3b3;
+}
+
+.prevent{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:20px;
+}
+
+.prevent div{
+    text-align:center;
+}
+
+
+
+.home-btn{
+    text-align:center;
+    margin:40px;
+}
+
+.home-btn a{
+    background:#e60000;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.home-btn a:hover{
+    background:#c70000;
+}
+
+@media(max-width:900px){
+
+.grid,
+.do-dont,
+.flex{
+    grid-template-columns:1fr;
+    flex-direction:column;
+}
+
+.flex img{
+    width:100%;
+}
+
+.prevent{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.overlay h1{
+    font-size:3rem;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- HERO -->
+<div class="hero">
+
+<img src="diabetic-emergency-hero.jpg">
+
+<div class="overlay">
+<h1>Diabetic Emergency</h1>
+<p>Recognize high and low blood sugar quickly</p>
+</div>
+
+</div>
+
+
+<!-- INTRODUCTION -->
+<div class="card flex">
+
+<div class="flex-content">
+
+<h2>Introduction</h2>
+
+<p>
+
+Diabetes is a lifelong condition in which the body cannot properly regulate blood glucose levels because of insufficient insulin production or inability to use insulin effectively. Blood sugar levels may become dangerously high (hyperglycaemia) or dangerously low (hypoglycaemia), both of which are medical emergencies.
+
+<br><br>
+
+People with Type 1 diabetes require insulin injections, while people with Type 2 diabetes may control blood sugar with medicines, diet, exercise, or insulin. Prompt recognition and treatment can prevent serious complications and save lives.
+
+</p>
+
+</div>
+
+<img src="diabetes-intro.jpg">
+
+</div>
+
+
+<!-- TYPES -->
+<div class="card flex">
+
+<img src="diabetes-types.jpg">
+
+<div class="flex-content">
+
+<h2>Types of Diabetes</h2>
+
+<ul>
+
+<li>Type 1 Diabetes (Insulin-dependent).</li>
+
+<li>Type 2 Diabetes (Non-insulin-dependent).</li>
+
+<li>Gestational diabetes during pregnancy.</li>
+
+<li>Diabetes caused by pancreatic disorders.</li>
+
+</ul>
+
+<h2>Common Causes of Emergencies</h2>
+
+<ul>
+
+<li>Missed meals.</li>
+
+<li>Too much insulin.</li>
+
+<li>Excessive exercise.</li>
+
+<li>Alcohol consumption.</li>
+
+<li>Infections or illness.</li>
+
+<li>Stress and dehydration.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- HYPER + HYPO -->
+<div class="grid">
+
+<div class="card">
+
+<h2>High Blood Sugar (Hyperglycaemia)</h2>
+
+<ul>
+
+<li>Warm, dry skin.</li>
+
+<li>Rapid breathing and pulse.</li>
+
+<li>Extreme thirst.</li>
+
+<li>Frequent urination.</li>
+
+<li>Fruity-smelling breath.</li>
+
+<li>Drowsiness.</li>
+
+<li>Confusion.</li>
+
+<li>Unresponsiveness or diabetic coma.</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Low Blood Sugar (Hypoglycaemia)</h2>
+
+<ul>
+
+<li>Weakness and hunger.</li>
+
+<li>Sweating with cold, clammy skin.</li>
+
+<li>Rapid pulse.</li>
+
+<li>Trembling or shaking.</li>
+
+<li>Confusion or strange behavior.</li>
+
+<li>Blurred vision.</li>
+
+<li>Loss of coordination.</li>
+
+<li>Deteriorating consciousness.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- FIRST AID -->
+<div class="card flex">
+
+<img src="hypoglycemia-treatment.jpg">
+
+<div class="flex-content">
+
+<h2>First Aid for Low Blood Sugar (Hypoglycaemia)</h2>
+
+<ol>
+
+<li>Help the person sit down comfortably.</li>
+
+<li>Give glucose gel if available.</li>
+
+<li>Provide sugary drinks or fruit juice.</li>
+
+<li>Offer sweets or two teaspoons of sugar.</li>
+
+<li>Give additional sugary food once improved.</li>
+
+<li>Help them check glucose levels if possible.</li>
+
+<li>Stay with the person until fully recovered.</li>
+
+<li>Call emergency services if no improvement occurs.</li>
+
+</ol>
+
+</div>
+
+</div>
+
+
+<!-- HYPERGLYCAEMIA -->
+<div class="card flex">
+
+<img src="hyperglycemia.jpg">
+
+<div class="flex-content">
+
+<h2>First Aid for High Blood Sugar (Hyperglycaemia)</h2>
+
+<ol>
+
+<li>Call for medical help immediately.</li>
+
+<li>Keep the person resting comfortably.</li>
+
+<li>Monitor breathing and pulse regularly.</li>
+
+<li>Encourage water if fully conscious.</li>
+
+<li>Watch for worsening drowsiness.</li>
+
+<li>If unconscious, open the airway.</li>
+
+<li>Place in recovery position if breathing.</li>
+
+<li>Prepare to start CPR if breathing stops.</li>
+
+</ol>
+
+</div>
+
+</div>
+
+
+<!-- UNSURE -->
+<div class="card">
+
+<h2>If You Are Unsure Whether Blood Sugar Is High or Low</h2>
+
+<p>
+
+If you cannot determine whether the person has hyperglycaemia or hypoglycaemia, give something sugary. Sugar quickly improves low blood sugar and usually causes little immediate harm if blood sugar is high.
+
+</p>
+
+<div class="note">
+
+<b>Important:</b> If the person does not improve rapidly or becomes unconscious, call emergency services immediately and monitor breathing continuously.
+
+</div>
+
+</div>
+
+
+<!-- DO'S DON'TS -->
+<div class="card">
+
+<h2 style="text-align:center">Diabetic Emergency First Aid</h2>
+
+<div class="do-dont">
+
+<div class="card do">
+
+<h2>✔ DOs</h2>
+
+<ul>
+
+<li>Call emergency services if necessary.</li>
+
+<li>Give sugary drinks for low blood sugar.</li>
+
+<li>Monitor pulse and breathing.</li>
+
+<li>Use glucose gel if available.</li>
+
+<li>Place unconscious patients in recovery position.</li>
+
+<li>Start CPR if breathing stops.</li>
+
+</ul>
+
+</div>
+
+<div class="card dont">
+
+<h2>✖ DON'Ts</h2>
+
+<ul>
+
+<li>Do not give food to an unconscious person.</li>
+
+<li>Do not delay medical treatment.</li>
+
+<li>Do not leave the person alone.</li>
+
+<li>Do not force drinks into someone who cannot swallow.</li>
+
+<li>Do not assume the person is intoxicated.</li>
+
+<li>Do not ignore warning signs.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- COMPLICATIONS -->
+<div class="card flex">
+
+<img src="glucose-meter.jpg">
+
+<div class="flex-content">
+
+<h2>Possible Complications</h2>
+
+<p>
+
+Untreated diabetic emergencies may lead to seizures, diabetic coma, brain damage, heart problems, and death. Prompt treatment greatly improves outcomes and reduces complications.
+
+<br><br>
+
+Many people with diabetes carry insulin pens, glucose tablets, medical bracelets, or blood glucose testing kits. These items can help identify the condition and provide immediate treatment.
+
+</p>
+
+</div>
+
+</div>
+
+
+<!-- PREVENTION -->
+<div class="card">
+
+<h2 style="text-align:center">Prevention and Healthy Habits</h2>
+
+<div class="prevent">
+
+<div>
+<span style="font-size:70px;">🍽️</span>
+<p>Never skip meals.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">💊</span>
+<p>Take medicines regularly.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">🧘</span>
+<p>Exercise moderately.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">🥛</span>
+<p>Stay hydrated.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">📋</span>
+<p>Monitor blood sugar levels.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">🪪</span>
+<p>Carry a medical ID and glucose source.</p>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- BACK BUTTON -->
+<div class="home-btn">
+
+<a href="/learnPage/learn.html">
+← Back to Home
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drownings - First Aid</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f3f3f3;
+    color:#222;
+}
+
+.container{
+    width:95%;
+    max-width:1400px;
+    margin:auto;
+    padding:20px 0;
+}
+
+/* HERO */
+.hero{
+    position:relative;
+    height:350px;
+    overflow:hidden;
+    border-radius:20px;
+    margin-bottom:25px;
+}
+
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.4);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay h1{
+    color:#fff;
+    font-size:5rem;
+}
+
+.overlay p{
+    color:white;
+    font-size:1.6rem;
+    margin-top:10px;
+}
+
+/* CARDS */
+.card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+}
+
+.card h2{
+    color:#e60000;
+    margin-bottom:20px;
+    border-bottom:3px solid #ffb0b0;
+    display:inline-block;
+}
+
+.card p{
+    line-height:2;
+    color:#444;
+}
+
+.card ul{
+    padding-left:20px;
+}
+
+.card li{
+    line-height:1.9;
+    margin:8px 0;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.flex{
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+
+.flex img{
+    width:40%;
+    border-radius:15px;
+}
+
+.flex-content{
+    flex:1;
+}
+
+.note{
+    margin-top:20px;
+    background:#e7f1ff;
+    padding:15px;
+    border-radius:15px;
+    color:#0b57d0;
+}
+
+/* DO DON'T */
+.do-dont{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.do{
+    background:#effbf0;
+    border:2px solid #a8e1ad;
+}
+
+.dont{
+    background:#fff2f2;
+    border:2px solid #ffb3b3;
+}
+
+/* PREVENTION */
+.prevent{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:20px;
+}
+
+.prevent div{
+    text-align:center;
+}
+
+.prevent img{
+    width:90px;
+    margin-bottom:10px;
+}
+
+.home-btn{
+    text-align:center;
+    margin:40px;
+}
+
+.home-btn a{
+    background:#e60000;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.home-btn a:hover{
+    background:#c70000;
+}
+
+@media(max-width:900px){
+
+.grid,
+.do-dont,
+.flex{
+    grid-template-columns:1fr;
+    flex-direction:column;
+}
+
+.flex img{
+    width:100%;
+}
+
+.prevent{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.overlay h1{
+    font-size:3rem;
+}
+
+}
+</style>
+</head>
+
+
+<body>
+
+<div class="container">
+
+<!-- HERO -->
+<div class="hero">
+<img src="suffocation.jpg">
+
+<div class="overlay">
+<h1>Asphyxia</h1>
+<p>Restoring breathing quickly can save a life</p>
+</div>
+</div>
+
+
+<!-- INTRODUCTION -->
+<div class="card flex">
+
+<div class="flex-content">
+
+<h2>Introduction</h2>
+
+<p>
+Asphyxia or suffocation is a life-threatening condition in which the body does not receive enough oxygen while carbon dioxide accumulates in the blood. Lack of oxygen can rapidly damage the brain and other vital organs, resulting in unconsciousness or death if immediate treatment is not provided.
+<br><br>
+Asphyxia may occur because of drowning, choking, strangulation, asthma attacks, poisonous gases, throat infections and several other conditions. Early recognition and prompt first aid are essential for survival.
+</p>
+
+</div>
+
+<img src="asphyxia-intro.jpg">
+
+</div>
+
+
+<!-- CAUSES -->
+<div class="card flex">
+
+<img src="asphyxia-causes.jpg">
+
+<div class="flex-content">
+
+<h2>Types and Causes of Asphyxia</h2>
+
+<ul>
+
+<li>Suffocation caused by toxic gases.</li>
+
+<li>Drowning and near drowning accidents.</li>
+
+<li>Choking due to food or foreign objects.</li>
+
+<li>Strangulation and neck compression.</li>
+
+<li>Asthma and severe allergic reactions.</li>
+
+<li>Severe infections of the throat.</li>
+
+<li>Smoke inhalation during fires.</li>
+
+<li>Fetal asphyxia and respiratory failure.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- SIGNS + DANGER -->
+<div class="grid">
+
+<div class="card">
+
+<h2>Signs and Symptoms</h2>
+
+<ul>
+
+<li>Difficulty breathing.</li>
+
+<li>Bluish lips and fingernails.</li>
+
+<li>Rapid pulse.</li>
+
+<li>Confusion and anxiety.</li>
+
+<li>Restlessness.</li>
+
+<li>Loss of consciousness.</li>
+
+<li>Dilated pupils.</li>
+
+<li>Weak or absent breathing.</li>
+
+<li>Pale or bluish face.</li>
+
+<li>Cardiac arrest in severe cases.</li>
+
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h2>Danger Signs</h2>
+
+<p>
+
+Oxygen deprivation can cause permanent brain injury within a few minutes. Immediate action is necessary whenever a person becomes unconscious or stops breathing.
+
+</p>
+
+<div class="note">
+
+<b>Important:</b> Always call emergency medical services immediately and begin life-saving measures without delay.
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- FIRST AID -->
+<div class="card flex">
+
+<img src="asphyxia-first-aid.jpg">
+
+<div class="flex-content">
+
+<h2>First Aid Measures</h2>
+
+<ol>
+
+<li>Ensure the airway is open and clear.</li>
+
+<li>Look for bluish discoloration and abnormal breathing.</li>
+
+<li>Move the victim to fresh air if toxic gases are involved.</li>
+
+<li>Remove tight clothing around the neck and chest.</li>
+
+<li>Remove any object causing strangulation.</li>
+
+<li>Sit asthma patients upright and reassure them.</li>
+
+<li>Turn drowning victims sideways to drain water.</li>
+
+<li>If breathing stops, begin artificial respiration.</li>
+
+<li>Arrange immediate medical assistance.</li>
+
+</ol>
+
+</div>
+
+</div>
+
+
+<!-- ARTIFICIAL RESPIRATION + CPR -->
+<div class="grid">
+
+<div class="card">
+
+<h2>Mouth-to-Mouth Artificial Respiration</h2>
+
+<ul>
+
+<li>Lay the victim on the back.</li>
+
+<li>Tilt the head backward.</li>
+
+<li>Pinch the nose closed.</li>
+
+<li>Seal your mouth over the victim's mouth.</li>
+
+<li>Blow until the chest rises.</li>
+
+<li>Give rescue breaths regularly.</li>
+
+<li>For infants, cover both mouth and nose.</li>
+
+<li>Continue until breathing returns or help arrives.</li>
+
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h2>Chest Compressions</h2>
+
+<ul>
+
+<li>Begin CPR if breathing does not resume.</li>
+
+<li>Give chest compressions in the center of the chest.</li>
+
+<li>Maintain a rhythm of 100–120 compressions per minute.</li>
+
+<li>Alternate compressions with rescue breaths.</li>
+
+<li>Check the carotid pulse regularly.</li>
+
+<li>Observe for recovery signs.</li>
+
+<li>Continue until professionals take over.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- DO'S AND DON'TS -->
+<div class="card">
+
+<h2 style="text-align:center;">First Aid DOs and DON'Ts</h2>
+
+<div class="do-dont">
+
+<div class="card do">
+
+<h2>✔ DOs</h2>
+
+<ul>
+
+<li>Call emergency services immediately.</li>
+
+<li>Maintain an open airway.</li>
+
+<li>Move victims to fresh air.</li>
+
+<li>Begin rescue breathing if needed.</li>
+
+<li>Start CPR if breathing stops.</li>
+
+<li>Monitor pulse and breathing continuously.</li>
+
+<li>Keep the victim warm and calm.</li>
+
+</ul>
+
+</div>
+
+
+<div class="card dont">
+
+<h2>✖ DON'Ts</h2>
+
+<ul>
+
+<li>Do not delay treatment.</li>
+
+<li>Do not leave the victim alone.</li>
+
+<li>Do not force water or food into an unconscious person.</li>
+
+<li>Do not panic.</li>
+
+<li>Do not stop CPR too early.</li>
+
+<li>Do not expose the victim to toxic gases again.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PREVENTION -->
+<div class="card">
+
+<h2 style="text-align:center;">Prevention and Safety Measures</h2>
+
+<div class="prevent">
+
+<div>
+<img src="mask.png">
+<p>Avoid toxic gases and smoke.</p>
+</div>
+
+<div>
+<img src="food.png">
+<p>Chew food properly to avoid choking.</p>
+</div>
+
+<div>
+<img src="swim.png">
+<p>Follow water safety rules.</p>
+</div>
+
+<div>
+<img src="child.png">
+<p>Keep small objects away from children.</p>
+</div>
+
+<div>
+<img src="inhaler.png">
+<p>Manage asthma and allergies.</p>
+</div>
+
+<div>
+<img src="cpr.png">
+<p>Learn CPR and rescue breathing.</p>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- WHY QUICK ACTION MATTERS -->
+<div class="card">
+
+<h2>Why Immediate Action Matters</h2>
+
+<p>
+
+Brain cells begin to die within minutes without oxygen. Therefore, maintaining an open airway, restoring breathing and performing CPR when required are the most important priorities during asphyxia emergencies.
+
+<br><br>
+
+Prompt first aid combined with professional medical treatment greatly increases the chances of survival and reduces the risk of permanent complications.
+
+</p>
+
+</div>
+
+
+<!-- BACK BUTTON -->
+<div class="home-btn">
+<a href="/learnPage/learn.html">← Back to Home</a>
+</div>
+
+</div>
+
+</body>

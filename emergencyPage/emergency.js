@@ -1,45 +1,49 @@
 const demo = document.getElementById("demo");
+const districtPara = document.getElementById("district");
 
-function getLocation(){
+function getLocation() {
 
-    if(navigator.geolocation){
-
+    if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
-
     }
-    else{
+    else {
         demo.innerHTML = "Geolocation is not supported.";
     }
+
 }
 
-function showPosition(position){
+const district = document.getElementById("district");
+
+async function showPosition(position){
+
+    const lat = position.coords.latitude;
+    const lon = position.coords.longitude;
 
     demo.innerHTML =
-    "Latitude : " +
-    position.coords.latitude +
-    "<br>Longitude : " +
-    position.coords.longitude;
-}
+    "Latitude : " + lat +
+    "<br>Longitude : " + lon;
 
+    try{
 
+        const response = await fetch(
+            `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lon}&localityLanguage=en`
+        );
 
-const hospitalBtn = document.getElementById("hospitalBtn");
+        const data = await response.json();
 
-hospitalBtn.addEventListener("click",()=>{
-
-    if(navigator.geolocation){
-
-        navigator.geolocation.getCurrentPosition((position)=>{
-
-            const lat = position.coords.latitude;
-            const lon = position.coords.longitude;
-
-            window.open(
-`https://www.google.com/maps/search/hospitals/@${lat},${lon},15z`
-            );
-
-        });
+        district.innerHTML =
+            "District: " + data.locality +
+            "<br>🏛️ State: " + data.principalSubdivision;
 
     }
 
-});
+    catch(error){
+
+        district.innerHTML = "Unable to fetch district.";
+
+    }
+}
+
+function openPage(page) {
+    window.location.href = page;
+}

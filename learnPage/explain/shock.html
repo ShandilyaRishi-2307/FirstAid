@@ -3,34 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shock </title>
+<title>Shock - First Aid</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
-    *{
+
+*{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Poppins,sans-serif;
+    font-family:'Poppins',sans-serif;
 }
 
 body{
-    background:#f4f4f4;
+    background:#f3f3f3;
+    color:#222;
 }
 
 .container{
-    width:90%;
-    max-width:900px;
+    width:95%;
+    max-width:1400px;
     margin:auto;
-    padding:30px 0;
+    padding:20px 0;
 }
+
+/* HERO */
 
 .hero{
     position:relative;
-    height:400px;
-    border-radius:20px;
+    height:350px;
     overflow:hidden;
-    margin-bottom:30px;
+    border-radius:20px;
+    margin-bottom:25px;
 }
 
 .hero img{
@@ -43,192 +48,430 @@ body{
     position:absolute;
     inset:0;
     background:rgba(0,0,0,.45);
-
     display:flex;
+    flex-direction:column;
     justify-content:center;
     align-items:center;
 }
 
 .overlay h1{
     color:white;
-    font-size:3rem;
+    font-size:4.5rem;
 }
+
+.overlay p{
+    color:white;
+    font-size:1.4rem;
+    margin-top:10px;
+}
+
+/* CARDS */
 
 .card{
     background:white;
     border-radius:20px;
-    padding:35px;
-    margin-bottom:30px;
-    box-shadow:0 5px 20px rgba(0,0,0,.1);
-}
-
-.card img{
-    width:100%;
-    height:300px;
-    object-fit:cover;
-    border-radius:15px;
-    margin-bottom:20px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
 }
 
 .card h2{
-    color:#d40000;
+    color:#e60000;
     margin-bottom:20px;
-    padding-bottom:10px;
-    border-bottom:2px solid #ffb0b0;
+    border-bottom:3px solid #ffb0b0;
+    display:inline-block;
 }
 
 .card h3{
-    margin:20px 0;
+    color:#444;
+    margin-bottom:15px;
 }
 
 .card p{
-    color:#555;
     line-height:2;
+    color:#444;
 }
 
+.card ul,
 .card ol{
-    padding-left:25px;
+    padding-left:20px;
 }
 
 .card li{
-    margin:15px 0;
-    line-height:1.8;
-    color:#444;
+    line-height:1.9;
+    margin:10px 0;
 }
+
+/* FLEX */
+
+.flex{
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+
+.flex img{
+    width:40%;
+    border-radius:15px;
+}
+
+.flex-content{
+    flex:1;
+}
+
+/* GRID */
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+/* NOTE */
+
+.note{
+    margin-top:20px;
+    background:#e7f1ff;
+    padding:15px;
+    border-radius:15px;
+    color:#0b57d0;
+}
+
+/* DO DON'T */
+
+.do-dont{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.do{
+    background:#effbf0;
+    border:2px solid #a8e1ad;
+}
+
+.dont{
+    background:#fff2f2;
+    border:2px solid #ffb3b3;
+}
+
+/* BUTTON */
+
 .home-btn{
     text-align:center;
-    margin:40px 0 60px;
+    margin:40px;
 }
 
 .home-btn a{
-    display:inline-block;
     background:#e60000;
     color:white;
     text-decoration:none;
     padding:15px 35px;
     border-radius:12px;
-    font-size:1rem;
     font-weight:600;
-    transition:0.3s;
-    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    transition:.3s;
 }
 
 .home-btn a:hover{
     background:#c70000;
-    transform:translateY(-5px);
 }
-</style>
 
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.flex{
+    flex-direction:column;
+}
+
+.flex img{
+    width:100%;
+}
+
+.grid,
+.do-dont{
+    grid-template-columns:1fr;
+}
+
+.overlay h1{
+    font-size:3rem;
+}
+
+}
+
+</style>
 </head>
 <body>
 
 <div class="container">
 
-    <!-- Hero Image -->
-    <div class="hero">
-        <img src="cpr.jpg" alt="">
-        <div class="overlay">
-            <h1>Shock</h1>
-        </div>
-    </div>
+<!-- HERO -->
 
-    <!-- Introduction -->
-    <div class="card">
-        <h2>Introduction</h2>
+<div class="hero">
 
-        <p>
-            Shock (not to be confused with emotional shock) is a life-threatening condition which happens when the body is not getting enough flow of blood.  <br>
-            This means that the cells dont get enough oxygen to enable them to work properly, which can lead to damage of the vital organs like the brain and the heart.
-        </p>
-    </div>
+<img src="shock-hero.jpg">
 
-    <!-- Mouth to Mouth -->
-    <div class="card">
-
-        <img src="mouth-to-mouth.jpg" alt="">
-
-        <h2>Shock can be caused by anything that reduces the flow of blood, including:</h2>
-
-
-        <ul>
-            <li>heart problems, such as a heart attack, or heart failure
-                severe internal or external bleeding</li>
-
-            <li>severe internal or external bleeding</li>
-
-            <li>loss of body fluids, from dehydration, diarrhoea, vomiting or burns</li>
-
-            <li>severe allergic reactions and severe infection</li>
-
-
-        </ul>
-        <p>
-            If someone has any of the conditions above, which can reduce the circulation or blood flow, they could develop shock, so you may need to treat them for this condition as well.
-        </p>
-
-    </div>
-
-    <!-- Mouth to Nose -->
-    <div class="card">
-
-        <img src="mouth-to-nose.jpg" alt="">
-
-        <h2>What to look for </h2>
-
-        <p>
-            If you think somebody could be suffering from shock, there are seven key things to look for:
-        </p>
-
-        <ol>
-
-            <li>Paleness of the face (pallor)</li>
-
-            <li>Cold, clammy skin</li>
-
-            <li>Fast, weak pulse</li>
-
-            <li>Fast, shallow breathing</li>
-
-            <li>Yawning or sighing</li>
-
-            <li>Confusion</li>
-
-            <li>Loss of consciousness (in extreme cases)</li>
-        </ol>
-
-    </div>
-
-    <div class="card">
-
-        <img src="mouth-to-nose.jpg" alt="">
-
-        <h2>What you need to do: </h2>
-
-        <p>
-            If they are showing signs of shock: <br>
-        </p>
-        <ol>
-
-            <li>Lay them down with their head low and legs raised and supported, to increase the flow of blood to their head.</li>
-
-            <li>Call for medical help and say you think they are in shock, and explain what you think caused it (such as bleeding or a heart attack).</li>
-
-            <li>Loosen any tight clothing around the neck, chest and waist to make sure it doesnt constrict their blood flow</li>
-
-            <li>Fear and pain can make shock worse, by increasing the body is demand for oxygen, so while you wait for help to arrive, its important to keep them comfortable, warm and calm. Do this by covering them with a coat or blanket and comforting and reassuring them</li>
-
-            <li>Keep checking their breathing, pulse and level of response.</li>
-
-            <li>If they lose consciousness at any point, open their airway, check their breathing, and prepare to treat someone who has become unconscious.</li>
-        </ol>
-
-    </div>
+<div class="overlay">
+<h1>Shock</h1>
+<p>Early treatment can save a life</p>
+</div>
 
 </div>
-<!-- Back to Home Button -->
+
+
+<!-- INTRODUCTION -->
+
+<div class="card flex">
+
+<div class="flex-content">
+
+<h2>Introduction</h2>
+
+<p>
+
+Shock (not to be confused with emotional shock) is a life-threatening condition that occurs when the body does not receive enough blood flow. As a result, cells do not get enough oxygen and nutrients to function properly. If untreated, shock can lead to damage of vital organs such as the brain, kidneys and heart.
+
+<br><br>
+
+Shock often develops after severe injuries, blood loss, heart attacks, allergic reactions, burns, or infections. Immediate first aid and rapid medical attention are essential to improve survival.
+
+</p>
+
+</div>
+
+<img src="shock-intro.jpg">
+
+</div>
+
+
+<!-- CAUSES -->
+
+<div class="card flex">
+
+<img src="shock-causes.jpg">
+
+<div class="flex-content">
+
+<h2>Causes of Shock</h2>
+
+<ul>
+
+<li>Heart problems such as heart attack or heart failure.</li>
+
+<li>Severe internal or external bleeding.</li>
+
+<li>Loss of body fluids due to dehydration, vomiting, diarrhea or burns.</li>
+
+<li>Severe allergic reactions (anaphylaxis).</li>
+
+<li>Serious infections.</li>
+
+<li>Major trauma and accidents.</li>
+
+</ul>
+
+<p>
+
+Any condition that reduces blood circulation can cause shock. Therefore, treating the underlying cause is equally important.
+
+</p>
+
+</div>
+
+</div>
+
+
+<!-- SIGNS -->
+
+<div class="grid">
+
+<div class="card">
+
+<h2>Signs and Symptoms</h2>
+
+<p>If you suspect shock, look for these warning signs:</p>
+
+<ol>
+
+<li>Pale appearance (pallor).</li>
+
+<li>Cold and clammy skin.</li>
+
+<li>Fast, weak pulse.</li>
+
+<li>Rapid, shallow breathing.</li>
+
+<li>Yawning or sighing.</li>
+
+<li>Confusion or restlessness.</li>
+
+<li>Loss of consciousness in severe cases.</li>
+
+</ol>
+
+</div>
+
+
+<div class="card">
+
+<h2>Additional Symptoms</h2>
+
+<ul>
+
+<li>Weakness and dizziness.</li>
+
+<li>Thirst.</li>
+
+<li>Nausea or vomiting.</li>
+
+<li>Bluish lips or fingernails.</li>
+
+<li>Anxiety or fear.</li>
+
+<li>Reduced alertness.</li>
+
+<li>Fainting.</li>
+
+</ul>
+
+<div class="note">
+
+<b>Important:</b> Shock can become fatal very quickly. Always seek emergency medical help immediately.
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- FIRST AID -->
+
+<div class="card flex">
+
+<img src="shock-treatment.jpg">
+
+<div class="flex-content">
+
+<h2>What You Need To Do</h2>
+
+<ol>
+
+<li>Lay the person down with the head low and legs raised to improve blood flow to the brain.</li>
+
+<li>Call emergency services immediately and explain the cause if known.</li>
+
+<li>Loosen tight clothing around the neck, chest and waist.</li>
+
+<li>Keep the person warm using a blanket or coat.</li>
+
+<li>Reassure and comfort the casualty because fear and pain can worsen shock.</li>
+
+<li>Monitor breathing, pulse and level of consciousness continuously.</li>
+
+<li>If unconscious, open the airway and be prepared to give CPR if breathing stops.</li>
+
+</ol>
+
+</div>
+
+</div>
+
+
+<!-- DO AND DON'T -->
+
+<div class="card">
+
+<h2 style="text-align:center;">Shock First Aid DOs and DON'Ts</h2>
+
+<div class="do-dont">
+
+<div class="card do">
+
+<h2>✔ DOs</h2>
+
+<ul>
+
+<li>Call for emergency medical help.</li>
+
+<li>Keep the person warm and comfortable.</li>
+
+<li>Raise the legs if there are no fractures.</li>
+
+<li>Check breathing and pulse regularly.</li>
+
+<li>Treat severe bleeding immediately.</li>
+
+<li>Stay with the person until help arrives.</li>
+
+</ul>
+
+</div>
+
+
+<div class="card dont">
+
+<h2>✖ DON'Ts</h2>
+
+<ul>
+
+<li>Do not give food or drink.</li>
+
+<li>Do not allow the person to stand or walk.</li>
+
+<li>Do not leave the victim alone.</li>
+
+<li>Do not raise the legs if spinal injury is suspected.</li>
+
+<li>Do not move seriously injured victims unnecessarily.</li>
+
+<li>Do not delay medical treatment.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PREVENTION -->
+
+<div class="card">
+
+<h2>Prevention and Safety Tips</h2>
+
+<p>
+
+Many cases of shock can be prevented by avoiding accidents, staying hydrated, treating severe bleeding promptly, managing heart conditions properly and seeking immediate treatment for allergic reactions or infections.
+
+<br><br>
+
+Learning first aid and CPR can help you act confidently during emergencies and greatly improve the chances of survival.
+
+</p>
+
+<div class="note">
+
+<b>Emergency Warning:</b> If a person becomes unconscious and stops breathing normally, begin CPR immediately and continue until professional help arrives.
+
+</div>
+
+</div>
+
+
+<!-- BACK BUTTON -->
+
 <div class="home-btn">
-    <a href="/learnPage/learn.html">← Back to Home</a>
+
+<a href="/learnPage/learn.html">
+← Back to Home
+</a>
+
 </div>
-s
+
+</div>
+
 </body>
 </html>
