@@ -22,7 +22,6 @@ function showPosition(position){
 }
 
 
-// Nearest Hospital button
 
 const hospitalBtn = document.getElementById("hospitalBtn");
 
