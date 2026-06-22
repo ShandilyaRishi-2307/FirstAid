@@ -240,7 +240,11 @@ button{
         grid-template-columns:repeat(2,1fr);
     }
 
-    
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:30px;
+    }
 
     
 

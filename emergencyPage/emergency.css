@@ -299,7 +299,7 @@ nav ul li a:hover{
     nav ul{
         flex-wrap:wrap;
         justify-content:center;
-        gap:15px;
+        gap:30px;
     }
 
     .hero{
@@ -369,8 +369,9 @@ nav ul li a:hover{
     }
 
     nav ul{
-        gap:10px;
-        font-size:0.9rem;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:30px;
     }
 
     .hero h1{
