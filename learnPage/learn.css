@@ -133,6 +133,16 @@ nav ul li a:hover{
     color:white;
 }
 
+.hamburger{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#menu-toggle{
+    display: none;
+}
+
 /* Tablet */
 
 @media(max-width:992px){
@@ -149,6 +159,40 @@ nav ul li a:hover{
 
     .topics{
         grid-template-columns:1fr;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:30px;
+    }
+    .logo{
+        font-size:0.9rem;
+    }
+
+    .hamburger{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 30%;
+        transform: translate(-50%);
+    }
+
+    #menu-toggle:checked ~ .nav-links{
+        display: flex;
+    }
+
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        width: 200px;
+        background: white;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     }
 
     .hero h1{
