@@ -175,6 +175,21 @@ body{
     background:#c70000;
 }
 
+.video-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.video-container iframe{
+    width:80%;
+    max-width:800px;
+    aspect-ratio:16/9;
+    height:auto;
+    border:none;
+    border-radius:15px;
+}
+
 @media(max-width:900px){
 
 .grid,
@@ -533,7 +548,11 @@ Knowing when to call emergency services and how to perform CPR can save lives. C
 
 </div>
 
-
+<div class="card">
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ddHKwkMwNyI?si=JdvObTuxwWZUg2bL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
 <!-- BACK BUTTON -->
 <div class="home-btn">
 <a href="/learnPage/learn.html">← Back to Home</a>
@@ -542,3 +561,4 @@ Knowing when to call emergency services and how to perform CPR can save lives. C
 </div>
 
 </body>
+</html>

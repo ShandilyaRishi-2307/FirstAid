@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heatstroke - First Aid</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f3f3f3;
+    color:#222;
+}
+
+.container{
+    width:95%;
+    max-width:1400px;
+    margin:auto;
+    padding:20px 0;
+}
+
+.hero{
+    position:relative;
+    height:350px;
+    overflow:hidden;
+    border-radius:20px;
+    margin-bottom:25px;
+}
+
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.4);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay h1{
+    color:white;
+    font-size:5rem;
+}
+
+.overlay p{
+    color:white;
+    font-size:1.5rem;
+    margin-top:10px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+}
+
+.card h2{
+    color:#e60000;
+    margin-bottom:20px;
+    border-bottom:3px solid #ffb0b0;
+    display:inline-block;
+}
+
+.card p{
+    line-height:2;
+    color:#444;
+}
+
+.card ul,
+.card ol{
+    padding-left:20px;
+}
+
+.card li{
+    line-height:1.9;
+    margin:8px 0;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.flex{
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+
+.flex img{
+    width:40%;
+    border-radius:15px;
+}
+
+.flex-content{
+    flex:1;
+}
+
+.note{
+    margin-top:20px;
+    background:#e7f1ff;
+    padding:15px;
+    border-radius:15px;
+    color:#0b57d0;
+}
+
+.do-dont{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.do{
+    background:#effbf0;
+    border:2px solid #a8e1ad;
+}
+
+.dont{
+    background:#fff2f2;
+    border:2px solid #ffb3b3;
+}
+
+.prevent{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:20px;
+}
+
+.prevent div{
+    text-align:center;
+}
+
+.home-btn{
+    text-align:center;
+    margin:40px;
+}
+
+.home-btn a{
+    background:#e60000;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:12px;
+    font-weight:600;
+}
+
+.video-container{
+    display:flex;
+    justify-content:center;
+}
+
+.video-container iframe{
+    width:80%;
+    max-width:800px;
+    aspect-ratio:16/9;
+    border:none;
+    border-radius:15px;
+}
+
+@media(max-width:900px){
+
+.grid,
+.do-dont,
+.flex{
+    grid-template-columns:1fr;
+    flex-direction:column;
+}
+
+.flex img{
+    width:100%;
+}
+
+.prevent{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.overlay h1{
+    font-size:3rem;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<!-- HERO -->
+<div class="hero">
+
+<img src="heatstroke-hero.jpg">
+
+<div class="overlay">
+<h1>Heatstroke</h1>
+<p>Cool the casualty quickly and seek urgent medical help</p>
+</div>
+
+</div>
+
+
+<!-- INTRODUCTION -->
+<div class="card flex">
+
+<div class="flex-content">
+
+<h2>Introduction</h2>
+
+<p>
+
+Heatstroke is a life-threatening condition caused by failure of the body's temperature regulating system. Prolonged exposure to high temperatures, dehydration, strenuous physical activity, or illnesses with high fever can cause the body's temperature to rise dangerously.
+
+<br><br>
+
+Heatstroke may also occur after heat exhaustion when the body stops sweating and can no longer cool itself effectively. Symptoms may develop rapidly, causing confusion, collapse, or loss of consciousness within minutes. Immediate cooling and urgent medical attention are essential.
+
+</p>
+
+</div>
+
+<img src="heat-intro.jpg">
+
+</div>
+
+
+<!-- CAUSES -->
+<div class="card flex">
+
+<img src="heat-causes.jpg">
+
+<div class="flex-content">
+
+<h2>Common Causes</h2>
+
+<ul>
+
+<li>Long exposure to hot weather.</li>
+
+<li>Heavy exercise in high temperatures.</li>
+
+<li>Severe dehydration.</li>
+
+<li>High fever caused by illness.</li>
+
+<li>Heat exhaustion progressing to heatstroke.</li>
+
+<li>Certain medications or recreational drugs.</li>
+
+<li>Wearing excessive clothing in hot environments.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- SIGNS -->
+<div class="grid">
+
+<div class="card">
+
+<h2>Signs and Symptoms</h2>
+
+<ul>
+
+<li>Headache and dizziness.</li>
+
+<li>Restlessness and confusion.</li>
+
+<li>Hot, flushed, dry skin.</li>
+
+<li>Rapid deterioration in consciousness.</li>
+
+<li>Strong and rapid pulse.</li>
+
+<li>Body temperature above 40°C (104°F).</li>
+
+<li>Nausea and vomiting.</li>
+
+<li>Collapse or seizures.</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Danger Signs</h2>
+
+<ul>
+
+<li>Loss of responsiveness.</li>
+
+<li>Difficulty breathing.</li>
+
+<li>Seizures.</li>
+
+<li>Extremely high body temperature.</li>
+
+<li>Rapid pulse and confusion.</li>
+
+<li>No sweating despite heat.</li>
+
+<li>Signs of shock.</li>
+
+</ul>
+
+<div class="note">
+
+<b>Emergency:</b> Heatstroke is a medical emergency. Call emergency services immediately.
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- FIRST AID -->
+<div class="card flex">
+
+<img src="cooling-person.jpg">
+
+<div class="flex-content">
+
+<h2>Immediate First Aid Steps</h2>
+
+<ol>
+
+<li>Move the casualty to a cool shaded place.</li>
+
+<li>Remove excess clothing while preserving dignity.</li>
+
+<li>Call emergency medical services.</li>
+
+<li>Wrap the person in a cold wet sheet or sponge them with cool water.</li>
+
+<li>Fan the casualty continuously to aid cooling.</li>
+
+<li>Monitor body temperature if possible.</li>
+
+<li>Continue cooling until temperature falls below 38°C.</li>
+
+<li>Check breathing, pulse and level of response regularly.</li>
+
+<li>If they become unresponsive, open the airway and prepare to provide CPR if necessary.</li>
+
+</ol>
+
+</div>
+
+</div>
+
+
+<!-- DO'S AND DON'TS -->
+<div class="card">
+
+<h2 style="text-align:center">Heatstroke First Aid DOs and DON'Ts</h2>
+
+<div class="do-dont">
+
+<div class="card do">
+
+<h2>✔ DOs</h2>
+
+<ul>
+
+<li>Move them to a cool place.</li>
+
+<li>Use cool water to lower body temperature.</li>
+
+<li>Fan the casualty continuously.</li>
+
+<li>Call emergency services immediately.</li>
+
+<li>Monitor breathing and consciousness.</li>
+
+<li>Continue cooling while waiting for help.</li>
+
+</ul>
+
+</div>
+
+<div class="card dont">
+
+<h2>✖ DON'Ts</h2>
+
+<ul>
+
+<li>Do not delay seeking medical help.</li>
+
+<li>Do not leave the person alone.</li>
+
+<li>Do not give alcohol or caffeine.</li>
+
+<li>Do not force drinks if unconscious.</li>
+
+<li>Do not cover them with heavy blankets.</li>
+
+<li>Do not stop cooling too early.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- COMPLICATIONS -->
+<div class="card flex">
+
+<img src="heat-complications.jpg">
+
+<div class="flex-content">
+
+<h2>Possible Complications</h2>
+
+<p>
+
+Untreated heatstroke can damage the brain, kidneys, liver, heart, and muscles. Severe cases may lead to seizures, coma, organ failure, and death. Permanent neurological damage can occur if cooling is delayed.
+
+<br><br>
+
+Rapid recognition and immediate treatment greatly increase the chance of recovery and reduce complications.
+
+</p>
+
+</div>
+
+</div>
+
+
+<!-- PREVENTION -->
+<div class="card">
+
+<h2 style="text-align:center">Prevention and Safety Tips</h2>
+
+<div class="prevent">
+
+<div>
+<span style="font-size:70px;">💧</span>
+<p>Drink plenty of water.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">☀️</span>
+<p>Avoid direct sunlight.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">🧢</span>
+<p>Wear light clothing.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">🌳</span>
+<p>Rest in shaded areas.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">🥤</span>
+<p>Replace fluids regularly.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">🏃</span>
+<p>Avoid heavy exercise in heat.</p>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- WHY QUICK ACTION MATTERS -->
+<div class="card">
+
+<h2>Why Early Treatment Matters</h2>
+
+<p>
+
+Heatstroke can progress rapidly and become fatal within a short period. Lowering body temperature immediately helps prevent damage to vital organs and improves survival.
+
+<br><br>
+
+Continuous cooling and rapid transport to hospital provide the best chance of recovery. Delayed treatment increases the risk of permanent disability and death.
+
+</p>
+
+</div>
+
+
+<!-- VIDEO -->
+<div class="card">
+
+<div class="video-container">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/miZ9eQO6kpI?si=P_3L_lCwnymsGQEt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</div>
+
+</div>
+
+
+<!-- HOME BUTTON -->
+<div class="home-btn">
+
+<a href="/learnPage/learn.html">
+← Back to Home
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>

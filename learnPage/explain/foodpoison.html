@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drownings - First Aid</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f3f3f3;
+    color:#222;
+}
+
+.container{
+    width:95%;
+    max-width:1400px;
+    margin:auto;
+    padding:20px 0;
+}
+
+/* HERO */
+.hero{
+    position:relative;
+    height:350px;
+    overflow:hidden;
+    border-radius:20px;
+    margin-bottom:25px;
+}
+
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.4);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay h1{
+    color:#fff;
+    font-size:5rem;
+}
+
+.overlay p{
+    color:white;
+    font-size:1.6rem;
+    margin-top:10px;
+}
+
+/* CARDS */
+.card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+}
+
+.card h2{
+    color:#e60000;
+    margin-bottom:20px;
+    border-bottom:3px solid #ffb0b0;
+    display:inline-block;
+}
+
+.card p{
+    line-height:2;
+    color:#444;
+}
+
+.card ul{
+    padding-left:20px;
+}
+
+.card li{
+    line-height:1.9;
+    margin:8px 0;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.flex{
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+
+.flex img{
+    width:40%;
+    border-radius:15px;
+}
+
+.flex-content{
+    flex:1;
+}
+
+.note{
+    margin-top:20px;
+    background:#e7f1ff;
+    padding:15px;
+    border-radius:15px;
+    color:#0b57d0;
+}
+
+/* DO DON'T */
+.do-dont{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.do{
+    background:#effbf0;
+    border:2px solid #a8e1ad;
+}
+
+.dont{
+    background:#fff2f2;
+    border:2px solid #ffb3b3;
+}
+
+/* PREVENTION */
+.prevent{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:20px;
+}
+
+.prevent div{
+    text-align:center;
+}
+
+.prevent img{
+    width:90px;
+    margin-bottom:10px;
+}
+
+.home-btn{
+    text-align:center;
+    margin:40px;
+}
+
+.home-btn a{
+    background:#e60000;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.home-btn a:hover{
+    background:#c70000;
+}
+
+
+.video-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.video-container iframe{
+    width:80%;
+    max-width:800px;
+    aspect-ratio:16/9;
+    height:auto;
+    border:none;
+    border-radius:15px;
+}
+
+@media(max-width:900px){
+
+.grid,
+.do-dont,
+.flex{
+    grid-template-columns:1fr;
+    flex-direction:column;
+}
+
+.flex img{
+    width:100%;
+}
+
+.prevent{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.overlay h1{
+    font-size:3rem;
+}
+
+}
+</style>
+</head>
+<body>
+<!-- HERO -->
+<div class="hero">
+
+<img src="food-poisoning-hero.jpg">
+
+<div class="overlay">
+<h1>Food Poisoning</h1>
+<p>Prevent dehydration and help the body recover safely</p>
+</div>
+
+</div>
+
+
+<!-- INTRODUCTION -->
+<div class="card flex">
+
+<div class="flex-content">
+
+<h2>Introduction</h2>
+
+<p>
+
+Food poisoning is caused by eating contaminated food or drinking contaminated water. Harmful bacteria such as Salmonella and Escherichia coli (E. coli), viruses, parasites, or toxins can make a person ill. Symptoms often appear within a few hours, although some infections may take several days to develop.
+
+<br><br>
+
+Most cases are mild and improve within a few days with rest and plenty of fluids. However, severe food poisoning can lead to dehydration and other serious complications, especially in young children, older adults, pregnant women, and people with weakened immune systems.
+
+</p>
+
+</div>
+
+<img src="food-poisoning-intro.jpg">
+
+</div>
+
+
+<!-- CAUSES -->
+<div class="card flex">
+
+<img src="food-poisoning-causes.jpg">
+
+<div class="flex-content">
+
+<h2>Common Causes</h2>
+
+<ul>
+
+<li>Undercooked meat and poultry.</li>
+
+<li>Raw eggs and unpasteurized milk.</li>
+
+<li>Contaminated seafood.</li>
+
+<li>Improper food storage.</li>
+
+<li>Poor kitchen hygiene.</li>
+
+<li>Contaminated fruits and vegetables.</li>
+
+<li>Dirty drinking water.</li>
+
+<li>Cross-contamination during food preparation.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- SIGNS -->
+<div class="grid">
+
+<div class="card">
+
+<h2>Signs and Symptoms</h2>
+
+<ul>
+
+<li>Feeling sick or nausea.</li>
+
+<li>Vomiting, sometimes bloodstained.</li>
+
+<li>Stomach cramps and abdominal pain.</li>
+
+<li>Diarrhoea.</li>
+
+<li>Headache.</li>
+
+<li>Fever and chills.</li>
+
+<li>Weakness and tiredness.</li>
+
+<li>Loss of appetite.</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Danger Signs</h2>
+
+<ul>
+
+<li>Blood in vomit or stool.</li>
+
+<li>Severe dehydration.</li>
+
+<li>Persistent vomiting.</li>
+
+<li>High fever.</li>
+
+<li>Confusion or fainting.</li>
+
+<li>Severe abdominal pain.</li>
+
+<li>Symptoms lasting more than three days.</li>
+
+</ul>
+
+<div class="note">
+
+<b>Emergency:</b> Seek urgent medical help if symptoms become severe or signs of dehydration develop.
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- FIRST AID -->
+<div class="card flex">
+
+<img src="rehydration.jpg">
+
+<div class="flex-content">
+
+<h2>Immediate First Aid Steps</h2>
+
+<ol>
+
+<li>Help the person lie down and rest.</li>
+
+<li>Provide plenty of water to prevent dehydration.</li>
+
+<li>Encourage frequent small sips if vomiting occurs.</li>
+
+<li>Use oral rehydration solutions to replace lost salts and minerals.</li>
+
+<li>Avoid fatty, spicy, or heavy meals.</li>
+
+<li>Monitor their breathing and level of response.</li>
+
+<li>Encourage light foods such as toast, rice, bananas, or crackers once symptoms improve.</li>
+
+<li>Seek medical advice if symptoms worsen.</li>
+
+</ol>
+
+</div>
+
+</div>
+
+
+<!-- DO'S AND DON'TS -->
+<div class="card">
+
+<h2 style="text-align:center">Food Poisoning First Aid DOs and DON'Ts</h2>
+
+<div class="do-dont">
+
+<div class="card do">
+
+<h2>✔ DOs</h2>
+
+<ul>
+
+<li>Give plenty of fluids.</li>
+
+<li>Encourage rest.</li>
+
+<li>Use oral rehydration solutions.</li>
+
+<li>Eat bland foods when able.</li>
+
+<li>Wash hands thoroughly.</li>
+
+<li>Seek medical care if symptoms worsen.</li>
+
+</ul>
+
+</div>
+
+<div class="card dont">
+
+<h2>✖ DON'Ts</h2>
+
+<ul>
+
+<li>Do not force large amounts of food.</li>
+
+<li>Do not drink alcohol.</li>
+
+<li>Do not consume dairy products initially.</li>
+
+<li>Do not ignore signs of dehydration.</li>
+
+<li>Do not share towels or utensils.</li>
+
+<li>Do not delay medical treatment if blood appears in vomit or stool.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- DEHYDRATION -->
+<div class="card">
+
+<h2>Signs of Dehydration</h2>
+
+<ul>
+
+<li>Dry mouth and lips.</li>
+
+<li>Extreme thirst.</li>
+
+<li>Dark yellow urine.</li>
+
+<li>Reduced urination.</li>
+
+<li>Dizziness and weakness.</li>
+
+<li>Sunken eyes.</li>
+
+<li>Rapid heartbeat.</li>
+
+<li>Confusion in severe cases.</li>
+
+</ul>
+
+</div>
+
+
+<!-- COMPLICATIONS -->
+<div class="card flex">
+
+<img src="food-complications.jpg">
+
+<div class="flex-content">
+
+<h2>Possible Complications</h2>
+
+<p>
+
+Severe food poisoning may cause dehydration, electrolyte imbalance, kidney failure, blood infections, or damage to the digestive system. Young children, elderly people, and individuals with weakened immune systems are at greater risk of complications.
+
+<br><br>
+
+Prompt treatment and adequate fluid replacement greatly reduce the risk of serious illness.
+
+</p>
+
+</div>
+
+</div>
+
+
+<!-- PEOPLE AT RISK -->
+<div class="card">
+
+<h2>People Most at Risk</h2>
+
+<ul>
+
+<li>Infants and young children.</li>
+
+<li>Pregnant women.</li>
+
+<li>Older adults.</li>
+
+<li>People with diabetes.</li>
+
+<li>People with weakened immune systems.</li>
+
+<li>Individuals receiving chemotherapy.</li>
+
+<li>People with chronic illnesses.</li>
+
+</ul>
+
+</div>
+
+
+<!-- PREVENTION -->
+<div class="card">
+
+<h2 style="text-align:center">Prevention and Safety Tips</h2>
+
+<div class="prevent">
+
+<div>
+<span style="font-size:70px;">🧼</span>
+<p>Wash hands before cooking.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">🍗</span>
+<p>Cook meat thoroughly.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">🥛</span>
+<p>Use pasteurized products.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">❄️</span>
+<p>Refrigerate food properly.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">💧</span>
+<p>Drink clean water.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">🥗</span>
+<p>Wash fruits and vegetables.</p>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- WHEN TO SEEK HELP -->
+<div class="card">
+
+<h2>When to Seek Medical Attention</h2>
+
+<p>
+
+Medical help should be sought immediately if the person has severe dehydration, blood in vomit or stool, persistent high fever, severe abdominal pain, confusion, or symptoms lasting more than three days.
+
+<br><br>
+
+Infants, elderly adults, pregnant women, and people with weakened immune systems should be evaluated early because they are more likely to develop complications.
+
+</p>
+
+</div>
+
+
+<!-- WHY QUICK ACTION MATTERS -->
+<div class="card">
+
+<h2>Why Early Treatment Matters</h2>
+
+<p>
+
+Most cases of food poisoning improve with rest and fluid replacement. However, dehydration can develop quickly, particularly when vomiting and diarrhoea are severe.
+
+<br><br>
+
+Early treatment helps replace lost fluids and electrolytes, prevents complications, and speeds recovery. Severe cases require prompt medical attention to avoid life-threatening consequences.
+
+</p>
+
+</div>
+
+
+<!-- VIDEO -->
+<div class="card">
+
+<div class="video-container">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/K36B1wnMHIo?si=CBW0JOASdaYTwopT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</div>
+
+</div>
+
+
+<!-- HOME BUTTON -->
+<div class="home-btn">
+
+<a href="/learnPage/learn.html">
+← Back to Home
+</a>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scorpion Bite - First Aid & Management</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f3f3f3;
+    color: #222;
+}
+
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.hero {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.55);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.overlay h1 {
+    color: white;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.overlay p {
+    color: white;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.1);
+}
+
+.card h2 {
+    color: #d40000;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #ffb3b3;
+    display: inline-block;
+}
+
+.card p {
+    line-height: 2;
+    color: #444;
+}
+
+.card ul,
+.card ol {
+    padding-left: 20px;
+}
+
+.card li {
+    line-height: 1.9;
+    margin: 8px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.flex {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.flex img {
+    width: 40%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.flex-content {
+    flex: 1;
+}
+
+.note {
+    margin-top: 20px;
+    background: #eaf4ff;
+    padding: 15px;
+    border-radius: 15px;
+    color: #0b57d0;
+}
+
+.do-dont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.do {
+    background: #effbf0;
+    border: 2px solid #9fe0a7;
+}
+
+.dont {
+    background: #fff2f2;
+    border: 2px solid #ffb5b5;
+}
+
+.prevent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.prevent div {
+    text-align: center;
+}
+
+.home-btn {
+    text-align: center;
+    margin: 40px;
+}
+
+.home-btn a {
+    background: #d40000;
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.video-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.video-container iframe{
+    width:80%;
+    max-width:800px;
+    aspect-ratio:16/9;
+    height:auto;
+    border:none;
+    border-radius:15px;
+}
+
+@media(max-width: 900px) {
+    .grid,
+    .do-dont,
+    .flex {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .flex img {
+        width: 100%;
+    }
+
+    .prevent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .overlay h1 {
+        font-size: 3rem;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<!-- HERO -->
+<div class="hero">
+    <img src="https://images.unsplash.com/photo-1590409861611-39e24694d8b9?q=80&w=2000&auto=format&fit=crop" alt="Scorpion in the sand">
+    <div class="overlay">
+        <h1>Scorpion Bite</h1>
+        <p>Recognize symptoms, apply fast first aid, and seek emergency care</p>
+    </div>
+</div>
+
+<!-- INTRODUCTION -->
+<div class="card flex">
+    <div class="flex-content">
+        <h2>Introduction</h2>
+        <p>
+            Most of the time, a scorpion sting causes mild discomfort that gradually abates on its own. However, depending on the species of scorpion—such as the highly venomous bark scorpion—and the victim's age, a sting can sometimes lead to moderate or severe life-threatening reactions. 
+            <br><br>
+            Proper home management is often sufficient for mild stings, but recognizing the signs of venom toxicity or an allergic reaction (anaphylaxis) is critical to getting timely and potentially life-saving anti-venom therapy.
+        </p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1616782352822-2615bc05978f?q=80&w=800&auto=format&fit=crop" alt="Scorpion in natural habitat">
+</div>
+
+<!-- RISK FACTORS -->
+<div class="card flex">
+    <img src="https://images.unsplash.com/photo-1516142104593-3760a92f0fa5?q=80&w=800&auto=format&fit=crop" alt="Hiking boots and gear">
+    <div class="flex-content">
+        <h2>Risk Factors</h2>
+        <p>Certain factors can significantly increase your risk of encountering and being stung by a scorpion:</p>
+        <ul>
+            <li><strong>Geography and Season:</strong> Scorpions thrive in desert regions and are most active during the summer and spring months.</li>
+            <li><strong>Outdoor Habitats:</strong> Scorpions, especially bark scorpions, frequently hide in the bark of trees and beneath rocks and logs.</li>
+            <li><strong>Household Hiding Spots:</strong> In residential areas, they commonly hide in trash cans, firewood piles, bedding, and inside shoes.</li>
+            <li><strong>Travel:</strong> You are more likely to encounter poisonous species when traveling to developing countries. They can also hide in your clothing and luggage and inadvertently travel home with you.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- SIGNS -->
+<div class="grid">
+    <div class="card">
+        <h2>Mild to Moderate Symptoms</h2>
+        <p>At the immediate site of the scorpion sting, a patient will typically experience:</p>
+        <ul>
+            <li>Painful, burning sensation.</li>
+            <li>Tingling or numbing feeling.</li>
+            <li>Slight redness around the puncture site.</li>
+            <li>Discomfort that gradually abates over time.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Severe Danger Signs</h2>
+        <p>If venom has spread or an allergic reaction occurs, these life-threatening symptoms may develop:</p>
+        <ul>
+            <li>Numbness all over the body.</li>
+            <li>Difficulty swallowing (dysphagia) and tongue thickness.</li>
+            <li>Blurry vision and erratic eye movements.</li>
+            <li>Excessive salivation, sweating, and vomiting.</li>
+            <li>Seizures and difficulty breathing.</li>
+            <li>Tachycardia (rapid heart rate) and extreme changes in blood pressure.</li>
+        </ul>
+        <div class="note">
+            <b>Emergency:</b> All these severe symptoms require prompt medical attention and emergency transport.
+        </div>
+    </div>
+</div>
+
+<!-- FIRST AID -->
+<div class="card flex">
+    <img src="https://images.unsplash.com/photo-1584308666744-24d5e4b7b2fb?q=80&w=800&auto=format&fit=crop" alt="First aid kit and ice compress">
+    <div class="flex-content">
+        <h2>Immediate First Aid Steps</h2>
+        <ol>
+            <li><strong>Wash the site:</strong> Clean the sting area with soap and water to prevent secondary infection.</li>
+            <li><strong>Remove jewelry:</strong> Take off any rings, watches, or jewelry near the bite, as swelling will hamper circulation.</li>
+            <li><strong>Apply cold compresses:</strong> Apply an ice pack for at least 10 minutes, remove for 10 minutes, and repeat. This eases pain, burning, and swelling.</li>
+            <li><strong>Elevate:</strong> Keep the affected limb positioned above the level of the heart.</li>
+            <li><strong>Keep calm:</strong> Keep the patient as still and calm as possible to slow down the spreading of the venom.</li>
+            <li><strong>Pain relief:</strong> Take OTC analgesics like acetaminophen (Tylenol) every 4 hours.</li>
+            <li><strong>Secure the scorpion:</strong> If possible and safe to do so, carefully collect the injured/dead scorpion in a sealed container to show the physician.</li>
+        </ol>
+    </div>
+</div>
+
+<!-- DO'S AND DON'TS -->
+<div class="card">
+    <h2 style="text-align:center">Scorpion Sting DOs and DON'Ts</h2>
+    <div class="do-dont">
+        <div class="card do">
+            <h2>✔ DOs</h2>
+            <ul>
+                <li>Wash the wound immediately with soap and water.</li>
+                <li>Apply ice to reduce pain and slow venom spread.</li>
+                <li>Elevate the injured limb.</li>
+                <li>Keep the victim calm to lower heart rate.</li>
+                <li>Seek immediate help for infants, children, or the elderly.</li>
+                <li>Use Acetaminophen (Tylenol) for pain.</li>
+            </ul>
+        </div>
+        <div class="card dont">
+            <h2>✖ DON'Ts</h2>
+            <ul>
+                <li>Do not make a cut or incision over the wound.</li>
+                <li>Do not attempt to suck out the venom.</li>
+                <li>Do not take NSAIDs like ibuprofen or aspirin (they can cause other complications).</li>
+                <li>Avoid consuming food or drinks if experiencing difficulty swallowing.</li>
+                <li>Do not apply heat to the sting site.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- HOME REMEDIES -->
+<div class="card">
+    <h2>Natural Home Remedies</h2>
+    <p>For mild stings where emergency symptoms are not present, natural remedies can provide supplemental relief:</p>
+    <ul>
+        <li><strong>Turmeric Paste:</strong> Turmeric possesses anti-inflammatory, antibiotic, and healing properties. Sprinkle dry turmeric on the wound or make a thick paste with water and apply it over the sting. It acts as an excellent natural first aid measure.</li>
+        <li><strong>Onion Juice:</strong> Onions have natural anti-inflammatory and antibiotic properties. Squeezing fresh onion juice and applying it directly onto the scorpion bite site can be highly beneficial for soothing pain.</li>
+    </ul>
+    <div class="note">
+        <b>Note:</b> Home remedies should only be used for mild stings. If a secondary infection occurs, professional antibiotics will be required.
+    </div>
+</div>
+
+<!-- PREVENTION -->
+<div class="card">
+    <h2 style="text-align:center">Prevention and Safety Tips</h2>
+    <div class="prevent">
+        <div>
+            <span style="font-size:70px;">🥾</span>
+            <p>Shake out shoes and boots before wearing.</p>
+        </div>
+        <div>
+            <span style="font-size:70px;">🧤</span>
+            <p>Wear heavy gloves when moving firewood or rocks.</p>
+        </div>
+        <div>
+            <span style="font-size:70px;">⛺</span>
+            <p>Check tents and sleeping bags before use.</p>
+        </div>
+        <div>
+            <span style="font-size:70px;">🧳</span>
+            <p>Inspect luggage after traveling to desert regions.</p>
+        </div>
+        <div>
+            <span style="font-size:70px;">🚪</span>
+            <p>Seal cracks and install weather-stripping at home.</p>
+        </div>
+        <div>
+            <span style="font-size:70px;">🔦</span>
+            <p>Use a UV blacklight at night (scorpions glow).</p>
+        </div>
+    </div>
+</div>
+
+<!-- BARK SCORPION -->
+<div class="card flex">
+    <div class="flex-content">
+        <h2>What To Do If Stung By A Bark Scorpion?</h2>
+        <p>
+            The bark scorpion (<em>Centruroides species</em>) is highly venomous. If the victim is an infant, a child, someone elderly, or if severe symptoms are presenting:
+            <br><br>
+            Immediately call emergency services. Continuously apply ice, and keep the patient entirely still. <strong>Anti-venom therapy</strong> is available specifically for bark scorpion stings in medical facilities. This anti-venom helps in stopping all severe symptoms within about 4 hours of administration. 
+            <br><br>
+            Because of the dangerous nature of this venom, all victims with anything beyond the mildest symptoms require hospital admission and observation for at least 24 hours.
+        </p>
+    </div>
+</div>
+
+<!-- VIDEO -->
+<div class="card">
+    <div class="video-container">
+       
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/IPJ9AAWKdkA?si=A4qrb-0_pfcHsQo8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<!-- HOME BUTTON -->
+<div class="home-btn">
+    <a href="/learnPage/learn.html">← Back to Home</a>
+</div>
+
+</div>
+
+</body>
+</html>

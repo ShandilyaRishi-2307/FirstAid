@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diabetic Emergency - First Aid</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f3f3f3;
+    color:#222;
+}
+
+.container{
+    width:95%;
+    max-width:1400px;
+    margin:auto;
+    padding:20px 0;
+}
+
+.hero{
+    position:relative;
+    height:350px;
+    overflow:hidden;
+    border-radius:20px;
+    margin-bottom:25px;
+}
+
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.4);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay h1{
+    color:#fff;
+    font-size:5rem;
+}
+
+.overlay p{
+    color:white;
+    font-size:1.6rem;
+    margin-top:10px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+}
+
+.card h2{
+    color:#e60000;
+    margin-bottom:20px;
+    border-bottom:3px solid #ffb0b0;
+    display:inline-block;
+}
+
+.card p{
+    line-height:2;
+    color:#444;
+}
+
+.card ul,
+.card ol{
+    padding-left:20px;
+}
+
+.card li{
+    line-height:1.9;
+    margin:8px 0;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.flex{
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+
+.flex img{
+    width:40%;
+    border-radius:15px;
+}
+
+.flex-content{
+    flex:1;
+}
+
+.note{
+    margin-top:20px;
+    background:#e7f1ff;
+    padding:15px;
+    border-radius:15px;
+    color:#0b57d0;
+}
+
+.do-dont{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.do{
+    background:#effbf0;
+    border:2px solid #a8e1ad;
+}
+
+.dont{
+    background:#fff2f2;
+    border:2px solid #ffb3b3;
+}
+
+.prevent{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:20px;
+}
+
+.prevent div{
+    text-align:center;
+}
+
+
+
+.home-btn{
+    text-align:center;
+    margin:40px;
+}
+
+.home-btn a{
+    background:#e60000;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.home-btn a:hover{
+    background:#c70000;
+}
+
+.video-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.video-container iframe{
+    width:80%;
+    max-width:800px;
+    aspect-ratio:16/9;
+    height:auto;
+    border:none;
+    border-radius:15px;
+}
+
+@media(max-width:900px){
+
+.grid,
+.do-dont,
+.flex{
+    grid-template-columns:1fr;
+    flex-direction:column;
+}
+
+.flex img{
+    width:100%;
+}
+
+.prevent{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.overlay h1{
+    font-size:3rem;
+}
+
+
+
+}
+</style>
+</head>
+<body>
+<!-- HERO -->
+<div class="hero">
+
+<img src="nosebleed-hero.jpg">
+
+<div class="overlay">
+<h1>Nose Bleeds</h1>
+<p>Control the bleeding and keep the airway open</p>
+</div>
+
+</div>
+
+
+<!-- INTRODUCTION -->
+<div class="card flex">
+
+<div class="flex-content">
+
+<h2>Introduction</h2>
+
+<p>
+
+A nose bleed (epistaxis) occurs when small blood vessels inside one or both nostrils rupture and bleed. Most nose bleeds are minor and stop within a few minutes, but heavy bleeding can sometimes be serious.
+
+<br><br>
+
+Common causes include nose picking, blowing the nose too hard, sneezing, dry air, allergies, injury to the nose, infections, and high blood pressure. If bleeding follows a head injury and the blood appears watery, it may indicate a skull fracture and requires immediate emergency medical care.
+
+</p>
+
+</div>
+
+<img src="nosebleed-intro.jpg">
+
+</div>
+
+
+<!-- CAUSES -->
+<div class="card flex">
+
+<img src="nosebleed-causes.jpg">
+
+<div class="flex-content">
+
+<h2>Common Causes</h2>
+
+<ul>
+
+<li>Blow or injury to the nose.</li>
+
+<li>Picking the nose.</li>
+
+<li>Frequent sneezing or forceful nose blowing.</li>
+
+<li>Dry or cold air.</li>
+
+<li>Allergies and sinus infections.</li>
+
+<li>High blood pressure.</li>
+
+<li>Certain medications that affect blood clotting.</li>
+
+<li>Foreign objects inside the nose.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- SIGNS -->
+<div class="grid">
+
+<div class="card">
+
+<h2>Signs and Symptoms</h2>
+
+<ul>
+
+<li>Blood flowing from one or both nostrils.</li>
+
+<li>Taste of blood in the mouth.</li>
+
+<li>Blood dripping into the throat.</li>
+
+<li>Dizziness or weakness after heavy bleeding.</li>
+
+<li>Difficulty breathing if blood blocks the airway.</li>
+
+<li>Blood clots from the nose.</li>
+
+<li>Paleness in severe blood loss.</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Danger Signs</h2>
+
+<ul>
+
+<li>Bleeding lasting longer than 30 minutes.</li>
+
+<li>Heavy blood loss.</li>
+
+<li>Difficulty breathing.</li>
+
+<li>Blood after a head injury.</li>
+
+<li>Thin, watery blood after trauma.</li>
+
+<li>Repeated nose bleeds.</li>
+
+<li>Signs of shock or loss of consciousness.</li>
+
+</ul>
+
+<div class="note">
+
+<b>Emergency:</b> Seek urgent medical help if bleeding is severe, follows a head injury, or does not stop after 30 minutes.
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- FIRST AID -->
+<div class="card flex">
+
+<img src="pinch-nose.jpg">
+
+<div class="flex-content">
+
+<h2>Immediate First Aid Steps</h2>
+
+<ol>
+
+<li>Help the casualty sit upright.</li>
+
+<li>Lean them slightly forward, not backward.</li>
+
+<li>Ask them to breathe through their mouth.</li>
+
+<li>Pinch the soft part of the nose firmly.</li>
+
+<li>Maintain pressure for 10 minutes.</li>
+
+<li>Release briefly and repeat if necessary.</li>
+
+<li>Apply a cold compress to the bridge of the nose if available.</li>
+
+<li>Keep them calm and discourage talking or swallowing.</li>
+
+<li>Call emergency services if bleeding is severe or lasts more than 30 minutes.</li>
+
+</ol>
+
+</div>
+
+</div>
+
+
+<!-- DO'S AND DON'TS -->
+<div class="card">
+
+<h2 style="text-align:center">Nose Bleed First Aid DOs and DON'Ts</h2>
+
+<div class="do-dont">
+
+<div class="card do">
+
+<h2>✔ DOs</h2>
+
+<ul>
+
+<li>Sit upright and lean forward.</li>
+
+<li>Pinch the soft part of the nose.</li>
+
+<li>Breathe through the mouth.</li>
+
+<li>Stay calm and relaxed.</li>
+
+<li>Use a cold compress if available.</li>
+
+<li>Seek medical help if bleeding persists.</li>
+
+</ul>
+
+</div>
+
+<div class="card dont">
+
+<h2>✖ DON'Ts</h2>
+
+<ul>
+
+<li>Do not lean backward.</li>
+
+<li>Do not lie down.</li>
+
+<li>Do not tilt the head back.</li>
+
+<li>Do not pick or blow the nose.</li>
+
+<li>Do not swallow blood.</li>
+
+<li>Do not insert tissues deeply into the nostrils.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- COMPLICATIONS -->
+<div class="card flex">
+
+<img src="nosebleed-complications.jpg">
+
+<div class="flex-content">
+
+<h2>Possible Complications</h2>
+
+<p>
+
+Although most nose bleeds are harmless, severe or prolonged bleeding can lead to significant blood loss, weakness, dizziness, and shock. Blood flowing into the throat may also cause choking or vomiting.
+
+<br><br>
+
+Nose bleeds following head injuries are particularly serious because they may indicate a fracture of the skull. Recurrent nose bleeds should be assessed by a healthcare professional.
+
+</p>
+
+</div>
+
+</div>
+
+
+<!-- PREVENTION -->
+<div class="card">
+
+<h2 style="text-align:center">Prevention and Safety Tips</h2>
+
+<div class="prevent">
+
+<div>
+<span style="font-size:70px;">💧</span>
+<p>Keep nasal passages moist.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">🤧</span>
+<p>Blow your nose gently.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">🚫</span>
+<p>Avoid picking the nose.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">🌬️</span>
+<p>Use a humidifier in dry weather.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">🩺</span>
+<p>Control high blood pressure.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">🥽</span>
+<p>Wear protection during sports.</p>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- WHY QUICK ACTION MATTERS -->
+<div class="card">
+
+<h2>Why Early Treatment Matters</h2>
+
+<p>
+
+Simple first aid measures can stop most nose bleeds within a few minutes and prevent unnecessary blood loss. Sitting upright and leaning forward helps keep the airway clear and prevents blood from being swallowed.
+
+<br><br>
+
+Prompt medical attention is essential if bleeding becomes severe, lasts longer than 30 minutes, or occurs after a head injury. Early treatment reduces the risk of complications and ensures a safe recovery.
+
+</p>
+
+</div>
+
+
+<!-- VIDEO -->
+<div class="card">
+
+<div class="video-container">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PmmhxW0vVXA?si=E_gfSqtYUHTvsdyv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</div>
+
+</div>
+
+
+<!-- HOME BUTTON -->
+<div class="home-btn">
+
+<a href="/learnPage/learn.html">
+← Back to Home
+</a>
+
+</div>
+</body>
+</html>

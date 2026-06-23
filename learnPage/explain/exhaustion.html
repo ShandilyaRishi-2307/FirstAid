@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drownings - First Aid</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f3f3f3;
+    color:#222;
+}
+
+.container{
+    width:95%;
+    max-width:1400px;
+    margin:auto;
+    padding:20px 0;
+}
+
+/* HERO */
+.hero{
+    position:relative;
+    height:350px;
+    overflow:hidden;
+    border-radius:20px;
+    margin-bottom:25px;
+}
+
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.4);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay h1{
+    color:#fff;
+    font-size:5rem;
+}
+
+.overlay p{
+    color:white;
+    font-size:1.6rem;
+    margin-top:10px;
+}
+
+/* CARDS */
+.card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+}
+
+.card h2{
+    color:#e60000;
+    margin-bottom:20px;
+    border-bottom:3px solid #ffb0b0;
+    display:inline-block;
+}
+
+.card p{
+    line-height:2;
+    color:#444;
+}
+
+.card ul{
+    padding-left:20px;
+}
+
+.card li{
+    line-height:1.9;
+    margin:8px 0;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.flex{
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+
+.flex img{
+    width:40%;
+    border-radius:15px;
+}
+
+.flex-content{
+    flex:1;
+}
+
+.note{
+    margin-top:20px;
+    background:#e7f1ff;
+    padding:15px;
+    border-radius:15px;
+    color:#0b57d0;
+}
+
+/* DO DON'T */
+.do-dont{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.do{
+    background:#effbf0;
+    border:2px solid #a8e1ad;
+}
+
+.dont{
+    background:#fff2f2;
+    border:2px solid #ffb3b3;
+}
+
+/* PREVENTION */
+.prevent{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:20px;
+}
+
+.prevent div{
+    text-align:center;
+}
+
+.prevent img{
+    width:90px;
+    margin-bottom:10px;
+}
+
+.home-btn{
+    text-align:center;
+    margin:40px;
+}
+
+.home-btn a{
+    background:#e60000;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.home-btn a:hover{
+    background:#c70000;
+}
+
+
+
+.video-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.video-container iframe{
+    width:80%;
+    max-width:800px;
+    aspect-ratio:16/9;
+    height:auto;
+    border:none;
+    border-radius:15px;
+}
+@media(max-width:900px){
+
+.grid,
+.do-dont,
+.flex{
+    grid-template-columns:1fr;
+    flex-direction:column;
+}
+
+.flex img{
+    width:100%;
+}
+
+.prevent{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.overlay h1{
+    font-size:3rem;
+}
+
+}
+</style>
+</head>
+<body>
+<!-- HERO -->
+<div class="hero">
+
+<img src="heat-exhaustion-hero.jpg">
+
+<div class="overlay">
+<h1>Heat Exhaustion</h1>
+<p>Cool the body, replace fluids, and prevent heatstroke</p>
+</div>
+
+</div>
+
+
+<!-- INTRODUCTION -->
+<div class="card flex">
+
+<div class="flex-content">
+
+<h2>Introduction</h2>
+
+<p>
+
+Heat exhaustion occurs when the body loses excessive amounts of water and salts through sweating, causing dehydration and an inability to cool itself efficiently. It develops gradually and is common during hot and humid weather, particularly in people who are not accustomed to high temperatures.
+
+<br><br>
+
+Illnesses such as vomiting and diarrhoea, strenuous exercise, or certain recreational drugs like ecstasy may also increase the risk. If heat exhaustion is not treated quickly, it can progress to heatstroke, a life-threatening condition that requires emergency treatment.
+
+</p>
+
+</div>
+
+<img src="heat-intro.jpg">
+
+</div>
+
+
+<!-- CAUSES -->
+<div class="card flex">
+
+<img src="heat-causes.jpg">
+
+<div class="flex-content">
+
+<h2>Common Causes</h2>
+
+<ul>
+
+<li>Excessive sweating in hot weather.</li>
+
+<li>Strenuous physical activity.</li>
+
+<li>Dehydration from vomiting or diarrhoea.</li>
+
+<li>Not drinking enough fluids.</li>
+
+<li>Hot and humid environments.</li>
+
+<li>Alcohol consumption.</li>
+
+<li>Use of certain drugs that affect temperature regulation.</li>
+
+<li>Wearing heavy or tight clothing.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- SIGNS -->
+<div class="grid">
+
+<div class="card">
+
+<h2>Signs and Symptoms</h2>
+
+<ul>
+
+<li>Headache.</li>
+
+<li>Dizziness and confusion.</li>
+
+<li>Loss of appetite and nausea.</li>
+
+<li>Excessive sweating.</li>
+
+<li>Pale, cool, clammy skin.</li>
+
+<li>Muscle cramps in the arms, legs and abdomen.</li>
+
+<li>Fast but weak pulse.</li>
+
+<li>Shallow breathing.</li>
+
+<li>Weakness and fatigue.</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Warning Signs of Deterioration</h2>
+
+<ul>
+
+<li>Increasing confusion.</li>
+
+<li>Difficulty walking or standing.</li>
+
+<li>Vomiting repeatedly.</li>
+
+<li>Reduced responsiveness.</li>
+
+<li>Very rapid pulse.</li>
+
+<li>Difficulty breathing.</li>
+
+<li>Symptoms not improving after cooling.</li>
+
+</ul>
+
+<div class="note">
+
+<b>Important:</b> Heat exhaustion can progress to heatstroke. Seek medical help if symptoms worsen or do not improve.
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- FIRST AID -->
+<div class="card flex">
+
+<img src="cooling-person.jpg">
+
+<div class="flex-content">
+
+<h2>Immediate First Aid Steps</h2>
+
+<ol>
+
+<li>Move the casualty to a cool and shaded place.</li>
+
+<li>Help them lie down and raise their legs slightly.</li>
+
+<li>Loosen or remove excess clothing.</li>
+
+<li>Encourage them to drink plenty of cool water.</li>
+
+<li>Offer sports drinks or oral rehydration solutions to replace lost salts.</li>
+
+<li>Cool the body with damp towels or by fanning.</li>
+
+<li>Monitor breathing, pulse and level of response.</li>
+
+<li>Advise them to see a doctor even if they recover quickly.</li>
+
+<li>If they become worse or unresponsive, place them in the recovery position and call emergency services.</li>
+
+</ol>
+
+</div>
+
+</div>
+
+
+<!-- DO'S AND DON'TS -->
+<div class="card">
+
+<h2 style="text-align:center">Heat Exhaustion DOs and DON'Ts</h2>
+
+<div class="do-dont">
+
+<div class="card do">
+
+<h2>✔ DOs</h2>
+
+<ul>
+
+<li>Move the person to a cool place.</li>
+
+<li>Encourage drinking water slowly.</li>
+
+<li>Use cool wet cloths or fans.</li>
+
+<li>Allow the person to rest.</li>
+
+<li>Monitor their condition.</li>
+
+<li>Seek medical advice if needed.</li>
+
+</ul>
+
+</div>
+
+<div class="card dont">
+
+<h2>✖ DON'Ts</h2>
+
+<ul>
+
+<li>Do not leave the person alone.</li>
+
+<li>Do not give alcohol.</li>
+
+<li>Do not force fluids if unconscious.</li>
+
+<li>Do not ignore worsening symptoms.</li>
+
+<li>Do not let them continue exercising.</li>
+
+<li>Do not expose them to direct sunlight.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- COMPLICATIONS -->
+<div class="card flex">
+
+<img src="heat-complications.jpg">
+
+<div class="flex-content">
+
+<h2>Possible Complications</h2>
+
+<p>
+
+Without treatment, heat exhaustion may progress to heatstroke, which can damage the brain, kidneys, heart and other vital organs. Severe dehydration can also lead to low blood pressure, fainting, shock and collapse.
+
+<br><br>
+
+Prompt cooling and fluid replacement usually allow a full recovery, but delayed treatment increases the risk of serious complications.
+
+</p>
+
+</div>
+
+</div>
+
+
+<!-- PEOPLE AT RISK -->
+<div class="card">
+
+<h2>Who Is More At Risk?</h2>
+
+<ul>
+
+<li>Older adults.</li>
+
+<li>Infants and young children.</li>
+
+<li>Athletes and outdoor workers.</li>
+
+<li>People with fever, vomiting or diarrhoea.</li>
+
+<li>Individuals with heart disease or diabetes.</li>
+
+<li>People taking medications that affect sweating.</li>
+
+<li>Those not accustomed to hot climates.</li>
+
+</ul>
+
+</div>
+
+
+<!-- PREVENTION -->
+<div class="card">
+
+<h2 style="text-align:center">Prevention and Safety Tips</h2>
+
+<div class="prevent">
+
+<div>
+<span style="font-size:70px;">💧</span>
+<p>Drink plenty of water.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">☀️</span>
+<p>Avoid excessive heat.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">🧢</span>
+<p>Wear light clothing.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">🌳</span>
+<p>Rest in cool places.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">🥤</span>
+<p>Replace salts and fluids.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">🏃</span>
+<p>Avoid overexertion.</p>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- HEAT EXHAUSTION VS HEATSTROKE -->
+<div class="card">
+
+<h2>Heat Exhaustion vs Heatstroke</h2>
+
+<p>
+
+Heat exhaustion usually causes heavy sweating, pale clammy skin and weakness, while heatstroke is much more severe and is characterized by very high body temperature, hot dry skin, confusion and loss of consciousness.
+
+<br><br>
+
+Heatstroke is a medical emergency. Recognizing and treating heat exhaustion early can prevent this dangerous progression and save lives.
+
+</p>
+
+</div>
+
+
+<!-- WHY QUICK ACTION MATTERS -->
+<div class="card">
+
+<h2>Why Early Treatment Matters</h2>
+
+<p>
+
+Most people recover quickly from heat exhaustion when cooled down and given fluids. Early treatment prevents dehydration from worsening and reduces the risk of heatstroke.
+
+<br><br>
+
+Ignoring symptoms or continuing physical activity in hot conditions can rapidly lead to collapse and serious complications. Prompt first aid greatly improves recovery and safety.
+
+</p>
+
+</div>
+
+
+<!-- VIDEO -->
+<div class="card">
+
+<div class="video-container">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/R6VdoV8dZRc?si=z7tfo5xIScqxlv_F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</div>
+
+</div>
+
+
+<!-- HOME BUTTON -->
+<div class="home-btn">
+
+<a href="/learnPage/learn.html">
+← Back to Home
+</a>
+
+</div>
+</body>
+</html>

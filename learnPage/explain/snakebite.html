@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diabetic Emergency - First Aid</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f3f3f3;
+    color:#222;
+}
+
+.container{
+    width:95%;
+    max-width:1400px;
+    margin:auto;
+    padding:20px 0;
+}
+
+.hero{
+    position:relative;
+    height:350px;
+    overflow:hidden;
+    border-radius:20px;
+    margin-bottom:25px;
+}
+
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.4);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay h1{
+    color:#fff;
+    font-size:5rem;
+}
+
+.overlay p{
+    color:white;
+    font-size:1.6rem;
+    margin-top:10px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+}
+
+.card h2{
+    color:#e60000;
+    margin-bottom:20px;
+    border-bottom:3px solid #ffb0b0;
+    display:inline-block;
+}
+
+.card p{
+    line-height:2;
+    color:#444;
+}
+
+.card ul,
+.card ol{
+    padding-left:20px;
+}
+
+.card li{
+    line-height:1.9;
+    margin:8px 0;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.flex{
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+
+.flex img{
+    width:40%;
+    border-radius:15px;
+}
+
+.flex-content{
+    flex:1;
+}
+
+.note{
+    margin-top:20px;
+    background:#e7f1ff;
+    padding:15px;
+    border-radius:15px;
+    color:#0b57d0;
+}
+
+.do-dont{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.do{
+    background:#effbf0;
+    border:2px solid #a8e1ad;
+}
+
+.dont{
+    background:#fff2f2;
+    border:2px solid #ffb3b3;
+}
+
+.prevent{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:20px;
+}
+
+.prevent div{
+    text-align:center;
+}
+
+
+
+.home-btn{
+    text-align:center;
+    margin:40px;
+}
+
+.home-btn a{
+    background:#e60000;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.home-btn a:hover{
+    background:#c70000;
+}
+
+.video-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.video-container iframe{
+    width:80%;
+    max-width:800px;
+    aspect-ratio:16/9;
+    height:auto;
+    border:none;
+    border-radius:15px;
+}
+
+@media(max-width:900px){
+
+.grid,
+.do-dont,
+.flex{
+    grid-template-columns:1fr;
+    flex-direction:column;
+}
+
+.flex img{
+    width:100%;
+}
+
+.prevent{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.overlay h1{
+    font-size:3rem;
+}
+
+
+
+}
+</style>
+</head>
+
+
+<body>
+<!-- HERO -->
+<div class="hero">
+
+<img src="snakebite-hero.jpg">
+
+<div class="overlay">
+<h1>Snakebites</h1>
+<p>Stay calm, limit movement and seek emergency medical care immediately</p>
+
+</div>
+
+</div>
+
+
+<!-- INTRODUCTION -->
+<div class="card flex">
+
+<div class="flex-content">
+
+<h2>Introduction</h2>
+
+<p>
+
+Most snakes are harmless to humans, but some species possess venom that can cause serious illness or death. Venomous snakes inject toxins that may damage tissues, affect blood clotting, or interfere with the nervous system. Quick medical treatment greatly improves recovery and reduces complications.
+
+<br><br>
+
+Even if you are unsure whether the snake was venomous, every snakebite should be treated seriously. Stay calm, avoid unnecessary movement, and seek emergency medical attention as soon as possible. Many hospitals carry antivenom, which can neutralize venom and prevent life-threatening complications.
+
+</p>
+
+</div>
+
+<img src="snakebite-intro.jpg">
+
+</div>
+
+
+<!-- COMMON CAUSES -->
+<div class="card flex">
+
+<img src="snakebite-causes.jpg">
+
+<div class="flex-content">
+
+<h2>Common Causes</h2>
+
+<ul>
+
+<li>Walking through tall grass or bushes.</li>
+
+<li>Accidentally stepping on a snake.</li>
+
+<li>Attempting to catch or kill snakes.</li>
+
+<li>Working outdoors without protective footwear.</li>
+
+<li>Camping and hiking in snake habitats.</li>
+
+<li>Reaching into dark holes or rock crevices.</li>
+
+<li>Handling unknown reptiles.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- SIGNS -->
+<div class="grid">
+
+<div class="card">
+
+<h2>Signs and Symptoms</h2>
+
+<ul>
+
+<li>Puncture marks or fang marks.</li>
+
+<li>Pain around the bite area.</li>
+
+<li>Rapid swelling and redness.</li>
+
+<li>Bruising or discoloration.</li>
+
+<li>Nausea and vomiting.</li>
+
+<li>Sweating and weakness.</li>
+
+<li>Tingling or numbness.</li>
+
+<li>Difficulty breathing in severe cases.</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Danger Signs</h2>
+
+<ul>
+
+<li>Severe swelling spreading rapidly.</li>
+
+<li>Difficulty breathing or swallowing.</li>
+
+<li>Blurred vision.</li>
+
+<li>Bleeding from the gums or wound.</li>
+
+<li>Loss of consciousness.</li>
+
+<li>Shock or collapse.</li>
+
+<li>Paralysis or muscle weakness.</li>
+
+</ul>
+
+<div class="note">
+
+<b>Emergency:</b> Suspected venomous snakebites require immediate medical treatment. Call emergency services right away.
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- FIRST AID -->
+<div class="card flex">
+
+<img src="snakebite-firstaid.jpg">
+
+<div class="flex-content">
+
+<h2>Immediate First Aid Steps</h2>
+
+<ol>
+
+<li>Move away from the snake to avoid another bite.</li>
+
+<li>Remain calm and reassure the casualty.</li>
+
+<li>Call emergency services immediately.</li>
+
+<li>Remove rings, bracelets, watches, and tight clothing.</li>
+
+<li>Keep the affected limb still and below heart level if possible.</li>
+
+<li>Clean the wound gently and cover it with a clean dry dressing.</li>
+
+<li>Keep movement to a minimum to slow venom spread.</li>
+
+<li>Monitor breathing and consciousness.</li>
+
+<li>Be prepared to provide CPR if breathing stops.</li>
+
+<li>Try to remember the snake's color and shape without approaching it.</li>
+
+<li>Transport the casualty to hospital as quickly as possible.</li>
+
+</ol>
+
+</div>
+
+</div>
+
+
+<!-- DO'S AND DON'TS -->
+<div class="card">
+
+<h2 style="text-align:center">Snakebite First Aid DOs and DON'Ts</h2>
+
+<div class="do-dont">
+
+<div class="card do">
+
+<h2>✔ DOs</h2>
+
+<ul>
+
+<li>Stay calm and reassure the person.</li>
+
+<li>Call emergency services immediately.</li>
+
+<li>Keep the bitten area still.</li>
+
+<li>Remove jewelry before swelling develops.</li>
+
+<li>Cover the wound with a clean dressing.</li>
+
+<li>Observe the snake from a safe distance if possible.</li>
+
+</ul>
+
+</div>
+
+<div class="card dont">
+
+<h2>✖ DON'Ts</h2>
+
+<ul>
+
+<li>Do not apply a tourniquet.</li>
+
+<li>Do not cut the wound.</li>
+
+<li>Do not attempt to suck out venom.</li>
+
+<li>Do not apply ice.</li>
+
+<li>Do not drink alcohol or caffeine.</li>
+
+<li>Do not attempt to catch the snake.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- COMPLICATIONS -->
+<div class="card flex">
+
+<img src="snakebite-complications.jpg">
+
+<div class="flex-content">
+
+<h2>Possible Complications</h2>
+
+<p>
+
+Venomous snakebites can lead to tissue destruction, severe bleeding, kidney failure, breathing difficulties, shock, paralysis, and death. Infection and permanent scarring may also occur. Delayed treatment increases the risk of serious complications.
+
+<br><br>
+
+Prompt administration of antivenom and supportive medical care significantly improve survival and recovery.
+
+</p>
+
+</div>
+
+</div>
+
+
+<!-- TYPES OF VENOMOUS SNAKES -->
+<div class="card">
+
+<h2>Venomous Snakes in North America</h2>
+
+<ul>
+
+<li><b>Rattlesnakes:</b> Recognized by the rattle at the end of their tails.</li>
+
+<li><b>Copperheads:</b> Pit vipers with triangular heads and slit-like pupils.</li>
+
+<li><b>Water Moccasins (Cottonmouths):</b> Have a white cotton-like lining inside their mouths.</li>
+
+<li><b>Coral Snakes:</b> Characterized by red, yellow, and black bands around the body.</li>
+
+<li>Most pit vipers have triangular heads and heat-sensing pits between the eye and nostril.</li>
+
+</ul>
+
+</div>
+
+
+<!-- PREVENTION -->
+<div class="card">
+
+<h2 style="text-align:center">Prevention and Safety Tips</h2>
+
+<div class="prevent">
+
+<div>
+<span style="font-size:70px;">🥾</span>
+<p>Wear boots outdoors.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">🚶</span>
+<p>Stay on clear paths.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">🌿</span>
+<p>Avoid tall grass.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">🔦</span>
+<p>Use a flashlight at night.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">✋</span>
+<p>Never handle wild snakes.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">🏕️</span>
+<p>Inspect campsites carefully.</p>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- WHY QUICK ACTION MATTERS -->
+<div class="card">
+
+<h2>Why Early Treatment Matters</h2>
+
+<p>
+
+Venom spreads through the bloodstream and lymphatic system. Early medical treatment and antivenom therapy can prevent severe damage to tissues and organs. Delays increase the risk of respiratory failure, shock, and permanent disability.
+
+<br><br>
+
+Keeping the casualty calm and limiting movement slows venom absorption and improves the effectiveness of treatment. Immediate hospital care provides the best chance of a full recovery.
+
+</p>
+
+</div>
+
+
+<!-- VIDEO -->
+<div class="card">
+
+<div class="video-container">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nH8o-bgwo_g?si=yz5JhLz6v0e8KOoD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</div>
+
+</div>
+
+
+<!-- HOME BUTTON -->
+<div class="home-btn">
+
+<a href="/learnPage/learn.html">
+
+← Back to Home
+
+</a>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diabetic Emergency - First Aid</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f3f3f3;
+    color:#222;
+}
+
+.container{
+    width:95%;
+    max-width:1400px;
+    margin:auto;
+    padding:20px 0;
+}
+
+.hero{
+    position:relative;
+    height:350px;
+    overflow:hidden;
+    border-radius:20px;
+    margin-bottom:25px;
+}
+
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.4);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay h1{
+    color:#fff;
+    font-size:5rem;
+}
+
+.overlay p{
+    color:white;
+    font-size:1.6rem;
+    margin-top:10px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+}
+
+.card h2{
+    color:#e60000;
+    margin-bottom:20px;
+    border-bottom:3px solid #ffb0b0;
+    display:inline-block;
+}
+
+.card p{
+    line-height:2;
+    color:#444;
+}
+
+.card ul,
+.card ol{
+    padding-left:20px;
+}
+
+.card li{
+    line-height:1.9;
+    margin:8px 0;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.flex{
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+
+.flex img{
+    width:40%;
+    border-radius:15px;
+}
+
+.flex-content{
+    flex:1;
+}
+
+.note{
+    margin-top:20px;
+    background:#e7f1ff;
+    padding:15px;
+    border-radius:15px;
+    color:#0b57d0;
+}
+
+.do-dont{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.do{
+    background:#effbf0;
+    border:2px solid #a8e1ad;
+}
+
+.dont{
+    background:#fff2f2;
+    border:2px solid #ffb3b3;
+}
+
+.prevent{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:20px;
+}
+
+.prevent div{
+    text-align:center;
+}
+
+
+
+.home-btn{
+    text-align:center;
+    margin:40px;
+}
+
+.home-btn a{
+    background:#e60000;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.home-btn a:hover{
+    background:#c70000;
+}
+
+.video-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.video-container iframe{
+    width:80%;
+    max-width:800px;
+    aspect-ratio:16/9;
+    height:auto;
+    border:none;
+    border-radius:15px;
+}
+
+@media(max-width:900px){
+
+.grid,
+.do-dont,
+.flex{
+    grid-template-columns:1fr;
+    flex-direction:column;
+}
+
+.flex img{
+    width:100%;
+}
+
+.prevent{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.overlay h1{
+    font-size:3rem;
+}
+
+
+
+}
+</style>
+</head>
+
+
+<!-- HERO -->
+<div class="hero">
+
+<img src="bruise-hero.jpg">
+
+<div class="overlay">
+<h1>Bumps and Bruises</h1>
+<p>Reduce pain and swelling with quick first aid</p>
+</div>
+
+</div>
+
+
+<!-- INTRODUCTION -->
+<div class="card flex">
+
+<div class="flex-content">
+
+<h2>Introduction</h2>
+
+<p>
+
+Bumps and bruises are common minor injuries caused by a blow or impact to the body. A bump is a swelling caused by fluid collecting beneath the skin, while a bruise occurs when tiny blood vessels break and leak blood into surrounding tissues.
+
+<br><br>
+
+Bruises may not appear immediately after the injury. They often start red or purple and gradually change to blue, green, and yellow as they heal. Most bruises heal naturally within a few days or weeks, but severe bruising or swelling may indicate a deeper injury that requires medical attention.
+
+</p>
+
+</div>
+
+<img src="bruise-intro.jpg">
+
+</div>
+
+
+<!-- COMMON CAUSES -->
+<div class="card flex">
+
+<img src="bruise-causes.jpg">
+
+<div class="flex-content">
+
+<h2>Common Causes</h2>
+
+<ul>
+
+<li>Falls and slips.</li>
+
+<li>Sports injuries.</li>
+
+<li>Bumping into hard objects.</li>
+
+<li>Road accidents.</li>
+
+<li>Direct blows during physical activities.</li>
+
+<li>Minor injuries at home or work.</li>
+
+<li>Fragile blood vessels in elderly people.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- SIGNS -->
+<div class="grid">
+
+<div class="card">
+
+<h2>Signs and Symptoms</h2>
+
+<ul>
+
+<li>Pain or tenderness around the injury.</li>
+
+<li>Swelling or a raised bump.</li>
+
+<li>Red, blue, or purple discoloration.</li>
+
+<li>Warmth around the injured area.</li>
+
+<li>Difficulty moving the affected part.</li>
+
+<li>Soreness when touched.</li>
+
+<li>Skin color changing to green or yellow during healing.</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>When to Seek Medical Help</h2>
+
+<ul>
+
+<li>Very severe pain.</li>
+
+<li>Large swelling or deformity.</li>
+
+<li>Inability to move the limb.</li>
+
+<li>Bruising without any obvious injury.</li>
+
+<li>Signs of fracture.</li>
+
+<li>Bruising around the eyes after a head injury.</li>
+
+<li>Persistent pain or swelling.</li>
+
+</ul>
+
+<div class="note">
+
+<b>Medical Advice:</b> Seek professional help if pain or swelling becomes severe or symptoms worsen.
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- FIRST AID -->
+<div class="card flex">
+
+<img src="ice-pack.jpg">
+
+<div class="flex-content">
+
+<h2>Immediate First Aid Steps</h2>
+
+<ol>
+
+<li>Help the person sit or lie comfortably.</li>
+
+<li>Apply a cold compress or ice wrapped in a cloth.</li>
+
+<li>Keep the ice pack on for about 10 minutes.</li>
+
+<li>Repeat every few hours if needed.</li>
+
+<li>Raise the injured area above heart level if possible.</li>
+
+<li>Encourage rest and avoid strenuous activity.</li>
+
+<li>Monitor for increasing pain or swelling.</li>
+
+<li>Seek medical attention if symptoms worsen.</li>
+
+</ol>
+
+</div>
+
+</div>
+
+
+<!-- DO'S AND DON'TS -->
+<div class="card">
+
+<h2 style="text-align:center">Bumps and Bruises First Aid DOs and DON'Ts</h2>
+
+<div class="do-dont">
+
+<div class="card do">
+
+<h2>✔ DOs</h2>
+
+<ul>
+
+<li>Apply a cold pack immediately.</li>
+
+<li>Rest the injured area.</li>
+
+<li>Elevate the affected part.</li>
+
+<li>Observe for worsening symptoms.</li>
+
+<li>Use a clean cloth around ice packs.</li>
+
+<li>Seek medical advice for severe injuries.</li>
+
+</ul>
+
+</div>
+
+<div class="card dont">
+
+<h2>✖ DON'Ts</h2>
+
+<ul>
+
+<li>Do not apply ice directly to the skin.</li>
+
+<li>Do not massage the bruise.</li>
+
+<li>Do not continue strenuous activity.</li>
+
+<li>Do not ignore severe swelling.</li>
+
+<li>Do not apply heat during the first 24 hours.</li>
+
+<li>Do not leave persistent symptoms untreated.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- POSSIBLE COMPLICATIONS -->
+<div class="card flex">
+
+<img src="bruise-complications.jpg">
+
+<div class="flex-content">
+
+<h2>Possible Complications</h2>
+
+<p>
+
+Although most bumps and bruises heal without problems, severe injuries may involve muscle damage, fractures, or internal bleeding. Large bruises can become painful and restrict movement.
+
+<br><br>
+
+If bruising appears without injury or continues to spread, it may indicate an underlying medical condition and should be assessed by a healthcare professional.
+
+</p>
+
+</div>
+
+</div>
+
+
+<!-- PREVENTION -->
+<div class="card">
+
+<h2 style="text-align:center">Prevention and Safety Tips</h2>
+
+<div class="prevent">
+
+<div>
+<span style="font-size:70px;">🥽</span>
+<p>Wear protective gear.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">🚶</span>
+<p>Walk carefully.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">🏃</span>
+<p>Warm up before exercise.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">🧹</span>
+<p>Keep floors clutter-free.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">👟</span>
+<p>Wear suitable footwear.</p>
+</div>
+
+<div>
+<span style="font-size:70px;">⚽</span>
+<p>Use proper sports equipment.</p>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- WHY QUICK ACTION MATTERS -->
+<div class="card">
+
+<h2>Why Early Treatment Matters</h2>
+
+<p>
+
+Applying cold treatment soon after an injury helps reduce pain, swelling, and bleeding beneath the skin. Elevating the affected area also limits blood flow and minimizes bruising.
+
+<br><br>
+
+Recognizing severe symptoms early can prevent complications such as fractures, internal bleeding, or long-term damage, ensuring a faster and safer recovery.
+
+</p>
+
+</div>
+
+
+<!-- VIDEO -->
+<div class="card">
+
+<div class="video-container">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DQA1-6ciOY8?si=44aZEerCLgm0hJ2r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</div>
+
+</div>
+
+
+<!-- HOME BUTTON -->
+<div class="home-btn">
+
+<a href="/learnPage/learn.html">
+← Back to Home
+</a>
+
+</div>
