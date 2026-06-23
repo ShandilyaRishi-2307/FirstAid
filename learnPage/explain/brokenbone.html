@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Broken Bones and Fractures - First Aid</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f3f3f3;
+    color: #222;
+}
+
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.hero {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.55);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.overlay h1 {
+    color: white;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.overlay p {
+    color: white;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.1);
+}
+
+.card h2 {
+    color: #d40000;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #ffb3b3;
+    display: inline-block;
+}
+
+.card p {
+    line-height: 2;
+    color: #444;
+}
+
+.card ul,
+.card ol {
+    padding-left: 20px;
+}
+
+.card li {
+    line-height: 1.9;
+    margin: 8px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.flex {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.flex img {
+    width: 40%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.flex-content {
+    flex: 1;
+}
+
+.note {
+    margin-top: 20px;
+    background: #eaf4ff;
+    padding: 15px;
+    border-radius: 15px;
+    color: #0b57d0;
+}
+
+.warning {
+    margin-top: 20px;
+    background: #fff2f2;
+    padding: 15px;
+    border-radius: 15px;
+    color: #d40000;
+}
+
+.do-dont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.do {
+    background: #effbf0;
+    border: 2px solid #9fe0a7;
+}
+
+.dont {
+    background: #fff2f2;
+    border: 2px solid #ffb5b5;
+}
+
+.prevent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.prevent div {
+    text-align: center;
+}
+
+.home-btn {
+    text-align: center;
+    margin: 40px;
+}
+
+.home-btn a {
+    background: #d40000;
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+}
+
+.video-container iframe {
+    width: 80%;
+    max-width: 800px;
+    aspect-ratio: 16/9;
+    border: none;
+    border-radius: 15px;
+}
+
+@media(max-width: 900px) {
+    .grid,
+    .do-dont,
+    .flex {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .flex img {
+        width: 100%;
+    }
+
+    .prevent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .overlay h1 {
+        font-size: 3rem;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="hero">
+    <img src="https://images.unsplash.com/photo-1583324113626-70df0f4deaab?q=80&w=2000&auto=format&fit=crop" alt="First aid and medical supplies">
+    <div class="overlay">
+        <h1>Broken Bones and Fractures</h1>
+        <p>Identify fractures, immobilize the injury, and wait for emergency help</p>
+    </div>
+</div>
+
+<div class="card flex">
+    <div class="flex-content">
+        <h2>Introduction</h2>
+        <p>
+            A break or crack in a bone is called a fracture. In most cases, the damage to the bone will be under the skin, which is called a <strong>closed fracture</strong>. However, sometimes bits of the bone can puncture through the skin to become an <strong>open fracture</strong>.
+            <br><br>
+            To break a fully grown bone, a huge amount of force is needed. But bones that are still growing (like in children) are supple and can split, crack, or bend quite easily, a bit like a twig.
+        </p>
+        <div class="warning">
+            <b>Important:</b> In both open and closed fractures, you will need to treat the casualty for shock. Even if you can't see any blood, the break might have caused severe internal bleeding.
+        </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1512678080530-7760d81faba6?q=80&w=800&auto=format&fit=crop" alt="X-ray of bones">
+</div>
+
+<div class="card">
+    <h2>What to Look For</h2>
+    <p>If you suspect someone has a broken bone or fracture, look out for these seven common signs:</p>
+    <div class="grid" style="margin-top: 15px;">
+        <ul>
+            <li><strong>Swelling:</strong> The area around the injury may puff up quickly.</li>
+            <li><strong>Difficulty moving:</strong> Inability to use the limb normally.</li>
+            <li><strong>Movement in an unnatural direction:</strong> Bending where there is no joint.</li>
+            <li><strong>Visible deformity:</strong> A limb that looks noticeably shorter, twisted, or bent.</li>
+        </ul>
+        <ul>
+            <li><strong>A grating noise or feeling:</strong> You or the casualty may feel the bone ends rubbing.</li>
+            <li><strong>Loss of strength:</strong> The limb cannot bear weight or exert force.</li>
+            <li><strong>Signs of shock:</strong> Pale, cold, clammy skin and a rapid, weak pulse.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="card flex">
+    <img src="https://images.unsplash.com/photo-1584308666744-24d5e4b7b2fb?q=80&w=800&auto=format&fit=crop" alt="First aid kit and bandages">
+    <div class="flex-content">
+        <h2>What You Need to Do</h2>
+        <ol>
+            <li><strong>Manage Open Wounds:</strong> If it is an open fracture, cover the wound with a sterile dressing and secure it with a bandage. Apply pressure <em>around</em> the wound to control any bleeding (do not press directly on the protruding bone).</li>
+            <li><strong>Immobilize:</strong> Support the injured body part to stop it from moving. This should ease any pain and prevent any further damage.</li>
+            <li><strong>Call for Help:</strong> Once you’ve done this, call <strong>999</strong> or <strong>112</strong> for emergency medical help.</li>
+            <li><strong>Do Not Move Them:</strong> While waiting for help to arrive, don’t move the casualty unless they are in immediate danger (e.g., from traffic or fire).</li>
+        </ol>
+    </div>
+</div>
+
+<div class="card">
+    <h2>Waiting for Medical Help to Arrive</h2>
+    <p>While you wait for emergency responders, take the following steps to keep the casualty safe and stable:</p>
+    <ul>
+        <li><strong>Protect the injured area:</strong> Use bandages to secure the broken limb to an uninjured part of the body to stop it from moving. For example, fractures on the arm can be secured to the chest with a sling, and a leg with a fracture can be tied to the uninjured leg.</li>
+        <li><strong>Monitor for shock:</strong> Keep checking the casualty for signs of shock. This does not mean emotional shock, but a physical, life-threatening condition often caused by losing blood. Keep them warm and calm.</li>
+        <li><strong>Check responsiveness:</strong> If they lose responsiveness at any point, open their airway, check their breathing, and prepare to treat someone who’s become unresponsive (including initiating CPR if they stop breathing).</li>
+    </ul>
+</div>
+
+<div class="card">
+    <h2 style="text-align:center">Fracture First Aid DOs and DON'Ts</h2>
+    <div class="do-dont">
+        <div class="card do">
+            <h2>✔ DOs</h2>
+            <ul>
+                <li>Keep the person as still as possible.</li>
+                <li>Support the limb using your hands, a sling, or by strapping it to the other leg.</li>
+                <li>Call 999 or 112 immediately.</li>
+                <li>Cover open wounds with a sterile dressing.</li>
+                <li>Watch for signs of clinical shock.</li>
+            </ul>
+        </div>
+        <div class="card dont">
+            <h2>✖ DON'Ts</h2>
+            <ul>
+                <li>Do not attempt to realign the bone or push a protruding bone back in.</li>
+                <li>Do not move the casualty unless their life is in immediate danger.</li>
+                <li>Do not give them anything to eat or drink (they may need surgery).</li>
+                <li>Do not press directly on the exposed bone when stopping bleeding.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="video-container">
+        <iframe width="560" height="415" src="https://www.youtube.com/embed/2v8vlXgGXwE?si=-zkLgGeXFiJsNr6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div class="home-btn">
+    <a href="/learnPage/learn.html">← Back to Home</a>
+</div>
+
+</div>
+
+</body>
+</html>

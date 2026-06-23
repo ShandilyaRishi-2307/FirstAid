@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Strains and Sprains - First Aid & RICE Method</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f3f3f3;
+    color: #222;
+}
+
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.hero {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.55);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.overlay h1 {
+    color: white;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.overlay p {
+    color: white;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.1);
+}
+
+.card h2 {
+    color: #d40000;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #ffb3b3;
+    display: inline-block;
+}
+
+.card p {
+    line-height: 2;
+    color: #444;
+}
+
+.card ul,
+.card ol {
+    padding-left: 20px;
+}
+
+.card li {
+    line-height: 1.9;
+    margin: 8px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.flex {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.flex img {
+    width: 40%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.flex-content {
+    flex: 1;
+}
+
+.note {
+    margin-top: 20px;
+    background: #eaf4ff;
+    padding: 15px;
+    border-radius: 15px;
+    color: #0b57d0;
+}
+
+.warning {
+    margin-top: 20px;
+    background: #fff2f2;
+    padding: 15px;
+    border-radius: 15px;
+    color: #d40000;
+}
+
+.do-dont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.do {
+    background: #effbf0;
+    border: 2px solid #9fe0a7;
+}
+
+.dont {
+    background: #fff2f2;
+    border: 2px solid #ffb5b5;
+}
+
+.prevent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.prevent div {
+    text-align: center;
+}
+
+.home-btn {
+    text-align: center;
+    margin: 40px;
+}
+
+.home-btn a {
+    background: #d40000;
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+}
+
+.video-container iframe {
+    width: 80%;
+    max-width: 800px;
+    aspect-ratio: 16/9;
+    border: none;
+    border-radius: 15px;
+}
+
+@media(max-width: 900px) {
+    .grid,
+    .do-dont,
+    .flex {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .flex img {
+        width: 100%;
+    }
+
+    .prevent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .overlay h1 {
+        font-size: 3rem;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="hero">
+    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=2000&auto=format&fit=crop" alt="Athlete holding ankle in pain">
+    <div class="overlay">
+        <h1>Strains and Sprains</h1>
+        <p>Master the R.I.C.E method for quick and effective recovery</p>
+    </div>
+</div>
+
+<div class="card flex">
+    <div class="flex-content">
+        <h2>Introduction</h2>
+        <p>
+            Strains and sprains are common injuries which affect the soft tissues around joints – the muscles, tendons, and ligaments. They happen when the tissues are stretched, twisted, or torn by violent or sudden movements, for instance, if someone changes direction suddenly, or falls and lands awkwardly.
+            <br><br>
+            <strong>What's the difference?</strong><br>
+            • A <strong>sprain</strong> is when a ligament has been twisted or torn.<br>
+            • A <strong>strain</strong> is when the muscle has been overstretched and has partially torn. (A rupture is when a muscle or tendon is completely torn).
+        </p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1581090122319-8fab9528eaaa?q=80&w=800&auto=format&fit=crop" alt="Physical therapy treatment">
+</div>
+
+<div class="card">
+    <h2>What to Look For</h2>
+    <p>If you think someone may have strained or sprained a muscle, ligament, or tendon, these are the three key things to look for:</p>
+    <ul>
+        <li><strong>Pain and tenderness:</strong> The affected area will hurt, especially when touched or moved.</li>
+        <li><strong>Difficulty moving:</strong> They may not be able to put weight on the limb or move the joint properly.</li>
+        <li><strong>Swelling and bruising:</strong> The area may puff up and discolor rapidly after the injury occurs.</li>
+    </ul>
+</div>
+
+<div class="card">
+    <h2 style="text-align:center; display:block; border-bottom:none;">Treatment: The R.I.C.E. Method</h2>
+    <p style="text-align:center; margin-bottom: 20px;">Remember RICE for the four steps to deal with strains and sprains.</p>
+    
+    <div class="grid">
+        <div class="card" style="box-shadow: none; border: 1px solid #eee;">
+            <h2 style="color: #0b57d0; border-bottom: 3px solid #b3d4ff;">1. Rest</h2>
+            <p>Help the casualty to sit or lie down and support the part they’ve hurt in a comfortable, raised position. Prevent them from putting any weight on the injured area.</p>
+        </div>
+
+        <div class="card" style="box-shadow: none; border: 1px solid #eee;">
+            <h2 style="color: #0b57d0; border-bottom: 3px solid #b3d4ff;">2. Ice</h2>
+            <p>To cool the area, apply a cold compress, like an ice pack or cold pad. This will help to reduce the swelling, bruising, and pain. <strong>Do not leave on for more than 10 minutes.</strong></p>
+        </div>
+
+        <div class="card" style="box-shadow: none; border: 1px solid #eee;">
+            <h2 style="color: #0b57d0; border-bottom: 3px solid #b3d4ff;">3. Comfortable Support</h2>
+            <p>Leave the cold compress in place or wrap a soft layer of padding, e.g., cotton wool, around the area. Tie a support bandage around it to hold it in place. It should go as far as the next joint on each side (e.g., from base of toes to knees for an ankle).</p>
+        </div>
+
+        <div class="card" style="box-shadow: none; border: 1px solid #eee;">
+            <h2 style="color: #0b57d0; border-bottom: 3px solid #b3d4ff;">4. Elevation</h2>
+            <p>Elevate the injury and support it with something soft, like cushions. This reduces blood flow to the area, limiting swelling.</p>
+        </div>
+    </div>
+    
+    <div class="warning">
+        <b>When to seek hospital care:</b> If the pain is severe, or they can’t use their limb at all, take or send them to the hospital. Otherwise, just tell them to rest it and to see a health care professional if necessary.
+    </div>
+</div>
+
+<div class="card">
+    <h2 style="text-align:center">Strains & Sprains DOs and DON'Ts</h2>
+    <div class="do-dont">
+        <div class="card do">
+            <h2>✔ DOs</h2>
+            <ul>
+                <li>Follow the R.I.C.E. method immediately.</li>
+                <li>Wrap ice in a towel to prevent ice burns.</li>
+                <li>Elevate the limb above the level of the heart if possible.</li>
+                <li>Use pillows or cushions for comfortable elevation.</li>
+                <li>Check circulation after bandaging (press a nail and see if color returns).</li>
+            </ul>
+        </div>
+        <div class="card dont">
+            <h2>✖ DON'Ts</h2>
+            <ul>
+                <li>Do not apply heat (like hot baths or heat packs) in the first 48 hours.</li>
+                <li>Do not apply ice directly to the bare skin.</li>
+                <li>Do not massage the injured area right away.</li>
+                <li>Do not wrap the support bandage too tightly (it will restrict blood flow).</li>
+                <li>Do not attempt to push through the pain.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="video-container">
+        <iframe width="560" height="415" src="https://www.youtube.com/embed/BZMD3cfyjVI?si=0qtC-mdZ0UwTkckI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div class="home-btn">
+    <a href="/learnPage/learn.html">← Back to Home</a>
+</div>
+
+</div>
+
+</body>
+</html>

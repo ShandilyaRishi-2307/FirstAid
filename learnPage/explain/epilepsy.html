@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animal Bites - First Aid & Management</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f3f3f3;
+    color: #222;
+}
+
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.hero {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.55);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.overlay h1 {
+    color: white;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.overlay p {
+    color: white;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.1);
+}
+
+.card h2 {
+    color: #d40000;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #ffb3b3;
+    display: inline-block;
+}
+
+.card p {
+    line-height: 2;
+    color: #444;
+}
+
+.card ul,
+.card ol {
+    padding-left: 20px;
+}
+
+.card li {
+    line-height: 1.9;
+    margin: 8px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.flex {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.flex img {
+    width: 40%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.flex-content {
+    flex: 1;
+}
+
+.note {
+    margin-top: 20px;
+    background: #eaf4ff;
+    padding: 15px;
+    border-radius: 15px;
+    color: #0b57d0;
+}
+
+.warning {
+    margin-top: 20px;
+    background: #fff2f2;
+    padding: 15px;
+    border-radius: 15px;
+    color: #d40000;
+}
+
+.do-dont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.do {
+    background: #effbf0;
+    border: 2px solid #9fe0a7;
+}
+
+.dont {
+    background: #fff2f2;
+    border: 2px solid #ffb5b5;
+}
+
+.prevent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.prevent div {
+    text-align: center;
+}
+
+.home-btn {
+    text-align: center;
+    margin: 40px;
+}
+
+.home-btn a {
+    background: #d40000;
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+}
+
+.video-container iframe {
+    width: 80%;
+    max-width: 800px;
+    aspect-ratio: 16/9;
+    border: none;
+    border-radius: 15px;
+}
+
+@media(max-width: 900px) {
+    .grid,
+    .do-dont,
+    .flex {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .flex img {
+        width: 100%;
+    }
+
+    .prevent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .overlay h1 {
+        font-size: 3rem;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<!-- HERO -->
+<div class="hero">
+    <img src="https://images.unsplash.com/photo-1527613426406-88094d2ab326?q=80&w=2000&auto=format&fit=crop" alt="Helping hands in support">
+    <div class="overlay">
+        <h1>Epilepsy & Seizures</h1>
+        <p>Know the essential steps to keep someone safe during and after a seizure</p>
+    </div>
+</div>
+
+<!-- INTRODUCTION -->
+<div class="card flex">
+    <div class="flex-content">
+        <h2>Introduction</h2>
+        <p>
+            Below is a basic guide about what to do in case of a seizure. Epilepsy is a neurological condition, and seizures can vary widely in how they present.
+            <br><br>
+            The most recognizable type is the <strong>convulsive seizure</strong>, where the body stiffens (known as the <em>tonic phase</em>) followed by general muscle jerking (the <em>clonic phase</em>). Knowing how to react calmly and safely is vital to protecting the person from injury.
+        </p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?q=80&w=800&auto=format&fit=crop" alt="Medical professional holding patient's hand">
+</div>
+
+<!-- DO'S AND DON'TS -->
+<div class="card">
+    <h2 style="text-align:center">Seizure First Aid DOs and DON'Ts</h2>
+    <div class="do-dont">
+        <div class="card do">
+            <h2>✔ DOs</h2>
+            <ul>
+                <li><strong>Remain calm</strong> and stay with the person.</li>
+                <li><strong>Time the seizure</strong> from start to finish.</li>
+                <li><strong>Protect from injury</strong>, especially by placing something soft under their head.</li>
+                <li><strong>Roll into recovery position</strong> after jerking stops OR immediately if there is food, fluid, or vomit in the mouth.</li>
+                <li><strong>Maintain privacy</strong> and dignity by asking bystanders to step back.</li>
+                <li><strong>Observe and monitor</strong> their breathing closely.</li>
+                <li><strong>Gently reassure</strong> the person until they are fully recovered.</li>
+            </ul>
+        </div>
+        <div class="card dont">
+            <h2>✖ DON'Ts</h2>
+            <ul>
+                <li><strong>Do NOT put anything in their mouth.</strong> (They cannot swallow their tongue, and you could break their teeth or block their airway).</li>
+                <li><strong>Do NOT restrain the person.</strong> Let the seizure run its course.</li>
+                <li><strong>Do NOT move the person</strong> unless they are in immediate, life-threatening danger (e.g., in traffic or near a fire).</li>
+                <li><strong>Do NOT apply CPR</strong> during the seizure.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- SPECIAL CIRCUMSTANCES -->
+<div class="card">
+    <h2>Special Circumstances: Wheelchairs, Car Seats, or Strollers</h2>
+    <p>If a seizure occurs while the person is seated in a wheelchair, car seat, or stroller, taking them out could cause injury. Instead, follow these steps:</p>
+    <ul>
+        <li>Leave the person in the chair with their seatbelt/harness properly fastened.</li>
+        <li>Lean the person slightly to one side to aid the drainage of any fluid, food, or vomit in their mouth.</li>
+        <li>Support their head and protect their airway as required.</li>
+        <li>After the jerking completely stops, carefully remove them from the chair and place them in the recovery position on the floor if possible or required.</li>
+    </ul>
+</div>
+
+<!-- WHEN TO CALL AN AMBULANCE -->
+<div class="card">
+    <h2 style="color: #d40000; border-bottom: 3px solid #ffb3b3;">When to Call an Ambulance</h2>
+    <p>While many seizures resolve on their own, emergency medical intervention is sometimes critical. Call for an ambulance immediately if:</p>
+    <div class="grid">
+        <ul>
+            <li>You are in any doubt about their condition.</li>
+            <li>You arrive after the seizure has already started.</li>
+            <li>An injury has occurred during the seizure.</li>
+            <li>Food or water is in their mouth during the seizure.</li>
+            <li>The seizure has occurred in water (pool, bath, etc.).</li>
+            <li>This is not an exhaustive list, but it is a starting point to help you consider your emergency response.</li>
+        </ul>
+        <ul>
+            <li>The seizure lasts longer than normal for that person.</li>
+            <li>The seizure lasts longer than <strong>five minutes</strong>.</li>
+            <li>Another seizure follows quickly after the first one.</li>
+            <li>The person is non-responsive for more than 5 minutes after the seizure ends.</li>
+            <li>The person has breathing difficulties after the jerking stops.</li>
+            <li>It is the person’s first known seizure.</li>
+        </ul>
+    </div>
+    <div class="warning">
+        <b>Emergency Reminder:</b> Never hesitate to dial emergency services if a seizure happens in water, lasts beyond 5 minutes, or affects a person's ability to breathe post-seizure.
+    </div>
+</div>
+
+<!-- SAFETY TIPS -->
+<div class="card">
+    <h2 style="text-align:center">Living with Epilepsy: Safety Tips</h2>
+    <div class="prevent">
+        <div>
+            <span style="font-size:70px;">🆔</span>
+            <p>Wear a medical ID bracelet.</p>
+        </div>
+        <div>
+            <span style="font-size:70px;">💊</span>
+            <p>Take prescribed medication on time.</p>
+        </div>
+        <div>
+            <span style="font-size:70px;">🛌</span>
+            <p>Get adequate, regular sleep.</p>
+        </div>
+        <div>
+            <span style="font-size:70px;">🚿</span>
+            <p>Take showers instead of baths.</p>
+        </div>
+        <div>
+            <span style="font-size:70px;">🚫</span>
+            <p>Avoid known seizure triggers.</p>
+        </div>
+        <div>
+            <span style="font-size:70px;">👥</span>
+            <p>Educate friends and family on first aid.</p>
+        </div>
+    </div>
+</div>
+
+<!-- VIDEO -->
+<div class="card">
+   
+    <div class="video-container">
+        
+        <iframe width="560" height="415" src="https://www.youtube.com/embed/Ovsw7tdneqE?si=JJ2to4IIMmQpSX7J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+
+<!-- HOME BUTTON -->
+<div class="home-btn">
+    <a href="/learnPage/learn.html">← Back to Home</a>
+</div>
+
+</div>
+
+</body>
+</html>

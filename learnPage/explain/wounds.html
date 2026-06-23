@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bleeding Cuts or Wounds - First Aid & Management</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f3f3f3;
+    color: #222;
+}
+
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.hero {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.55);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.overlay h1 {
+    color: white;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.overlay p {
+    color: white;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.1);
+}
+
+.card h2 {
+    color: #d40000;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #ffb3b3;
+    display: inline-block;
+}
+
+.card p {
+    line-height: 2;
+    color: #444;
+}
+
+.card ul,
+.card ol {
+    padding-left: 20px;
+}
+
+.card li {
+    line-height: 1.9;
+    margin: 8px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.flex {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.flex img {
+    width: 40%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.flex-content {
+    flex: 1;
+}
+
+.note {
+    margin-top: 20px;
+    background: #eaf4ff;
+    padding: 15px;
+    border-radius: 15px;
+    color: #0b57d0;
+}
+
+.warning {
+    margin-top: 20px;
+    background: #fff2f2;
+    padding: 15px;
+    border-radius: 15px;
+    color: #d40000;
+}
+
+.do-dont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.do {
+    background: #effbf0;
+    border: 2px solid #9fe0a7;
+}
+
+.dont {
+    background: #fff2f2;
+    border: 2px solid #ffb5b5;
+}
+
+.prevent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.prevent div {
+    text-align: center;
+}
+
+.home-btn {
+    text-align: center;
+    margin: 40px;
+}
+
+.home-btn a {
+    background: #d40000;
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.video-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.video-container iframe{
+    width:80%;
+    max-width:800px;
+    aspect-ratio:16/9;
+    height:auto;
+    border:none;
+    border-radius:15px;
+}
+
+@media(max-width: 900px) {
+    .grid,
+    .do-dont,
+    .flex {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .flex img {
+        width: 100%;
+    }
+
+    .prevent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .overlay h1 {
+        font-size: 3rem;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<!-- HERO -->
+<div class="hero">
+    <img src="https://images.unsplash.com/photo-1583324113626-70df0f4deaab?q=80&w=2000&auto=format&fit=crop" alt="First aid kit and bandages">
+    <div class="overlay">
+        <h1>Bleeding Cuts or Wounds</h1>
+        <p>Act fast to stop bleeding, prevent infection, and know when to seek medical help</p>
+    </div>
+</div>
+
+<!-- INTRODUCTION -->
+<div class="card flex">
+    <div class="flex-content">
+        <h2>Introduction</h2>
+        <p>
+            Cuts, scrapes, and open wounds are everyday occurrences, but knowing exactly how to treat them can mean the difference between a quick recovery and a serious infection or dangerous blood loss.
+            <br><br>
+            Proper first aid involves stopping the bleeding immediately, cleaning the wound safely to remove debris, and protecting the tissue as it heals. For deep or severe wounds, recognizing emergency signs early is critical to saving a life.
+        </p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1584308666744-24d5e4b7b2fb?q=80&w=800&auto=format&fit=crop" alt="Medical supplies">
+</div>
+
+<!-- EMERGENCY SIGNS -->
+<div class="card">
+    <h2 style="color: #d40000; border-bottom: 3px solid #ffb3b3;">Call Emergency If:</h2>
+    <p>Do not wait. Dial emergency services immediately if you observe any of the following:</p>
+    <ul>
+        <li><strong>Bleeding is severe:</strong> The wound is deep, large, or blood is pooling rapidly.</li>
+        <li><strong>Blood spurts out of the wound:</strong> This indicates an arterial bleed, which is life-threatening.</li>
+        <li><strong>Bleeding won't stop:</strong> You have applied firm and steady pressure for 10 minutes, but the bleeding continues.</li>
+        <li><strong>Abdominal or chest wound:</strong> Punctures or deep cuts to the torso can damage vital internal organs.</li>
+        <li><strong>Suspected internal bleeding:</strong> Look for signs like bruising, a hard or swollen abdomen, lightheadedness, confusion, or coughing up blood.</li>
+    </ul>
+    <div class="warning">
+        <b>Important:</b> If an object (like a knife or glass shard) is deeply impaled in the wound, <strong>do not remove it</strong>. Leave it in place, apply pressure around it, and wait for emergency responders.
+    </div>
+</div>
+
+<!-- 4 STEP FIRST AID -->
+<div class="card">
+    <h2 style="text-align:center">4 Steps to Treat Cuts and Wounds</h2>
+    
+    <div class="grid" style="margin-top: 20px;">
+        <div class="card" style="box-shadow: none; border: 1px solid #ddd;">
+            <h2>1. Stop Bleeding</h2>
+            <ol>
+                <li>Apply direct pressure on the cut or wound with a clean cloth, tissue, or piece of gauze until bleeding stops.</li>
+                <li>If blood soaks through the material, <strong>don’t remove it</strong>. Put more cloth or gauze on top of it and continue to apply pressure.</li>
+                <li>If the wound is on the arm or leg, raise the limb above the heart, if possible, to help slow the bleeding.</li>
+                <li>Wash your hands again after giving first aid and before cleaning and dressing the wound.</li>
+                <li><em>Do not apply a tourniquet</em> unless the bleeding is severe, life-threatening, and cannot be stopped with direct pressure.</li>
+            </ol>
+        </div>
+
+        <div class="card" style="box-shadow: none; border: 1px solid #ddd;">
+            <h2>2. Clean Cut or Wound</h2>
+            <ol>
+                <li>Gently clean the wound with mild soap and warm water.</li>
+                <li>Try to thoroughly rinse the soap out of the wound to prevent irritation.</li>
+                <li><strong>Avoid harsh chemicals:</strong> Don’t use hydrogen peroxide or iodine, which can damage exposed living tissue and delay healing.</li>
+            </ol>
+        </div>
+
+        <div class="card" style="box-shadow: none; border: 1px solid #ddd;">
+            <h2>3. Protect the Wound</h2>
+            <ol>
+                <li>Apply an over-the-counter antibiotic cream (like Neosporin) to reduce the risk of infection.</li>
+                <li>Cover the wound with a clean, sterile bandage or dressing.</li>
+                <li>Change the bandage daily (or more often if it becomes wet or dirty) to keep the wound clean and dry.</li>
+            </ol>
+        </div>
+
+        <div class="card" style="box-shadow: none; border: 1px solid #ddd;">
+            <h2>4. When to Call a Doctor</h2>
+            <ul>
+                <li>The wound is deep, or the edges are jagged or gaping open (may require stitches).</li>
+                <li>The wound is on the person’s face (for cosmetic healing).</li>
+                <li>The wound has dirt or debris that won’t come out after washing.</li>
+                <li>The area around the wound feels numb.</li>
+                <li>Signs of infection appear: redness, tenderness, thick discharge, red streaks, or fever.</li>
+                <li>The person hasn’t had a tetanus shot in the past 5 years (for dirty/deep wounds) or 10 years (for clean wounds).</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- DO'S AND DON'TS -->
+<div class="card">
+    <h2 style="text-align:center">Wound Care DOs and DON'Ts</h2>
+    <div class="do-dont">
+        <div class="card do">
+            <h2>✔ DOs</h2>
+            <ul>
+                <li>Wash your hands before treating any wound.</li>
+                <li>Apply firm, continuous pressure to stop bleeding.</li>
+                <li>Elevate a bleeding limb above the heart.</li>
+                <li>Add new bandages on top of soaked ones.</li>
+                <li>Use clean tap water to flush out debris.</li>
+                <li>Keep your tetanus boosters up to date.</li>
+            </ul>
+        </div>
+        <div class="card dont">
+            <h2>✖ DON'Ts</h2>
+            <ul>
+                <li>Do NOT peel off a blood-soaked bandage (it will rip off the forming blood clot).</li>
+                <li>Do NOT use hydrogen peroxide, iodine, or rubbing alcohol inside the wound.</li>
+                <li>Do NOT pick at scabs as the wound heals.</li>
+                <li>Do NOT apply a tourniquet for minor bleeding.</li>
+                <li>Do NOT remove deeply embedded objects from the body.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- PREVENTION -->
+<div class="card">
+    <h2 style="text-align:center">Prevention and Safety Tips</h2>
+    <div class="prevent">
+        <div>
+            <span style="font-size:70px;">🔪</span>
+            <p>Keep kitchen knives sharp (dull blades slip).</p>
+        </div>
+        <div>
+            <span style="font-size:70px;">🧤</span>
+            <p>Wear heavy gloves for yard work or DIY projects.</p>
+        </div>
+        <div>
+            <span style="font-size:70px;">🥽</span>
+            <p>Use safety gear when using power tools.</p>
+        </div>
+        <div>
+            <span style="font-size:70px;">🩹</span>
+            <p>Keep a well-stocked first aid kit at home and in your car.</p>
+        </div>
+        <div>
+            <span style="font-size:70px;">🚶‍♂️</span>
+            <p>Never run while holding sharp objects like scissors.</p>
+        </div>
+        <div>
+            <span style="font-size:70px;">💉</span>
+            <p>Stay updated on your routine Tetanus vaccinations.</p>
+        </div>
+    </div>
+</div>
+
+<!-- VIDEO -->
+<div class="card">
+    <div class="video-container">
+        <iframe width="560" height="415" src="https://www.youtube.com/embed/AhANvBB9hz0?si=d5qzpPJB9bOapG7C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+
+<!-- HOME BUTTON -->
+<div class="home-btn">
+    <a href="/learnPage/learn.html">← Back to Home</a>
+</div>
+
+</div>
+
+</body>
+</html>

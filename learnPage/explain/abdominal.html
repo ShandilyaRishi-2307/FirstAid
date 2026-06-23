@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdominal Pain - First Aid & Management</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f3f3f3;
+    color: #222;
+}
+
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.hero {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.55);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.overlay h1 {
+    color: white;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.overlay p {
+    color: white;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.1);
+}
+
+.card h2 {
+    color: #d40000;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #ffb3b3;
+    display: inline-block;
+}
+
+.card p {
+    line-height: 2;
+    color: #444;
+}
+
+.card ul,
+.card ol {
+    padding-left: 20px;
+}
+
+.card li {
+    line-height: 1.9;
+    margin: 8px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.flex {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.flex img {
+    width: 40%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.flex-content {
+    flex: 1;
+}
+
+.note {
+    margin-top: 20px;
+    background: #eaf4ff;
+    padding: 15px;
+    border-radius: 15px;
+    color: #0b57d0;
+}
+
+.warning {
+    margin-top: 20px;
+    background: #fff2f2;
+    padding: 15px;
+    border-radius: 15px;
+    color: #d40000;
+}
+
+.do-dont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.do {
+    background: #effbf0;
+    border: 2px solid #9fe0a7;
+}
+
+.dont {
+    background: #fff2f2;
+    border: 2px solid #ffb5b5;
+}
+
+.prevent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.prevent div {
+    text-align: center;
+}
+
+.home-btn {
+    text-align: center;
+    margin: 40px;
+}
+
+.home-btn a {
+    background: #d40000;
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+}
+
+.video-container iframe {
+    width: 80%;
+    max-width: 800px;
+    aspect-ratio: 16/9;
+    border: none;
+    border-radius: 15px;
+}
+
+@media(max-width: 900px) {
+    .grid,
+    .do-dont,
+    .flex {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .flex img {
+        width: 100%;
+    }
+
+    .prevent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .overlay h1 {
+        font-size: 3rem;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="hero">
+    <img src="https://images.unsplash.com/photo-1600671569420-74e793910398?q=80&w=2000&auto=format&fit=crop" alt="Person holding stomach">
+    <div class="overlay">
+        <h1>Abdominal Pain</h1>
+        <p>Identify the cause, treat symptoms safely, and know when to seek emergency care</p>
+    </div>
+</div>
+
+<div class="card flex">
+    <div class="flex-content">
+        <h2>Introduction</h2>
+        <p>
+            Abdominal pain is a common issue that can range from a mild stomach ache to severe, debilitating cramps. Because the abdomen houses many vital organs—including the stomach, liver, gallbladder, intestines, and appendix—the cause of the pain can vary widely.
+            <br><br>
+            While many cases are simply due to indigestion, trapped gas, or minor stomach bugs that can be treated at home, certain symptoms can indicate a serious medical condition. Knowing how to safely relieve discomfort and recognizing the warning signs of an emergency is crucial.
+        </p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?q=80&w=800&auto=format&fit=crop" alt="Cup of herbal tea">
+</div>
+
+<div class="card flex">
+    <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?q=80&w=800&auto=format&fit=crop" alt="Emergency and medical sign">
+    <div class="flex-content">
+        <h2 style="color: #d40000; border-bottom-color: #ffb3b3;">Call Emergency Immediately If:</h2>
+        <p>Do not wait to see a regular doctor if the person experiences any of these critical, life-threatening symptoms:</p>
+        <ul>
+            <li><strong>Vomits blood:</strong> The vomit may appear bright red or look like dark coffee grounds.</li>
+            <li><strong>Severe difficulty breathing:</strong> Breathing is rapid, shallow, or extremely painful.</li>
+            <li><strong>Sudden, agonizing pain:</strong> The pain is extremely sharp and appears out of nowhere.</li>
+            <li><strong>Rigid abdomen:</strong> The stomach is hard, stiff, and highly tender to the touch (possible appendicitis or organ rupture).</li>
+            <li><strong>Fainting or collapse:</strong> The person loses consciousness or becomes unresponsive.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="card">
+    <h2>Treating Symptoms at Home</h2>
+    <p>For mild to moderate abdominal pain with a known or non-threatening cause, try the following treatments:</p>
+    
+    <div class="grid" style="margin-top: 15px;">
+        <div>
+            <h3>For Heartburn (GERD):</h3>
+            <ul>
+                <li>Take an over-the-counter antacid or acid reducer to neutralize stomach acid.</li>
+                <li>Avoid eating within 3 hours of going to bed.</li>
+            </ul>
+        </div>
+        <div>
+            <h3>For Constipation:</h3>
+            <ul>
+                <li>Take a mild over-the-counter stool softener or laxative.</li>
+                <li>Increase water intake and eat high-fiber foods.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <h3 style="margin-top: 20px;">For General Pain & Cramps:</h3>
+    <ul>
+        <li>Take acetaminophen (such as Aspirin Free Anacin, Liquiprin, Panadol, or Tylenol) for pain relief.</li>
+        <li>Place a warm heating pad or hot water bottle on your stomach to relax cramping muscles.</li>
+        <li>Sip clear fluids like water, weak tea, or clear broth to stay hydrated, especially if you have had mild diarrhea.</li>
+    </ul>
+
+    <div class="warning">
+        <b>Crucial Medication Warning:</b> Avoid NSAIDs such as aspirin, ibuprofen (Advil, Midol, Motrin), or naproxen (Naprosyn, Aleve, Anaprox, Naprelan). These medications can cause severe stomach irritation, aggravate ulcers, and trigger dangerous internal bleeding.
+    </div>
+</div>
+
+<div class="card">
+    <h2>When to Call a Doctor</h2>
+    <p>Seek medical help if the person is experiencing any of the following symptoms:</p>
+    <div class="grid">
+        <ul>
+            <li>Has severe abdominal pain or pain that lasts several days.</li>
+            <li>Has nausea, fever, or inability to keep food down for several days.</li>
+            <li>Cannot pass stools, especially if also vomiting (sign of a blockage).</li>
+            <li>Has bloody stools (which may look bright red or tarry black).</li>
+            <li>Has heartburn that isn't relieved by over-the-counter drugs, or lasts longer than two weeks.</li>
+        </ul>
+        <ul>
+            <li>Has painful urination or a frequent, urgent need to urinate.</li>
+            <li>Has blood in the urine.</li>
+            <li>Had an injury to the abdomen in the days before the pain started.</li>
+            <li>Experiences yellowing of the skin or eyes (jaundice).</li>
+            <li>Is pregnant (or suspects pregnancy) and experiences abdominal pain.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="card">
+    <h2 style="text-align:center; display:block; margin-bottom: 20px;">Abdominal Pain DOs and DON'Ts</h2>
+    <div class="do-dont">
+        <div class="card do">
+            <h2 style="color: #2e7d32; border-bottom: 3px solid #9fe0a7;">✔ DOs</h2>
+            <ul>
+                <li>Drink plenty of clear fluids to prevent dehydration.</li>
+                <li>Eat smaller meals or follow the BRAT diet (Bananas, Rice, Applesauce, Toast) if recovering from a stomach bug.</li>
+                <li>Use a heating pad for muscle cramps.</li>
+                <li>Rest comfortably until the pain subsides.</li>
+                <li>Use Acetaminophen (Tylenol) for pain.</li>
+            </ul>
+        </div>
+        <div class="card dont">
+            <h2 style="color: #d40000; border-bottom: 3px solid #ffb3b3;">✖ DON'Ts</h2>
+            <ul>
+                <li>Do NOT take NSAIDs like Ibuprofen or Aspirin.</li>
+                <li>Do NOT eat heavy, greasy, fried, or highly spicy foods.</li>
+                <li>Do NOT consume alcohol, caffeine, or carbonated beverages.</li>
+                <li>Do NOT ignore pain that localizes to the lower right side (could be appendicitis).</li>
+                <li>Do NOT force yourself to eat if you feel nauseous.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <h2 style="text-align:center; display:block; margin-bottom: 20px;">Prevention Tips</h2>
+    <div class="prevent">
+        <div>
+            <span style="font-size:70px;">💧</span>
+            <p>Stay hydrated throughout the day.</p>
+        </div>
+        <div>
+            <span style="font-size:70px;">🥦</span>
+            <p>Eat a diet rich in fiber for digestion.</p>
+        </div>
+        <div>
+            <span style="font-size:70px;">🧼</span>
+            <p>Wash hands often to avoid stomach bugs.</p>
+        </div>
+        <div>
+            <span style="font-size:70px;">🍽️</span>
+            <p>Chew food thoroughly and eat slowly.</p>
+        </div>
+        <div>
+            <span style="font-size:70px;">🏃</span>
+            <p>Exercise regularly to prevent constipation.</p>
+        </div>
+        <div>
+            <span style="font-size:70px;">🧘</span>
+            <p>Manage stress, which can trigger stomach pain.</p>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="video-container">
+        <iframe width="560" height="415" src="https://www.youtube.com/embed/XVqbGUYMKXo?si=T3JOXsous1XbUCRb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div class="home-btn">
+    <a href="/learnPage/learn.html">← Back to Home</a>
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drownings - First Aid</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f3f3f3;
+    color:#222;
+}
+
+.container{
+    width:95%;
+    max-width:1400px;
+    margin:auto;
+    padding:20px 0;
+}
+
+/* HERO */
+.hero{
+    position:relative;
+    height:350px;
+    overflow:hidden;
+    border-radius:20px;
+    margin-bottom:25px;
+}
+
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.4);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay h1{
+    color:#fff;
+    font-size:5rem;
+}
+
+.overlay p{
+    color:white;
+    font-size:1.6rem;
+    margin-top:10px;
+}
+
+/* CARDS */
+.card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+}
+
+.card h2{
+    color:#e60000;
+    margin-bottom:20px;
+    border-bottom:3px solid #ffb0b0;
+    display:inline-block;
+}
+
+.card p{
+    line-height:2;
+    color:#444;
+}
+
+.card ul{
+    padding-left:20px;
+}
+
+.card li{
+    line-height:1.9;
+    margin:8px 0;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.flex{
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+
+.flex img{
+    width:40%;
+    border-radius:15px;
+}
+
+.flex-content{
+    flex:1;
+}
+
+.note{
+    margin-top:20px;
+    background:#e7f1ff;
+    padding:15px;
+    border-radius:15px;
+    color:#0b57d0;
+}
+
+/* DO DON'T */
+.do-dont{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.do{
+    background:#effbf0;
+    border:2px solid #a8e1ad;
+}
+
+.dont{
+    background:#fff2f2;
+    border:2px solid #ffb3b3;
+}
+
+/* PREVENTION */
+.prevent{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:20px;
+}
+
+.prevent div{
+    text-align:center;
+}
+
+.prevent img{
+    width:90px;
+    margin-bottom:10px;
+}
+
+.home-btn{
+    text-align:center;
+    margin:40px;
+}
+
+.home-btn a{
+    background:#e60000;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.home-btn a:hover{
+    background:#c70000;
+}
+
+
+
+.video-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.video-container iframe{
+    width:80%;
+    max-width:800px;
+    aspect-ratio:16/9;
+    height:auto;
+    border:none;
+    border-radius:15px;
+}
+@media(max-width:900px){
+
+.grid,
+.do-dont,
+.flex{
+    grid-template-columns:1fr;
+    flex-direction:column;
+}
+
+.flex img{
+    width:100%;
+}
+
+.prevent{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.overlay h1{
+    font-size:3rem;
+}
+
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<!-- HERO -->
+<div class="hero">
+    <img src="https://images.unsplash.com/photo-1544321617-6409605b0d66?q=80&w=2000&auto=format&fit=crop" alt="Fishing tackle and hook">
+    <div class="overlay">
+        <h1>Fishhook Removal</h1>
+        <p>Learn the safe technique to remove a fishhook and prevent serious infection</p>
+    </div>
+</div>
+
+<!-- INTRODUCTION -->
+<div class="card flex">
+    <div class="flex-content">
+        <h2>Introduction</h2>
+        <p>
+            Fishing is a widespread leisurely activity that rarely results in an emergency. However, trauma from a fishhook piercing the skin is fairly common.
+            <br><br>
+            Because of the barb at the end of the hook, simply pulling the hook backward out of the skin will cause severe tearing and tissue damage. Using the correct "push-through" technique with appropriate tools is crucial to minimizing injury before seeking medical evaluation for infection control.
+        </p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1506461883276-594a12b11ac3?q=80&w=800&auto=format&fit=crop" alt="Fisherman holding a fishing rod">
+</div>
+
+<!-- FIRST AID: PUSH-THROUGH METHOD -->
+<div class="card flex">
+    <img src="https://images.unsplash.com/photo-1584308666744-24d5e4b7b2fb?q=80&w=800&auto=format&fit=crop" alt="First aid medical supplies">
+    <div class="flex-content">
+        <h2>First Aid: The Push-Through Method</h2>
+        <p>If the hook is embedded in an area that is safe to treat (not the eye, face, or near an artery), use the following guidelines to remove a fishhook:</p>
+        <ol>
+            <li><strong>Push Through:</strong> Use pliers or forceps to push the hook gently through the skin, following the natural curve of the hook until the barbed end pokes out the other side.</li>
+            <li><strong>Cut the Barb:</strong> Use heavy-duty wire cutters or pliers to snip off the barb so that the remaining unbarbed portion of the fishhook is smooth.</li>
+            <li><strong>Back it Out:</strong> Carefully pull the unbarbed portion of the fishhook backwards out through the original entry wound.</li>
+            <li><strong>Clean, but Do Not Close:</strong> Clean the wound thoroughly with soap and water, but do <em>not</em> close or seal the wound tightly. Puncture wounds need to drain to prevent deep infections.</li>
+            <li><strong>Follow Up:</strong> Follow standard wound care guidelines and consult a doctor to start antibiotics immediately to prevent marine-borne bacterial infections.</li>
+        </ol>
+    </div>
+</div>
+
+<!-- WHEN TO SEEK MEDICAL CARE -->
+<div class="card">
+    <h2 style="color: #d40000; border-bottom: 3px solid #ffb3b3;">When to Seek Medical Care</h2>
+    <p>A fishhook wound can lead to a serious, aggressive infection due to the bacteria found in lakes, rivers, oceans, and on fish. Always keep the following in mind:</p>
+    <ul>
+        <li><strong>Consult a Doctor:</strong> Be certain to consult a doctor about available medications for the treatment of fishhook wounds. You will likely be prescribed antibiotics.</li>
+        <li><strong>Tetanus Vaccination:</strong> People who experience a fishhook puncture should be immunized for tetanus if more than <strong>5 years</strong> have passed since their last inoculation.</li>
+        <li><strong>Dangerous Locations:</strong> If the hook is lodged in the eye, face, neck, or deep inside a joint/bone, do NOT attempt removal. Tape it securely in place so it doesn't move and go to the emergency room immediately.</li>
+    </ul>
+    <div class="warning">
+        <b>Emergency Alert:</b> Never attempt the push-through method if you feel resistance against a bone, or if removing it could damage vital blood vessels or nerves. Let emergency professionals handle complex extractions.
+    </div>
+</div>
+
+<!-- DO'S AND DON'TS -->
+<div class="card">
+    <h2 style="text-align:center; display:block; margin-bottom: 20px;">Fishhook Removal DOs and DON'Ts</h2>
+    <div class="do-dont">
+        <div class="card do">
+            <h2 style="color: #2e7d32; border-bottom: 3px solid #9fe0a7;">✔ DOs</h2>
+            <ul>
+                <li>Wash your hands before touching the wound.</li>
+                <li>Use pliers to push the hook through its natural curve.</li>
+                <li>Cut the barb off completely before pulling the hook back out.</li>
+                <li>Leave the wound open to drain after washing it.</li>
+                <li>Check your tetanus vaccine status immediately.</li>
+            </ul>
+        </div>
+        <div class="card dont">
+            <h2 style="color: #d40000; border-bottom: 3px solid #ffb3b3;">✖ DON'Ts</h2>
+            <ul>
+                <li>Do NOT pull a barbed hook backward out of the skin (it will tear the tissue).</li>
+                <li>Do NOT close the wound tightly with glue or butterfly stitches.</li>
+                <li>Do NOT attempt to remove hooks near the eyes, face, or neck.</li>
+                <li>Do NOT ignore signs of infection like red streaks, heat, or throbbing pain.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- PREVENTION -->
+<div class="card">
+    <h2 style="text-align:center; display:block; margin-bottom: 20px;">Prevention Tips on the Water</h2>
+    <div class="prevent">
+        <div>
+            <span style="font-size:70px;">🥽</span>
+            <p>Always wear protective safety glasses/sunglasses.</p>
+        </div>
+        <div>
+            <span style="font-size:70px;">👀</span>
+            <p>Look behind you before casting your line.</p>
+        </div>
+        <div>
+            <span style="font-size:70px;">🛠️</span>
+            <p>Use long pliers to extract hooks from fish.</p>
+        </div>
+        <div>
+            <span style="font-size:70px;">🧰</span>
+            <p>Keep tackle boxes closed when not in use.</p>
+        </div>
+        <div>
+            <span style="font-size:70px;">👟</span>
+            <p>Wear closed-toe shoes on boats and docks.</p>
+        </div>
+        <div>
+            <span style="font-size:70px;">🎣</span>
+            <p>Consider pinching barbs down for catch-and-release.</p>
+        </div>
+    </div>
+</div>
+
+<!-- VIDEO -->
+<div class="card">
+    <div class="video-container">
+        
+       <iframe width="560" height="415" src="https://www.youtube.com/embed/gblNoYzlrOQ?si=LW31BYYv5zjlwxqo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+
+<!-- HOME BUTTON -->
+<div class="home-btn">
+    <a href="/learnPage/learn.html">← Back to Home</a>
+</div>
+
+</div>
+
+</body>
+</html>

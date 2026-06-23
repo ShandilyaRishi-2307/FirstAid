@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asthma and Asthma Attacks - First Aid</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f3f3f3;
+    color: #222;
+}
+
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.hero {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.55);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.overlay h1 {
+    color: white;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.overlay p {
+    color: white;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.1);
+}
+
+.card h2 {
+    color: #d40000;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #ffb3b3;
+    display: inline-block;
+}
+
+.card p {
+    line-height: 2;
+    color: #444;
+}
+
+.card ul,
+.card ol {
+    padding-left: 20px;
+}
+
+.card li {
+    line-height: 1.9;
+    margin: 8px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.flex {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.flex img {
+    width: 40%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.flex-content {
+    flex: 1;
+}
+
+.note {
+    margin-top: 20px;
+    background: #eaf4ff;
+    padding: 15px;
+    border-radius: 15px;
+    color: #0b57d0;
+}
+
+.warning {
+    margin-top: 20px;
+    background: #fff2f2;
+    padding: 15px;
+    border-radius: 15px;
+    color: #d40000;
+}
+
+.do-dont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.do {
+    background: #effbf0;
+    border: 2px solid #9fe0a7;
+}
+
+.dont {
+    background: #fff2f2;
+    border: 2px solid #ffb5b5;
+}
+
+.prevent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.prevent div {
+    text-align: center;
+}
+
+.home-btn {
+    text-align: center;
+    margin: 40px;
+}
+
+.home-btn a {
+    background: #d40000;
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+}
+
+.video-container iframe {
+    width: 80%;
+    max-width: 800px;
+    aspect-ratio: 16/9;
+    border: none;
+    border-radius: 15px;
+}
+
+@media(max-width: 900px) {
+    .grid,
+    .do-dont,
+    .flex {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .flex img {
+        width: 100%;
+    }
+
+    .prevent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .overlay h1 {
+        font-size: 3rem;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="hero">
+    <img src="https://images.unsplash.com/photo-1525268771113-32d9e9021a97?q=80&w=2000&auto=format&fit=crop" alt="Person breathing fresh air">
+    <div class="overlay">
+        <h1>Asthma Attacks</h1>
+        <p>Recognize the signs, assist with medication, and know when to get emergency help</p>
+    </div>
+</div>
+
+<div class="card flex">
+    <div class="flex-content">
+        <h2>Asthma and Hayfever</h2>
+        <p>
+            Hayfever is a major risk factor for asthma, and the two are often experienced side by side. Poorly treated hayfever can significantly increase the threat of an asthma attack. 
+            <br><br>
+            We recommend regularly checking pollen counts and staying on top of medication to keep asthma attacks at bay. If you’re asthmatic and you know hayfever affects you, keep your inhaler with you at all times, especially during high-pollen seasons.
+        </p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=800&auto=format&fit=crop" alt="Pollen and nature">
+</div>
+
+<div class="grid">
+    <div class="card">
+        <h2>What is an Asthma Attack?</h2>
+        <p>
+            An asthma attack happens when the lung muscles spasm and the airway swells. This causes the airways to become incredibly narrow, making it very hard for the person to breathe.
+        </p>
+        <div class="note">
+            <b>Common Triggers:</b> These attacks can be caused by many different things, including seasonal allergies (like hayfever), exposure to smoke, or strenuous physical exercise.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>How to Recognise an Attack</h2>
+        <p>Look out for the following signs and symptoms:</p>
+        <ul>
+            <li>Difficulty breathing and catching their breath.</li>
+            <li>Wheezing, specifically on the exhale.</li>
+            <li>Difficulty speaking, sometimes reduced to whispering.</li>
+            <li>Visible distress, panic, and anxiety.</li>
+            <li>Persistent coughing.</li>
+            <li>A grey-blue tinge to the lips, earlobes, and nailbeds (indicating lack of oxygen).</li>
+        </ul>
+    </div>
+</div>
+
+<div class="card flex">
+    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=800&auto=format&fit=crop" alt="Medical assistance">
+    <div class="flex-content">
+        <h2>Know What to Do</h2>
+        <p>Knowing first aid can help those around you stay safe. Here’s what you need to do if someone is having an asthma attack:</p>
+        <ol>
+            <li><strong>Keep calm:</strong> Panicking could make their breathing worse. Reassure them and encourage slow, deep breaths.</li>
+            <li><strong>Positioning:</strong> Help them into a comfortable breathing position (usually sitting upright, leaning slightly forward).</li>
+            <li><strong>Use medication:</strong> Encourage them to use their inhaler if they have one (typically a blue reliever inhaler).</li>
+            <li><strong>Dosing:</strong> A mild attack should ease within a few minutes. If it doesn’t, encourage them to take one or two puffs every two minutes, up to a maximum of 10 puffs.</li>
+            <li><strong>Monitor:</strong> Constantly monitor their vital signs: breathing, pulse, and responsiveness.</li>
+        </ol>
+        <div class="warning">
+            <b>Emergency:</b> Call an ambulance immediately if the inhaler has no effect, if they don't have an inhaler, or if the person is becoming physically exhausted from trying to breathe.
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <h2 style="text-align:center">Asthma First Aid DOs and DON'Ts</h2>
+    <div class="do-dont">
+        <div class="card do">
+            <h2>✔ DOs</h2>
+            <ul>
+                <li>Keep the person calm and reassured.</li>
+                <li>Help them sit up comfortably.</li>
+                <li>Help them find and use their reliever inhaler.</li>
+                <li>Wait 2 minutes between taking extra puffs (up to 10).</li>
+                <li>Call an ambulance if their condition doesn't improve.</li>
+            </ul>
+        </div>
+        <div class="card dont">
+            <h2>✖ DON'Ts</h2>
+            <ul>
+                <li>Do NOT panic or show anxiety (it will transfer to them).</li>
+                <li>Do NOT lay the person flat down on their back.</li>
+                <li>Do NOT leave the person alone during an attack.</li>
+                <li>Do NOT ignore grey or blue coloring in the lips/nails.</li>
+                <li>Do NOT delay calling an ambulance if they are exhausted.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <h2 style="text-align:center">Asthma Management & Prevention</h2>
+    <div class="prevent">
+        <div>
+            <span style="font-size:70px;">🌬️</span>
+            <p>Check daily pollen counts.</p>
+        </div>
+        <div>
+            <span style="font-size:70px;">🎒</span>
+            <p>Always carry your reliever inhaler.</p>
+        </div>
+        <div>
+            <span style="font-size:70px;">🚭</span>
+            <p>Avoid cigarette smoke and fumes.</p>
+        </div>
+        <div>
+            <span style="font-size:70px;">🧹</span>
+            <p>Keep homes free of dust and mold.</p>
+        </div>
+        <div>
+            <span style="font-size:70px;">🏃</span>
+            <p>Warm up before exercising.</p>
+        </div>
+        <div>
+            <span style="font-size:70px;">👨‍⚕️</span>
+            <p>Attend regular asthma reviews.</p>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="video-container">
+        <iframe width="560" height="415" src="https://www.youtube.com/embed/hdVKpUR513M?si=Cyqg8CfqOStVK7bv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div class="home-btn">
+    <a href="/learnPage/learn.html">← Back to Home</a>
+</div>
+
+</div>
+
+</body>
+</html>
