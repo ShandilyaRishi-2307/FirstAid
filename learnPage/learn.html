@@ -6,9 +6,66 @@
     <title>Learn First Aid</title>
 
     <link rel="stylesheet" href="learn.css">
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* Search Bar Styles */
+        .search-section {
+            display: flex;
+            justify-content: center;
+            margin: -25px auto 40px;
+            padding: 0 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .search-container {
+            background: white;
+            width: 100%;
+            max-width: 650px;
+            display: flex;
+            align-items: center;
+            padding: 15px 25px;
+            border-radius: 50px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .search-container:focus-within {
+            box-shadow: 0 8px 25px rgba(212, 0, 0, 0.2);
+        }
+
+        .search-container i {
+            color: #d40000;
+            font-size: 1.3rem;
+            margin-right: 15px;
+        }
+
+        .search-container input {
+            border: none;
+            outline: none;
+            width: 100%;
+            font-size: 1.1rem;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            background: transparent;
+        }
+
+        .search-container input::placeholder {
+            color: #999;
+        }
+
+        #no-results {
+            text-align: center;
+            width: 100%;
+            font-size: 1.2rem;
+            color: #666;
+            display: none;
+            margin-top: 20px;
+            grid-column: 1 / -1; /* Spans across all grid columns if .topics is a grid */
+        }
+    </style>
 </head>
 <body>
 
@@ -17,7 +74,6 @@
         <img src="first-aid-box.jpg" alt="#" id="logo">
         <h2>First <span>Aid</span></h2> 
     </div>
-
 
     <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="hamburger"><i class="fa-solid fa-bars"></i></label>
@@ -34,22 +90,25 @@
 </nav>
 
 <!-- Hero -->
-
 <section class="hero">
-
     <h1>Learn First Aid</h1>
-
     <p>
         Explore emergency procedures and life-saving techniques
         that everyone should know.
     </p>
+</section>
 
+<!-- Search Bar Section -->
+<section class="search-section">
+    <div class="search-container">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="searchInput" placeholder="Search topics (e.g. CPR, bleeding, burns)...">
+    </div>
 </section>
 
 <!-- Topics -->
-
-<section class="topics">
-
+<section class="topics" id="topicsContainer">
+    
     <div class="card" onclick="openPage(this)" id="artificial-respiration">Artificial Respiration</div>
     <div class="card" onclick="openPage(this)" id="cpr">CPR (Cardiac Massage)</div>
     <div class="card" onclick="openPage(this)" id="shock">Shock</div>
@@ -105,7 +164,11 @@
     <div class="card" onclick="openPage(this)" id="abdominal">Abdominal Pain</div>
     <div class="card" onclick="openPage(this)" id="hiccups">Hiccups Treatment</div>
 
+    <!-- No Results Message -->
+    <p id="no-results">No matching topics found. Please try a different search.</p>
+
 </section>
+
 <script src="learn.js"></script>
 
 </body>
