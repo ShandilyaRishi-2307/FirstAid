@@ -477,6 +477,44 @@ footer hr{
 }
 
 
+
+.heart-btn{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:rgba(16, 13, 4, 0.774);
+    backdrop-filter:blur(15px);
+    border:2px solid rgba(255,255,255,0.3);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+    z-index:99;
+    animation:pulse 2s infinite;
+    transition:.3s;
+}
+
+.heart-btn i{
+    color:#ff1744;
+    font-size:32px;
+}
+
+.heart-btn:hover{
+    transform:scale(1.15);
+    background: white;
+}
+
+@keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(255,23,68,.5);}
+    70%{box-shadow:0 0 0 18px rgba(255,23,68,0);}
+    100%{box-shadow:0 0 0 0 rgba(255,23,68,0);}
+}
+
+
 @media(max-width:900px){
 
     .features{
