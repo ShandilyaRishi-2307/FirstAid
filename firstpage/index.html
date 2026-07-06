@@ -305,8 +305,73 @@
 
 
 
-<a href="#" class="heart-btn">
-    <i class="fa-solid fa-droplet"></i>
-</a>
+<div class="fab-container">
+    <div class="fab-tooltip" id="fabTooltip">
+        👋 Get your Medicine Reminder, Mind Games, Hydration Tracker & Body Checkup here!
+    </div>
+
+    <div class="fab-menu" id="fabMenu">
+        <a href="bodycheckup.html" class="fab-item">
+            <i class="fa-solid fa-heart-pulse"></i>
+        </a>
+
+        <a href="hydration.html" class="fab-item">
+            <i class="fa-solid fa-glass-water"></i>
+        </a>
+
+        <a href="mindgames.html" class="fab-item">
+            <i class="fa-solid fa-brain"></i>
+        </a>
+
+        <a href="reminder.html" class="fab-item">
+            <i class="fa-solid fa-bell"></i>
+        </a>
+    </div>
+
+    <button class="fab-main" id="fabBtn">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+</div>
 </body>
+<script>
+const fabBtn = document.getElementById("fabBtn");
+const fabMenu = document.getElementById("fabMenu");
+
+fabBtn.addEventListener("click", () => {
+
+    fabMenu.classList.toggle("active");
+
+    const icon = fabBtn.querySelector("i");
+
+    if(fabMenu.classList.contains("active")){
+        icon.classList.remove("fa-chevron-up");
+        icon.classList.add("fa-chevron-down");
+    }
+    else{
+        icon.classList.remove("fa-chevron-down");
+        icon.classList.add("fa-chevron-up");
+    }
+
+});
+const tooltip = document.getElementById("fabTooltip");
+
+// Show only if user has never seen it before
+if (!localStorage.getItem("firstAidTooltipShown")) {
+
+    setTimeout(() => {
+        tooltip.classList.add("show");
+    }, 500);
+
+    setTimeout(() => {
+        tooltip.classList.remove("show");
+
+        // Remember that the tooltip has been shown
+        localStorage.setItem("firstAidTooltipShown", "true");
+
+    }, 4000);
+}
+
+
+</script>
 </html>

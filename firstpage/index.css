@@ -476,44 +476,139 @@ footer hr{
     display: none;
 }
 
-
-
-.heart-btn{
+.fab-container{
     position:fixed;
     bottom:25px;
     right:25px;
+    z-index:999;
+}
+
+.fab-main{
     width:70px;
     height:70px;
     border-radius:50%;
-    background:rgba(16, 13, 4, 0.774);
+    border:none;
+    cursor:pointer;
+
+    background:rgba(16,13,4,.77);
     backdrop-filter:blur(15px);
-    border:2px solid rgba(255,255,255,0.3);
+    border:2px solid rgba(255,255,255,.3);
+
     display:flex;
     justify-content:center;
     align-items:center;
-    text-decoration:none;
+
     box-shadow:0 10px 30px rgba(0,0,0,.2);
-    z-index:99;
+
     animation:pulse 2s infinite;
     transition:.3s;
 }
 
-.heart-btn i{
+.fab-main i{
     color:#ff1744;
     font-size:32px;
 }
 
-.heart-btn:hover{
+.fab-main:hover{
     transform:scale(1.15);
-    background: white;
+    background:white;
 }
 
-@keyframes pulse{
-    0%{box-shadow:0 0 0 0 rgba(255,23,68,.5);}
-    70%{box-shadow:0 0 0 18px rgba(255,23,68,0);}
-    100%{box-shadow:0 0 0 0 rgba(255,23,68,0);}
+.fab-menu{
+    position:absolute;
+    bottom:85px;
+    right:8px;
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(20px);
+
+    transition:.35s;
 }
 
+.fab-menu.active{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+}
+
+.fab-item{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+
+    color:#e60000;
+    font-size:22px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+    transition:.3s;
+}
+
+.fab-item:hover{
+    background:#e60000;
+    color:white;
+    transform:scale(1.1);
+}
+.fab-tooltip{
+    position:absolute;
+    right:90px;
+    bottom:15px;
+
+    width:280px;
+
+    background:white;
+    color:#222;
+
+    padding:12px 18px;
+
+    border-radius:12px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.18);
+
+    font-size:14px;
+    line-height:1.5;
+
+    opacity:0;
+    visibility:hidden;
+
+    transform:translateX(25px);
+
+    transition:.5s;
+}
+
+/* Small arrow */
+.fab-tooltip::after{
+    content:"";
+    position:absolute;
+
+    right:-10px;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    border-width:10px 0 10px 10px;
+    border-style:solid;
+    border-color:transparent transparent transparent white;
+}
+
+/* Show animation */
+.fab-tooltip.show{
+    opacity:1;
+    visibility:visible;
+    transform:translateX(0);
+}
 
 @media(max-width:900px){
 
