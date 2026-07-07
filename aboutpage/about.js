@@ -23,8 +23,9 @@ function openModal(img, title, desc){
     document.body.style.overflow = "hidden";
 }
 
-function closeModal(){
+function closeModal() {
     document.getElementById("modal").style.display = "none";
+    document.body.style.overflow = "auto";  
 }
 
 const modal = document.querySelector(".modal");
