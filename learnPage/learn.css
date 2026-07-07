@@ -98,7 +98,7 @@ nav ul li a:hover{
 .topics{
     width:90%;
     max-width:1400px;
-    margin:50px auto;
+    margin:25px auto 50px;
 
     display:grid;
     grid-template-columns:repeat(3,1fr);
