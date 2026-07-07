@@ -87,7 +87,7 @@ nav ul li a:hover{
     justify-content:space-between;
     padding:70px 8%;
     gap:50px;
-    background-image: url("firstpage/bg.png");
+    background-image: url("bg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
