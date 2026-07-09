@@ -263,7 +263,6 @@ body {
 .site-footer {
   padding: 20px 0;
   margin-top: 28px;
-  /* light pink background to match the design */
   background: linear-gradient(180deg, #fff6f6 0%, #fdecec 100%);
   border-top: 1px solid rgba(0,0,0,0.04);
 }
