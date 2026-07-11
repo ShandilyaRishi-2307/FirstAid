@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Contacts</title>
+    <link rel="stylesheet" href="contacts.css">
+</head>
+<style>
+    body{
+    margin:0;
+    padding:0;
+    background:#f4f6fb;
+    font-family:Arial,sans-serif;
+}
+
+.container{
+    width:80%;
+    max-width:700px;
+    margin:40px auto;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+h1,h2{
+    text-align:center;
+    color:#4b3f9f;
+}
+
+.form-box{
+    display:flex;
+    gap:10px;
+    margin:25px 0;
+}
+
+.form-box input{
+    flex:1;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.form-box button{
+    background:#c62828;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.form-box button:hover{
+    background:#372d7d;
+}
+
+.contact-card{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    margin:12px 0;
+}
+
+.contact-info h3{
+    margin:0;
+}
+
+.contact-info p{
+    margin:5px 0 0;
+    color:#555;
+}
+
+.delete-btn{
+    background:#e53935;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.delete-btn:hover{
+    background:#c62828;
+}
+#back{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+</style>
+<body>
+
+<div class="container">
+
+    <h1>📞 Emergency Contacts</h1>
+
+    <div class="form-box">
+
+        <input type="text" id="name" placeholder="Contact Name">
+
+        <input type="text" id="phone" placeholder="Phone Number">
+
+        <button onclick="addContact()">Add Contact</button>
+
+    </div>
+
+    <h2>Saved Contacts</h2>
+
+    <div id="contactList"></div>
+    <div>
+        <a href="../ResourcePage/resources.html" class="delete-btn" id="back">Back to home</a>
+    </div>
+
+</div>
+
+<script>
+    let contacts = JSON.parse(localStorage.getItem("contacts")) || [];
+
+displayContacts();
+
+function addContact(){
+
+    const name = document.getElementById("name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+
+    if(name==="" || phone===""){
+        alert("Please fill all fields");
+        return;
+    }
+
+    contacts.push({
+        id: Date.now(),
+        name,
+        phone
+    });
+
+    localStorage.setItem("contacts", JSON.stringify(contacts));
+
+    document.getElementById("name").value="";
+    document.getElementById("phone").value="";
+
+    displayContacts();
+}
+
+function displayContacts(){
+
+    const list=document.getElementById("contactList");
+
+    list.innerHTML="";
+
+    contacts.forEach(contact=>{
+
+        list.innerHTML += `
+
+        <div class="contact-card">
+
+            <div class="contact-info">
+
+                <h3>${contact.name}</h3>
+
+                <p>${contact.phone}</p>
+
+            </div>
+
+            <button class="delete-btn"
+                onclick="deleteContact(${contact.id})">
+
+                Delete
+
+            </button>
+
+        </div>
+
+        `;
+
+    });
+
+}
+
+function deleteContact(id){
+
+    contacts = contacts.filter(contact=>contact.id!==id);
+
+    localStorage.setItem("contacts",JSON.stringify(contacts));
+
+    displayContacts();
+
+}
+</script>
+
+</body>
+</html>
